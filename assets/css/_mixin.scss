@@ -1,0 +1,54 @@
+@mixin bluebtn {
+  font-size: 1.6rem;
+  background-color: #1912d3;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  span {
+    display: flex;
+    align-items: center;
+  }
+  p {
+    margin: 0;
+    color: #ffffff;
+  }
+}
+@mixin grayTitle {
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+@mixin grayBlueSelect {
+  color: #172f78;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+  background-color: transparent;
+  &:focus-visible {
+    outline: none;
+  }
+}
+@mixin grayBlueBtn{
+    color: #172f78;
+    font-weight: 600;
+    font-size: 1.6rem;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.4rem;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+@mixin blueHeading{
+    color: #172F78;
+    font-size: 1.6rem;
+    font-weight: 500;
+}

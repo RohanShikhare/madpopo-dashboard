@@ -9,5 +9,8 @@ $(document).ready(function () {
         $('[data-bs-toggle="tooltip"]').tooltip("dispose"); 
       }
   });
+  $(".datepicker").datepicker({
+    dateFormat: "MM yy"
+  });
  
 });
