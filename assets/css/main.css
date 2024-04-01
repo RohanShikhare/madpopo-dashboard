@@ -404,7 +404,10 @@ h6 {
 }
 #dashboardSection .BodyWrapper .BodyDiv #mainBody {
   background-color: #ffffff;
-  height: 100%;
+  height: 98%;
+  border-radius: 10px;
+  margin-right: 1rem;
+  padding: 1rem;
 }
 #dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap {
   background-color: #ffffff;
@@ -677,6 +680,277 @@ h6 {
   color: #ffffff;
   background-color: #1912d3;
 }
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap {
+  background-color: #ffffff;
+  height: 98%;
+  border-radius: 10px;
+  margin-right: 1rem;
+  padding: 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-title-wrap {
+  padding: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-title-wrap h3 {
+  color: #172f78;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-title-wrap p {
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .orders-InputWrap {
+  position: relative;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .orders-InputWrap span {
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  text-align: center;
+  top: 9px;
+  left: 11px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .orders-InputWrap span svg path {
+  fill: #172f78;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .orders-InputWrap input {
+  background-color: #edf3ff;
+  height: 3.6rem;
+  width: 25rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #888888;
+  padding-left: 3.5rem;
+  font-size: 1.4rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .orders-InputWrap input:focus-visible {
+  outline: none;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .new-order-div {
+  font-size: 1.6rem;
+  background-color: #1912d3;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .new-order-div span {
+  display: flex;
+  align-items: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .new-order-div p {
+  margin: 0;
+  color: #ffffff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap {
+  background-color: #f9fbff;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem;
+  border-bottom: 1px solid #dcefff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .showOrderEntries {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .showOrderEntries span {
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .showOrderEntries select {
+  color: #172f78;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+  background-color: transparent;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .showOrderEntries select:focus-visible {
+  outline: none;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap button {
+  color: #172f78;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.4rem;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap button span {
+  display: flex;
+  align-items: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap .order-dateWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap .order-dateWrap span {
+  position: absolute;
+  width: 1.7rem;
+  height: 1.7rem;
+  text-align: center;
+  top: 7px;
+  left: 11px;
+  display: flex;
+  align-items: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap .order-dateWrap input {
+  color: #172f78;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+  background-color: transparent;
+  padding-left: 3.5rem;
+  width: 17rem;
+  cursor: pointer;
+  caret-color: transparent;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap .order-dateWrap input:focus-visible {
+  outline: none;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow {
+  height: 46vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table {
+  margin-top: 2rem;
+  width: 100%;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr th {
+  color: #172f78;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr th:first-child div {
+  padding-right: 1rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr th:first-child div input {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr th:nth-child(even) {
+  border-right: 1px solid #dcefff;
+  border-left: 1px solid #dcefff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr td {
+  text-align: center;
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  text-overflow: ellipsis;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr td .tableIcon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 0 2rem;
+  justify-content: space-between;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr td .tableIcon a {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr td:first-child div {
+  padding: 1rem 2rem;
+  padding-right: 1rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr td:first-child div input {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr td:nth-child(even) {
+  border-right: 1px solid #dcefff;
+  border-left: 1px solid #dcefff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr:nth-child(even) {
+  background-color: #f9fbff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr:first-child {
+  background-color: #edf3ff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-pagination {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-pagination .orderEntriesWrap p {
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-pagination .order-pagination-wrap .order-pagination {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-pagination .order-pagination-wrap .order-pagination li {
+  background-color: #edf3ff;
+  color: #94a2bc;
+  font-size: 1.4rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.4rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-pagination .order-pagination-wrap .order-pagination li.active {
+  color: #ffffff;
+  background-color: #1912d3;
+}
 
 #add-new-hosting-modalwrap .nh-modal-adjuster {
   margin-top: 75px;
@@ -783,7 +1057,7 @@ h6 {
   color: #172f78;
 }
 #add-new-hosting-modalwrap .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-input-wrap .hs-modal-input {
-  background-color: #EDF3FF;
+  background-color: #edf3ff;
   padding: 0.5rem 1rem;
   font-size: 1.4rem;
   color: #888888;
@@ -822,7 +1096,7 @@ h6 {
   margin: 0;
 }
 #add-new-hosting-modalwrap .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-category-select-wrap .nh-category-input-wrap .hs-modal-input {
-  background-color: #EDF3FF;
+  background-color: #edf3ff;
   padding: 0.5rem 1rem;
   font-size: 1.4rem;
   color: #888888;
@@ -1128,7 +1402,7 @@ h6 {
   color: #172f78;
 }
 #addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-modal-input {
-  background-color: #EDF3FF;
+  background-color: #edf3ff;
   padding: 0.5rem 1rem;
   font-size: 1.4rem;
   color: #888888;
@@ -1205,6 +1479,7 @@ h6 {
 
 #add-server-modal .ac-modal-adjuster, #delete-modal .ac-modal-adjuster {
   margin: 25vh auto;
+  margin-left: 27vw;
 }
 #add-server-modal .ac-modal-adjuster .ac-modal-content, #delete-modal .ac-modal-adjuster .ac-modal-content {
   width: 670px;
@@ -1307,7 +1582,7 @@ h6 {
   color: #172f78;
 }
 #add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-modal-input, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-modal-input {
-  background-color: #EDF3FF;
+  background-color: #edf3ff;
   padding: 0.5rem 1rem;
   font-size: 1.4rem;
   color: #888888;
