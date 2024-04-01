@@ -34,21 +34,61 @@
     outline: none;
   }
 }
-@mixin grayBlueBtn{
-    color: #172f78;
-    font-weight: 600;
-    font-size: 1.6rem;
-    border: 1px solid #d9d9d9;
-    border-radius: 0.4rem;
-    padding: 0.5rem 1rem;
-    background-color: transparent;
+@mixin grayBlueBtn {
+  color: #172f78;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.4rem;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+@mixin blueHeading {
+  color: #172f78;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+@mixin blueSmHeading {
+  color: #172f78;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0;
+}
+@mixin graySmTitle {
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+@mixin categoryTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 0.5rem;
+  span {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 5px;
+  }
+  p {
+    @include blueSmHeading;
+  }
 }
-@mixin blueHeading{
-    color: #172F78;
-    font-size: 1.6rem;
-    font-weight: 500;
+
+@mixin hs-modal-input {
+  background-color: #EDF3FF;
+  padding: .5rem 1rem;
+  font-size: 1.4rem;
+  color: #888888;
+  font-weight: 400;
+  border: none;
+  width: 20rem;
+  border-radius: .5rem;
+  &:focus-visible{
+    outline: none;
+  }
 }
