@@ -1024,4 +1024,181 @@ h6 {
 #add-new-hosting-modalwrap .nh-modal-adjuster .nh-modal-content .nh-modal-footer .nh-footer-btn-wrap .nh-modal-addbtn p {
   margin: 0;
   color: #ffffff;
+}
+
+#addbtn-modal #add-btn-modal {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster {
+  margin: 25vh auto;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content {
+  width: 670px;
+  border-radius: 0.5rem;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  padding-bottom: 1rem;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header .ac-modal-title h3 {
+  color: #172f78;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header .ac-modal-title p {
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 0;
+  font-size: 1.6rem;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header .ac-modal-close span {
+  cursor: pointer;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body {
+  padding: 2rem;
+  padding-bottom: 0;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap {
+  background-color: #f9fbff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-title span {
+  display: flex;
+  align-items: center;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-title p {
+  color: #172f78;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap {
+  display: flex;
+  align-items: center;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap select {
+  padding: 0.5rem 1rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  width: 29rem;
+  border: none;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  background-color: #edf3ff;
+  color: #888888;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap select:focus-visible {
+  outline: none;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-cat-input-add-wrap {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: #edf3ff;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-cat-input-add-wrap p {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #172f78;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-modal-input {
+  background-color: #EDF3FF;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  color: #888888;
+  font-weight: 400;
+  border: none;
+  width: 20rem;
+  border-radius: 0.5rem;
+  width: 29rem;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-modal-input:focus-visible {
+  outline: none;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap.ac-tax-rate select {
+  border: none;
+  border-radius: 0.5rem;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn {
+  font-size: 1.6rem;
+  background-color: #1912d3;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  background-color: #edf3ff;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn span {
+  display: flex;
+  align-items: center;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn p {
+  margin: 0;
+  color: #ffffff;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn span svg path {
+  fill: #888888;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn p {
+  color: #888888;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-addbtn {
+  font-size: 1.6rem;
+  background-color: #1912d3;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-addbtn span {
+  display: flex;
+  align-items: center;
+}
+#addbtn-modal #add-btn-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-addbtn p {
+  margin: 0;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

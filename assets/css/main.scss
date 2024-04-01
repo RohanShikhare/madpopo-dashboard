@@ -903,5 +903,141 @@ h6 {
     }
   }
 }
-
 //add-new-hosting-modal-section-end
+
+
+//add-category-modal-start
+#addbtn-modal{
+  #add-btn-modal{
+    background-color: rgba(0, 0, 0, 0.4);
+  .ac-modal-adjuster{
+    margin: 25vh auto;
+    .ac-modal-content{
+      width: 670px;
+      border-radius: .5rem;
+      .ac-modal-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        padding-bottom: 1rem;
+        .ac-modal-title {
+          h3 {
+            @include blueSmHeading;
+            font-size: 1.8rem;
+            font-weight: 600;
+          }
+          p {
+            @include graySmTitle;
+            font-size: 1.6rem;
+          }
+        }
+        .ac-modal-close {
+          span {
+            cursor: pointer;
+          }
+        }
+      }
+      .ac-modal-body{
+        padding: 2rem;
+        padding-bottom: 0;
+        .ac-data-wrap{
+          background-color: #f9fbff;
+          border-radius: 0.5rem;
+          padding: 1rem;
+          .ac-data-row{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .ac-category-select-wrap {
+              .ac-category-title {
+                @include categoryTitle;
+                padding-left: 1rem;
+              }
+              .ac-category-input-wrap {
+                display: flex;
+                align-items: center;
+                select {
+                  padding: 0.5rem 1rem;
+                  font-weight: 400;
+                  font-size: 1.4rem;
+                  width: 29rem;
+                  border: none;
+                  border-top-left-radius: 0.5rem;
+                  border-bottom-left-radius: 0.5rem;
+                  background-color: #edf3ff;
+                  color: #888888;
+                  &:focus-visible {
+                    outline: none;
+                  }
+                }
+                .ac-cat-input-add-wrap {
+                  cursor: pointer;
+                  padding: 0.5rem 1rem;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 5px;
+                  background-color: #edf3ff;
+                  border-top-right-radius: 0.5rem;
+                  border-bottom-right-radius: 0.5rem;
+                  p {
+                    margin: 0;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    color: #172f78;
+                  }
+                }
+                .ac-modal-input {
+                  @include hs-modal-input;
+                  width: 29rem;
+                }
+
+                &.ac-tax-rate {
+                  select {
+                    border: none;
+                    border-radius: 0.5rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .ac-modal-footer {
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        .ac-footer-btn-wrap {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+
+          .ac-modal-closebtn {
+            @include bluebtn;
+            background-color: #edf3ff;
+            span {
+              svg {
+                path {
+                  fill: #888888;
+                }
+              }
+            }
+            p {
+              color: #888888;
+            }
+          }
+          .ac-modal-addbtn {
+            @include bluebtn;
+          }
+        }
+      }
+    }
+  }
+}
+}
+
+//add-category-modal-end
