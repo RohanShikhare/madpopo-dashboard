@@ -584,7 +584,7 @@ h6 {
                     align-items: center;
                     padding: 0 2rem;
                     justify-content: space-between;
-                    span {
+                    a {
                       display: flex;
                       align-items: center;
                       cursor: pointer;
@@ -948,7 +948,7 @@ h6 {
           .ac-data-row{
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 30px;
 
             .ac-category-select-wrap {
               .ac-category-title {
@@ -1042,14 +1042,13 @@ h6 {
 //add-category-modal-end
 
 
-//add-server-modal-start
-#add-server-modal {
-  
+//add-server-modal and delete modal start
+#add-server-modal, #delete-modal  {
   .ac-modal-adjuster{
     margin: 25vh auto;
     .ac-modal-content{
       width: 670px;
-      border-radius: .5rem;
+      border-radius: 1rem;
       .ac-modal-header {
         display: flex;
         align-items: center;
@@ -1083,12 +1082,19 @@ h6 {
           .ac-data-row{
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 30px;
 
             .ac-category-select-wrap {
               .ac-category-title {
                 @include categoryTitle;
                 padding-left: 1rem;
+              }
+              .d-sat-title{
+                p{
+                  color: #888888;
+                  font-weight: 400;
+                  font-size: 1.6rem;
+                }
               }
               .ac-category-input-wrap {
                 display: flex;
@@ -1168,10 +1174,13 @@ h6 {
           .ac-modal-addbtn {
             @include bluebtn;
           }
+          .d-confirm{
+            @include bluebtn;
+            background-color: #991010;
+          }
         }
       }
     }
   }
 }
-
-//add-server-modal-end
+//add-server-modal and delete modal end
