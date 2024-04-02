@@ -135,6 +135,9 @@ h6 {
 #dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList li .header-dropdown-wrap .header-dropdown::after {
   display: none;
 }
+#dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList li .header-dropdown-wrap ul li {
+  color: #1912d3;
+}
 #dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList li .header-dropdown-wrap:focus-visible {
   outline: none;
 }
@@ -405,14 +408,584 @@ h6 {
 #dashboardSection .BodyWrapper .BodyDiv #mainBody {
   background-color: #ffffff;
   height: 98%;
-  border-radius: 10px;
+  border-radius: 1rem;
   margin-right: 1rem;
   padding: 1rem;
+  height: 46vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+  height: 86vh;
+  background-color: #f1f5ff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow {
+  display: flex;
+  gap: 10px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide {
+  border-radius: 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap {
+  position: relative;
+  background: linear-gradient(90deg, rgb(12, 66, 230) 0%, rgb(0, 55, 128) 100%);
+  border-radius: 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem 0;
+  position: relative;
+  z-index: 999;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeTitle h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeTitle h2 span {
+  color: #43e3e0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeSubtext {
+  width: 30rem;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeSubtext p {
+  color: #d9d9d9;
+  font-size: 1.4rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .userImgDiv {
+  background-image: url(/assets/img/user.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 100%;
+  height: 13rem;
+  width: 14rem;
+  position: absolute;
+  top: -10px;
+  left: 41px;
+  z-index: 2;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .logo1Div {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .logo2Div {
+  position: absolute;
+  top: 10px;
+  left: 150px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .arrowDiv {
+  position: absolute;
+  top: -24px;
+  right: -19px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .serverDiv {
+  background-image: url(/assets/img/serverImg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 13.2rem;
+  width: 13.1rem;
+  top: 0;
+  right: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap::after {
+  content: "";
+  background-image: url(/assets/img/dash-wel-flow.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 98%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow {
+  display: flex;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  margin-right: 10px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidTitleWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidTitleWrap h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  color: #172f78;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidTitleWrap span {
+  background-color: #f1f5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap {
+  height: 46vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+  height: 33vh;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable {
+  margin-top: 2rem;
+  width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th {
+  color: #172f78;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th:first-child div {
+  padding-right: 1rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th:first-child div input {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th:nth-child(even) {
+  border-right: 1px solid #dcefff;
+  border-left: 1px solid #dcefff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td {
+  text-align: center;
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  text-overflow: ellipsis;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td .tableIcon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 0 2rem;
+  justify-content: space-between;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td .tableIcon a {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td:first-child div {
+  padding: 1rem 2rem;
+  padding-right: 1rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td:first-child div input {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td:nth-child(even) {
+  border-right: 1px solid #dcefff;
+  border-left: 1px solid #dcefff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr:nth-child(even) {
+  background-color: #f9fbff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr:first-child {
+  background-color: #edf3ff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  margin-right: 10px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .recentTicketTitleWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .recentTicketTitleWrap h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  color: #172f78;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .recentTicketTitleWrap span {
+  background-color: #f1f5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv {
+  height: 46vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+  height: 33vh;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap {
+  margin: 0 1rem;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #bfbdff;
+  justify-content: space-around;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketCardImg img {
+  border-radius: 50%;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketDetailsWrap {
+  padding: 0 0.6rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketDetailsWrap h5 {
+  color: #172f78;
+  font-size: 1.3rem;
+  margin: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketDetailsWrap p {
+  margin: 0;
+  font-size: 1rem;
+  color: #8e8e8e;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap button {
+  background-color: #ffe6e2;
+  color: #b42d16;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv {
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .recentPackagesTitleWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .recentPackagesTitleWrap h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  color: #172f78;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .recentPackagesTitleWrap span {
+  background-color: #f1f5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv {
+  height: 46vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+  height: 33vh;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard {
+  display: flex;
+  align-items: center;
+  margin: 0 2rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #bfbdff;
+  justify-content: space-between;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard p {
+  color: #7d7d7d;
+  font-size: 1rem;
+  margin: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageInfo h5 {
+  font-size: 1.3rem;
+  color: #172f78;
+  font-weight: 400;
+  margin: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageTime {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageTime .packageLogoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4e5fd;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageTime .packagePendingDiv span {
+  font-size: 1.2rem;
+  color: #172f78;
+  font-weight: 500;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide {
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingDomainDiv {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingDomainDiv .pdlogoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: #e3f8fa;
+  border-radius: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv h5 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #172f78;
+  margin: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv p {
+  color: #0c6e7b;
+  font-size: 1.6rem;
+  margin: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingHostingDiv {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingHostingDiv .phlogoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: #e3f8fa;
+  border-radius: 0.5rem;
+  background-color: #fff9dd;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv h5 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #172f78;
+  margin: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv p {
+  color: #0c6e7b;
+  font-size: 1.6rem;
+  margin: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv p {
+  color: #90790d;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv h5 {
+  color: #90790d;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .unpaidInvoicesDiv {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .unpaidInvoicesDiv .uilogoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: #e3f8fa;
+  border-radius: 0.5rem;
+  background-color: #f4e5fd;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv h5 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #172f78;
+  margin: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv p {
+  color: #0c6e7b;
+  font-size: 1.6rem;
+  margin: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv p {
+  color: #611592;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv h5 {
+  color: #611592;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .activeTicketsDiv {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .activeTicketsDiv .atlogoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: #e3f8fa;
+  border-radius: 0.5rem;
+  background-color: #ffe6e2;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv h5 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #172f78;
+  margin: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv p {
+  color: #0c6e7b;
+  font-size: 1.6rem;
+  margin: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv p {
+  color: #b42d16;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv h5 {
+  color: #b42d16;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv {
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv h3 {
+  color: #172f78;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv p {
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv h3 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv p {
+  font-size: 1.2rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieDiv {
+  width: 100%;
+  height: 20rem;
+  background: white;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieChartLegends {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartPaidDiv {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartPaidDiv span {
+  background-color: #001dff;
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartPaidDiv h5 {
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartOutstandingDiv {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartOutstandingDiv span {
+  background-color: #ff7664;
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartOutstandingDiv h5 {
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
 }
 #dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap {
   background-color: #ffffff;
   height: 98%;
-  border-radius: 10px;
+  border-radius: 1rem;
   margin-right: 1rem;
   padding: 1rem;
 }
@@ -683,7 +1256,7 @@ h6 {
 #dashboardSection .BodyWrapper .BodyDiv #orders-wrap {
   background-color: #ffffff;
   height: 98%;
-  border-radius: 10px;
+  border-radius: 1rem;
   margin-right: 1rem;
   padding: 1rem;
 }
@@ -923,6 +1496,15 @@ h6 {
 }
 #dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr:first-child {
   background-color: #edf3ff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table td .orderTableIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table td .orderTableIcon a {
+  cursor: pointer;
 }
 #dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-pagination {
   display: flex;
@@ -1477,22 +2059,26 @@ h6 {
   color: #ffffff;
 }
 
-#add-server-modal .ac-modal-adjuster, #delete-modal .ac-modal-adjuster {
+#add-server-modal .ac-modal-adjuster,
+#delete-modal .ac-modal-adjuster {
   margin: 25vh auto;
   margin-left: 27vw;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content, #delete-modal .ac-modal-adjuster .ac-modal-content {
+#add-server-modal .ac-modal-adjuster .ac-modal-content,
+#delete-modal .ac-modal-adjuster .ac-modal-content {
   width: 670px;
   border-radius: 1rem;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
   padding-bottom: 1rem;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header .ac-modal-title h3, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header .ac-modal-title h3 {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header .ac-modal-title h3,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header .ac-modal-title h3 {
   color: #172f78;
   font-size: 1.4rem;
   font-weight: 500;
@@ -1500,57 +2086,68 @@ h6 {
   font-size: 1.8rem;
   font-weight: 600;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header .ac-modal-title p, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header .ac-modal-title p {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header .ac-modal-title p,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header .ac-modal-title p {
   color: #888888;
   font-weight: 400;
   font-size: 1.4rem;
   margin: 0;
   font-size: 1.6rem;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header .ac-modal-close span, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header .ac-modal-close span {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header .ac-modal-close span,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-header .ac-modal-close span {
   cursor: pointer;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body {
   padding: 2rem;
   padding-bottom: 0;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap {
   background-color: #f9fbff;
   border-radius: 0.5rem;
   padding: 1rem;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-title, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-title {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-title,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-title {
   display: flex;
   align-items: center;
   gap: 10px;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-title span, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-title span {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-title span,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-title span {
   display: flex;
   align-items: center;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-title p, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-title p {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-title p,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-title p {
   color: #172f78;
   font-size: 1.4rem;
   font-weight: 500;
   margin: 0;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .d-sat-title p, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .d-sat-title p {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .d-sat-title p,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .d-sat-title p {
   color: #888888;
   font-weight: 400;
   font-size: 1.6rem;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap {
   display: flex;
   align-items: center;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap select, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap select {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap select,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap select {
   padding: 0.5rem 1rem;
   font-weight: 400;
   font-size: 1.4rem;
@@ -1561,10 +2158,12 @@ h6 {
   background-color: #edf3ff;
   color: #888888;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap select:focus-visible, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap select:focus-visible {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap select:focus-visible,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap select:focus-visible {
   outline: none;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-cat-input-add-wrap, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-cat-input-add-wrap {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-cat-input-add-wrap,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-cat-input-add-wrap {
   cursor: pointer;
   padding: 0.5rem 1rem;
   display: flex;
@@ -1575,13 +2174,15 @@ h6 {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-cat-input-add-wrap p, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-cat-input-add-wrap p {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-cat-input-add-wrap p,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-cat-input-add-wrap p {
   margin: 0;
   font-size: 1.4rem;
   font-weight: 600;
   color: #172f78;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-modal-input, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-modal-input {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-modal-input,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-modal-input {
   background-color: #edf3ff;
   padding: 0.5rem 1rem;
   font-size: 1.4rem;
@@ -1592,26 +2193,31 @@ h6 {
   border-radius: 0.5rem;
   width: 29rem;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-modal-input:focus-visible, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-modal-input:focus-visible {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-modal-input:focus-visible,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap .ac-modal-input:focus-visible {
   outline: none;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap.ac-tax-rate select, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap.ac-tax-rate select {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap.ac-tax-rate select,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-body .ac-data-wrap .ac-data-row .ac-category-select-wrap .ac-category-input-wrap.ac-tax-rate select {
   border: none;
   border-radius: 0.5rem;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer {
   padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: end;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn {
   font-size: 1.6rem;
   background-color: #1912d3;
   border-radius: 0.5rem;
@@ -1623,21 +2229,26 @@ h6 {
   cursor: pointer;
   background-color: #edf3ff;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn span, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn span {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn span,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn span {
   display: flex;
   align-items: center;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn p, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn p {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn p,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn p {
   margin: 0;
   color: #ffffff;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn span svg path, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn span svg path {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn span svg path,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn span svg path {
   fill: #888888;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn p, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn p {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn p,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-closebtn p {
   color: #888888;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-addbtn, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-addbtn {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-addbtn,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-addbtn {
   font-size: 1.6rem;
   background-color: #1912d3;
   border-radius: 0.5rem;
@@ -1648,15 +2259,18 @@ h6 {
   gap: 10px;
   cursor: pointer;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-addbtn span, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-addbtn span {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-addbtn span,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-addbtn span {
   display: flex;
   align-items: center;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-addbtn p, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-addbtn p {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-addbtn p,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .ac-modal-addbtn p {
   margin: 0;
   color: #ffffff;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .d-confirm, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .d-confirm {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .d-confirm,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .d-confirm {
   font-size: 1.6rem;
   background-color: #1912d3;
   border-radius: 0.5rem;
@@ -1668,11 +2282,13 @@ h6 {
   cursor: pointer;
   background-color: #991010;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .d-confirm span, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .d-confirm span {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .d-confirm span,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .d-confirm span {
   display: flex;
   align-items: center;
 }
-#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .d-confirm p, #delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .d-confirm p {
+#add-server-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .d-confirm p,
+#delete-modal .ac-modal-adjuster .ac-modal-content .ac-modal-footer .ac-footer-btn-wrap .d-confirm p {
   margin: 0;
   color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

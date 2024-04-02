@@ -96,7 +96,7 @@
 @mixin mainWrap {
   background-color: #ffffff;
   height: 98%;
-  border-radius: 10px;
+  border-radius: 1rem;
   margin-right: 1rem;
   padding: 1rem;
 }
@@ -202,7 +202,7 @@
   }
 }
 
-@mixin table-overflow-wrap {
+@mixin overflow-wrap {
   height: 46vh;
   position: sticky;
   top: 0;
@@ -287,19 +287,76 @@
   }
 }
 
-@mixin paginationDiv{
+@mixin paginationDiv {
   display: flex;
-                gap: 10px;
-                margin: 0;
-                li {
-                  background-color: #edf3ff;
-                  color: #94a2bc;
-                  font-size: 1.4rem;
-                  padding: 0.6rem 1.2rem;
-                  border-radius: 0.4rem;
-                  &.active {
-                    color: #ffffff;
-                    background-color: #1912d3;
-                  }
-                }
+  gap: 10px;
+  margin: 0;
+  li {
+    background-color: #edf3ff;
+    color: #94a2bc;
+    font-size: 1.4rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.4rem;
+    &.active {
+      color: #ffffff;
+      background-color: #1912d3;
+    }
+  }
+}
+
+@mixin dashTitles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+    color: #172f78;
+  }
+  span {
+    background-color: #f1f5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+}
+
+@mixin rsPendingCardDiv {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+@mixin svgDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: #e3f8fa;
+  border-radius: 0.5rem;
+}
+
+@mixin pendingCardTextDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  h5 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #172f78;
+    margin: 0;
+  }
+  p {
+    color: #0c6e7b;
+    font-size: 1.6rem;
+    margin: 0;
+  }
 }
