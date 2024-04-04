@@ -52,6 +52,9 @@ h6 {
         padding: 1.6rem;
         text-align: center;
         margin: 0;
+        @include d-1190-desktop {
+          font-size: 2.2;
+        }
       }
       .headerInputWrap {
         position: relative;
@@ -99,6 +102,9 @@ h6 {
           height: 100%;
           align-items: center;
           margin: 0;
+          @include d-1190-desktop {
+            gap: 10px;
+          }
           li {
             color: #c0d6ff;
             font-size: 1.6rem;
@@ -135,54 +141,12 @@ h6 {
             }
           }
         }
-      }
-      .navLastBlock {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        padding: 0 0.4rem;
-        .notificationWrap {
-          height: 40px;
-          width: 40px;
-          background-color: #2048e8;
-          border-radius: 50%;
+        .navLastBlock {
+          height: 100%;
           display: flex;
           align-items: center;
-          justify-content: center;
-          position: relative;
-          cursor: pointer;
-          .notificationIcon {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-          .notificationDot {
-            position: absolute;
-            height: 10px;
-            width: 10px;
-            background-color: red;
-            border-radius: 50%;
-            top: 8px;
-            right: 8px;
-          }
-        }
-        .headerUserBlock {
-          font-size: 1.4rem;
-          font-weight: 500;
-          display: flex;
-          padding: 0 0.8rem;
-          align-items: center;
-          gap: 10px;
-          h3 {
-            cursor: pointer;
-            color: #82a0ff;
-            margin: 0;
-            span {
-              color: #ffffff;
-            }
-          }
-          .headerUserIconWrap {
-            cursor: pointer;
+          padding: 0 0.4rem;
+          .notificationWrap {
             height: 40px;
             width: 40px;
             background-color: #2048e8;
@@ -190,10 +154,90 @@ h6 {
             display: flex;
             align-items: center;
             justify-content: center;
-            .headerUserIcon {
+            position: relative;
+            cursor: pointer;
+            .notificationIcon {
               display: flex;
               justify-content: center;
               align-items: center;
+            }
+            .notificationDot {
+              position: absolute;
+              height: 10px;
+              width: 10px;
+              background-color: red;
+              border-radius: 50%;
+              top: 8px;
+              right: 8px;
+            }
+          }
+          .headerUserBlock {
+            font-size: 1.4rem;
+            font-weight: 500;
+            display: flex;
+            padding: 0 0.8rem;
+            align-items: center;
+            gap: 10px;
+            h3 {
+              cursor: pointer;
+              color: #82a0ff;
+              margin: 0;
+              span {
+                color: #ffffff;
+              }
+            }
+            .headerUserIconWrap {
+              cursor: pointer;
+              height: 40px;
+              width: 40px;
+              background-color: #2048e8;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .headerUserIcon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+          }
+        }
+        .responsiveHeaderMenu {
+          display: none;
+          .hamburger-icon {
+            display: block;
+            width: 30px;
+            height: 20px;
+            position: relative;
+            margin-right: 20px;
+            cursor: pointer;
+            span {
+              display: block;
+              height: 3px;
+              width: 100%;
+              background: #fff;
+              position: absolute;
+              transition: transform 0.3s ease;
+              &:nth-child(2) {
+                top: 7px;
+              }
+              &:nth-child(3) {
+                top: 14px;
+              }
+            }
+            &.open span {
+              &:first-child {
+                transform: rotate(45deg);
+                top: 10px;
+              }
+              &:nth-child(2) {
+                opacity: 0;
+              }
+              &:nth-child(3) {
+                transform: rotate(-45deg);
+                top: 10px;
+              }
             }
           }
         }
@@ -519,6 +563,97 @@ h6 {
                 left: 0;
               }
             }
+            .dashGraphWrap {
+              background-color: #ffffff;
+              border-radius: 1rem;
+              margin: 1rem 0;
+              .dashGraphHeaderWrap {
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                h3 {
+                  @include blueHeading;
+                  font-weight: 600;
+                }
+                .graphLegends {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-evenly;
+                  gap: 10px;
+                  .graphPaidDiv {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    span {
+                      background-color: #001dff;
+                      border-radius: 50%;
+                      height: 1rem;
+                      width: 1rem;
+                    }
+                    h5 {
+                      font-weight: 500;
+                      font-size: 1rem;
+                      margin: 0;
+                    }
+                  }
+                  .graphInvoiceDiv {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    span {
+                      background-color: #ff7664;
+                      border-radius: 50%;
+                      height: 1rem;
+                      width: 1rem;
+                    }
+                    h5 {
+                      font-weight: 500;
+                      font-size: 1rem;
+                      margin: 0;
+                    }
+                  }
+                }
+                .graphDateWrap{
+                  display: flex;
+                  align-items: center;
+                  cursor: pointer;
+                  border: 1px solid #D1D7E2;
+                  border-radius: .5rem;
+                  padding: .1rem;
+                  position: relative;
+                  span{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: .5rem;
+                    border-right: 1px solid #D1D7E2;
+                  }
+                  input{
+                    border: none;
+                    padding: .5rem;
+                    width: 7rem;
+                    cursor: pointer;
+                    caret-color: transparent;
+                    font-size: 1.4rem;
+                    color: #172F78;
+                    &:focus-visible{
+                      outline: none;
+                    }
+                  }
+                  .graphDateSVG{
+                    position: absolute;
+                    right: 10px;
+                  }
+                }
+
+              }
+              .dashGraphDiv{
+                padding: 1rem;
+                padding-top: 0;
+                height: 259px;
+              }
+            }
             .dashRecentRow {
               display: flex;
               .recentlyPaidDiv {
@@ -650,6 +785,10 @@ h6 {
               .pdDetailDiv {
                 @include pendingCardTextDiv;
               }
+              .pdCircleDiv{
+                height: 4.6rem;
+                width: 4.6rem;
+              }
             }
             .pendingHostingDiv {
               @include rsPendingCardDiv;
@@ -665,6 +804,10 @@ h6 {
                 h5 {
                   color: #90790d;
                 }
+              }
+              .phCircleDiv{
+                height: 4.6rem;
+                width: 4.6rem;
               }
             }
             .unpaidInvoicesDiv {
@@ -682,6 +825,10 @@ h6 {
                   color: #611592;
                 }
               }
+              .uiCircleDiv{
+                height: 4.6rem;
+                width: 4.6rem;
+              }
             }
             .activeTicketsDiv {
               @include rsPendingCardDiv;
@@ -697,6 +844,10 @@ h6 {
                 h5 {
                   color: #b42d16;
                 }
+              }
+              .atCircleDiv{
+                height: 4.6rem;
+                width: 4.6rem;
               }
             }
             .dashPieChart {
@@ -716,9 +867,8 @@ h6 {
               }
               .pieDiv {
                 width: 100%;
-                height: 20rem;
+                height: 25rem;
                 background: white;
-                
               }
               .pieChartLegends {
                 display: flex;
@@ -873,14 +1023,14 @@ h6 {
             @include overflow-wrap;
             .order-table {
               @include data-table;
-              td{
-                .orderTableIcon{
+              td {
+                .orderTableIcon {
                   display: flex;
                   align-items: center;
                   justify-content: center;
                   gap: 10px;
 
-                  a{
+                  a {
                     cursor: pointer;
                   }
                 }

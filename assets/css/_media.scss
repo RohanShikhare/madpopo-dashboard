@@ -82,6 +82,13 @@ $l-desktop-width: 2560px;
         @content;
     }
 }
+
+@mixin d-1190-desktop {
+    @media (max-width: #{$desktop-1190-width}){
+        @content;
+    }
+}
+
 // max-width:1280px
 @mixin d-1280-desktop {
     @media (max-width: #{$desktop-1280-width}) {
