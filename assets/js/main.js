@@ -27,6 +27,10 @@ $(document).ready(function () {
     $("#add-btn-modal").modal("hide");
   });
 
+  $('.hamburger-icon').click(function() {
+    $('.hamburger-icon').toggleClass('open');
+  });
+
   //invoice payment doughnut start
   const data = {
     labels: ["$1,000.00", "$38.00"],

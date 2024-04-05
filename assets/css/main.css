@@ -52,6 +52,19 @@ h6 {
   display: flex;
   width: 100%;
 }
+@media (max-width: 360px) {
+  #dashboardSection .dashboardHeader .dashboardDiv {
+    justify-content: space-between;
+  }
+  #dashboardSection .dashboardHeader .dashboardDiv .xx-mobile-r {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #dashboardSection .dashboardHeader .dashboardDiv .xx-mobile-l {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
 #dashboardSection .dashboardHeader .dashboardDiv h1 {
   font-size: 2.4rem;
   color: #ffffff;
@@ -61,12 +74,32 @@ h6 {
 }
 @media (max-width: 1190px) {
   #dashboardSection .dashboardHeader .dashboardDiv h1 {
-    font-size: 2.2;
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 992px) {
+  #dashboardSection .dashboardHeader .dashboardDiv h1 {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 768px) {
+  #dashboardSection .dashboardHeader .dashboardDiv h1 {
+    text-align: start;
+  }
+}
+@media (min-width: 991px) and (max-width: 1003px) {
+  #dashboardSection .dashboardHeader .dashboardDiv h1 {
+    font-size: 2.1rem;
   }
 }
 #dashboardSection .dashboardHeader .dashboardDiv .headerInputWrap {
   position: relative;
   margin-top: 1.6rem;
+}
+@media (max-width: 768px) {
+  #dashboardSection .dashboardHeader .dashboardDiv .headerInputWrap {
+    display: none;
+  }
 }
 #dashboardSection .dashboardHeader .dashboardDiv .headerInputWrap .headerInputSVG {
   position: absolute;
@@ -105,6 +138,11 @@ h6 {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 1110px) {
+  #dashboardSection .dashboardHeader .dashboardDiv .headerNav {
+    justify-content: flex-end;
+  }
+}
 #dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList {
   flex-grow: 1;
   justify-content: end;
@@ -118,6 +156,11 @@ h6 {
 @media (max-width: 1190px) {
   #dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList {
     gap: 10px;
+  }
+}
+@media (max-width: 1110px) {
+  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList {
+    display: none;
   }
 }
 #dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList li {
@@ -156,6 +199,11 @@ h6 {
   display: flex;
   align-items: center;
   padding: 0 0.4rem;
+}
+@media (max-width: 480px) {
+  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .navLastBlock {
+    display: none;
+  }
 }
 #dashboardSection .dashboardHeader .dashboardDiv .headerNav .navLastBlock .notificationWrap {
   height: 40px;
@@ -216,12 +264,18 @@ h6 {
 #dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu {
   display: none;
 }
+@media (max-width: 1110px) {
+  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu {
+    display: block;
+  }
+}
 #dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .hamburger-icon {
   display: block;
   width: 30px;
   height: 20px;
   position: relative;
   margin-right: 20px;
+  z-index: 9999;
   cursor: pointer;
 }
 #dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .hamburger-icon span {

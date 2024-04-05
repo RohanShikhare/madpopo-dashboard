@@ -46,6 +46,15 @@ h6 {
     .dashboardDiv {
       display: flex;
       width: 100%;
+      @include xssm_360_mobile{
+        justify-content: space-between;
+        .xx-mobile-r{
+          width: fit-content;
+        }
+        .xx-mobile-l{
+          width: fit-content;
+        }
+      }
       h1 {
         font-size: 2.4rem;
         color: #ffffff;
@@ -53,12 +62,24 @@ h6 {
         text-align: center;
         margin: 0;
         @include d-1190-desktop {
-          font-size: 2.2;
+          font-size: 2.2rem;
+        }
+        @include mid-tab{
+          font-size: 2.4rem;
+        }
+        @include x-tablet{
+          text-align: start;
+        }
+        @media (min-width: 991px) and (max-width: 1003px) {
+          font-size: 2.1rem;
         }
       }
       .headerInputWrap {
         position: relative;
         margin-top: 1.6rem;
+        @include x-tablet{
+          display: none;
+        }
         .headerInputSVG {
           position: absolute;
           width: 1.7rem;
@@ -93,6 +114,9 @@ h6 {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include d-1110-desktop{
+          justify-content: flex-end;
+        }
         .headerNavList {
           flex-grow: 1;
           justify-content: end;
@@ -104,6 +128,9 @@ h6 {
           margin: 0;
           @include d-1190-desktop {
             gap: 10px;
+          }
+          @include d-1110-desktop{
+            display: none;
           }
           li {
             color: #c0d6ff;
@@ -146,6 +173,9 @@ h6 {
           display: flex;
           align-items: center;
           padding: 0 0.4rem;
+          @include mobile {
+            display: none;
+          }
           .notificationWrap {
             height: 40px;
             width: 40px;
@@ -205,12 +235,16 @@ h6 {
         }
         .responsiveHeaderMenu {
           display: none;
+          @include d-1110-desktop{
+            display: block;
+          }
           .hamburger-icon {
             display: block;
             width: 30px;
             height: 20px;
             position: relative;
             margin-right: 20px;
+            z-index: 9999;
             cursor: pointer;
             span {
               display: block;
@@ -240,6 +274,7 @@ h6 {
               }
             }
           }
+          
         }
       }
     }
@@ -1060,6 +1095,8 @@ h6 {
   }
 }
 
+
+
 //add-new-hosting-modal-section-start
 #add-new-hosting-modalwrap {
   .nh-modal-adjuster {
@@ -1587,3 +1624,72 @@ h6 {
   }
 }
 //add-server-modal and delete modal end
+
+
+
+//custom-css-for-modal-start
+
+.my-modal{
+  position: sticky;
+  height: 480px;
+  overflow: scroll;
+  scrollbar-width: none;
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h4 {
+      color: #172f78;
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: 600;
+  }
+  button {
+    border: 1px solid gray;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+}
+}
+  .form-group{
+    label,span{
+      color: #172f78;
+    font-size: 1.4rem;
+    font-weight: 500;
+    }
+    input,select{
+      font-weight: 400;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #edf3ff;
+    color: #888888;
+    }
+
+  }
+  .modal-footer{
+    a.btn-default{
+      font-size: 1.6rem;
+    
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    
+    cursor: pointer;
+    background-color: #edf3ff;
+    color: #888888;
+    }
+    button.btn{
+      font-size: 1.6rem;
+      background-color: #1912d3;
+      border-radius: 0.5rem;
+      padding: 0.8rem 1.2rem;
+      cursor: pointer;
+      color: #ffffff;
+  
+    }
+  }
+}
+//custom-css-for-modal-end

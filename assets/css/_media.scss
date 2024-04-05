@@ -13,6 +13,7 @@ $tablet-md-width: 834px;
 $mid_tablet: 992px;
 $mid_991_tablet: 991px;
 $desktop-width: 1024px;
+$desktop-1110-width: 1110px;
 $desktop-1190-width: 1190px;
 $desktop-1280-width: 1280px;
 $desktop-1200-width: 1200px;
@@ -79,6 +80,12 @@ $l-desktop-width: 2560px;
 }
 @mixin min-d-desktop {
     @media (min-width: #{$desktop-width + 1px}) {
+        @content;
+    }
+}
+
+@mixin d-1110-desktop {
+    @media (max-width: #{$desktop-1110-width}){
         @content;
     }
 }
