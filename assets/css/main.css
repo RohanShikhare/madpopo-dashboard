@@ -3980,29 +3980,29 @@ h6 {
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
-.common-css * label {
+.common-css div label {
   color: #172f78 !important;
   font-size: 1.4rem !important;
   font-weight: 500 !important;
   margin: 0 !important;
 }
 @media (max-width: 480px) {
-  .common-css * label {
+  .common-css div label {
     font-size: 1.2rem !important;
   }
 }
-.common-css * p {
+.common-css div p {
   color: #172f78 !important;
   font-size: 1.4rem !important;
   font-weight: 500 !important;
   margin: 0 !important;
 }
 @media (max-width: 480px) {
-  .common-css * p {
+  .common-css div p {
     font-size: 1.2rem !important;
   }
 }
-.common-css * input {
+.common-css div input {
   background-color: #edf3ff !important;
   padding: 0.5rem 1rem !important;
   font-size: 1.4rem !important;
@@ -4013,15 +4013,15 @@ h6 {
   border-radius: 0.5rem !important;
   width: 100% !important;
 }
-.common-css * input:focus-visible {
+.common-css div input:focus-visible {
   outline: none !important;
 }
 @media (max-width: 480px) {
-  .common-css * input {
+  .common-css div input {
     font-size: 1.2rem !important;
   }
 }
-.common-css * select {
+.common-css div select {
   color: #172f78 !important;
   font-weight: 600 !important;
   font-size: 1.6rem !important;
@@ -4033,35 +4033,35 @@ h6 {
   font-weight: 400 !important;
   width: 100% !important;
 }
-.common-css * select:focus-visible {
+.common-css div select:focus-visible {
   outline: none !important;
 }
 @media (max-width: 480px) {
-  .common-css * select {
+  .common-css div select {
     font-size: 1.2rem !important;
   }
 }
-.common-css * h1,
-.common-css * h2,
-.common-css * h3,
-.common-css * h4,
-.common-css * h5,
-.common-css * h6 {
+.common-css div h1,
+.common-css div h2,
+.common-css div h3,
+.common-css div h4,
+.common-css div h5,
+.common-css div h6 {
   color: #172f78 !important;
   font-size: 1.6rem !important;
   font-weight: 500 !important;
 }
 @media (max-width: 480px) {
-  .common-css * h1,
-  .common-css * h2,
-  .common-css * h3,
-  .common-css * h4,
-  .common-css * h5,
-  .common-css * h6 {
+  .common-css div h1,
+  .common-css div h2,
+  .common-css div h3,
+  .common-css div h4,
+  .common-css div h5,
+  .common-css div h6 {
     font-size: 1.4rem !important;
   }
 }
-.common-css * button {
+.common-css div button {
   font-size: 1.6rem !important;
   background-color: #1912d3 !important;
   border-radius: 0.5rem !important;
@@ -4073,16 +4073,148 @@ h6 {
   cursor: pointer !important;
   font-size: 1.4rem !important;
 }
-.common-css * button span {
+.common-css div button span {
   display: flex !important;
   align-items: center !important;
 }
-.common-css * button p {
+.common-css div button p {
   margin: 0 !important;
   color: #ffffff !important;
 }
 @media (max-width: 480px) {
-  .common-css * button {
+  .common-css div button {
+    font-size: 1.2rem !important;
+  }
+}
+.common-css table tr th label,
+.common-css table tr td label {
+  color: #172f78 !important;
+  font-size: 1.4rem !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+}
+@media (max-width: 480px) {
+  .common-css table tr th label,
+  .common-css table tr td label {
+    font-size: 1.2rem !important;
+  }
+}
+.common-css table tr th p,
+.common-css table tr td p {
+  color: #172f78 !important;
+  font-size: 1.4rem !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+}
+@media (max-width: 480px) {
+  .common-css table tr th p,
+  .common-css table tr td p {
+    font-size: 1.2rem !important;
+  }
+}
+.common-css table tr th input,
+.common-css table tr td input {
+  background-color: #edf3ff !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 1.4rem !important;
+  color: #888888 !important;
+  font-weight: 400 !important;
+  border: none !important;
+  width: 20rem !important;
+  border-radius: 0.5rem !important;
+  width: 100% !important;
+}
+.common-css table tr th input:focus-visible,
+.common-css table tr td input:focus-visible {
+  outline: none !important;
+}
+@media (max-width: 480px) {
+  .common-css table tr th input,
+  .common-css table tr td input {
+    font-size: 1.2rem !important;
+  }
+}
+.common-css table tr th select,
+.common-css table tr td select {
+  color: #172f78 !important;
+  font-weight: 600 !important;
+  font-size: 1.6rem !important;
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 0.4rem !important;
+  padding: 0.2rem !important;
+  background-color: transparent !important;
+  font-size: 1.4rem !important;
+  font-weight: 400 !important;
+  width: 100% !important;
+}
+.common-css table tr th select:focus-visible,
+.common-css table tr td select:focus-visible {
+  outline: none !important;
+}
+@media (max-width: 480px) {
+  .common-css table tr th select,
+  .common-css table tr td select {
+    font-size: 1.2rem !important;
+  }
+}
+.common-css table tr th h1,
+.common-css table tr th h2,
+.common-css table tr th h3,
+.common-css table tr th h4,
+.common-css table tr th h5,
+.common-css table tr th h6,
+.common-css table tr td h1,
+.common-css table tr td h2,
+.common-css table tr td h3,
+.common-css table tr td h4,
+.common-css table tr td h5,
+.common-css table tr td h6 {
+  color: #172f78 !important;
+  font-size: 1.6rem !important;
+  font-weight: 500 !important;
+}
+@media (max-width: 480px) {
+  .common-css table tr th h1,
+  .common-css table tr th h2,
+  .common-css table tr th h3,
+  .common-css table tr th h4,
+  .common-css table tr th h5,
+  .common-css table tr th h6,
+  .common-css table tr td h1,
+  .common-css table tr td h2,
+  .common-css table tr td h3,
+  .common-css table tr td h4,
+  .common-css table tr td h5,
+  .common-css table tr td h6 {
+    font-size: 1.4rem !important;
+  }
+}
+.common-css table tr th button,
+.common-css table tr td button {
+  font-size: 1.6rem !important;
+  background-color: #1912d3 !important;
+  border-radius: 0.5rem !important;
+  padding: 0.8rem 1.2rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  cursor: pointer !important;
+  font-size: 1.4rem !important;
+}
+.common-css table tr th button span,
+.common-css table tr td button span {
+  display: flex !important;
+  align-items: center !important;
+}
+.common-css table tr th button p,
+.common-css table tr td button p {
+  margin: 0 !important;
+  color: #ffffff !important;
+}
+@media (max-width: 480px) {
+  .common-css table tr th button,
+  .common-css table tr td button {
     font-size: 1.2rem !important;
   }
 }/*# sourceMappingURL=main.css.map */
