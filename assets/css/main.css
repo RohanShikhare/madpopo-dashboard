@@ -2723,6 +2723,7 @@ h6 {
 #dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-save-wrap {
   display: flex;
   justify-content: flex-end;
+  padding: 0.5rem 0;
 }
 #dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-save-wrap .menu-save-btn {
   font-size: 1.6rem;
@@ -3979,99 +3980,109 @@ h6 {
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
-.common-css label {
-  color: #172f78;
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin: 0;
+.common-css * label {
+  color: #172f78 !important;
+  font-size: 1.4rem !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
 }
 @media (max-width: 480px) {
-  .common-css label {
-    font-size: 1.2rem;
+  .common-css * label {
+    font-size: 1.2rem !important;
   }
 }
-.common-css p {
-  color: #172f78;
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin: 0;
+.common-css * p {
+  color: #172f78 !important;
+  font-size: 1.4rem !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
 }
 @media (max-width: 480px) {
-  .common-css p {
-    font-size: 1.2rem;
+  .common-css * p {
+    font-size: 1.2rem !important;
   }
 }
-.common-css input {
-  background-color: #edf3ff;
-  padding: 0.5rem 1rem;
-  font-size: 1.4rem;
-  color: #888888;
-  font-weight: 400;
-  border: none;
-  width: 20rem;
-  border-radius: 0.5rem;
-  width: 100%;
+.common-css * input {
+  background-color: #edf3ff !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 1.4rem !important;
+  color: #888888 !important;
+  font-weight: 400 !important;
+  border: none !important;
+  width: 20rem !important;
+  border-radius: 0.5rem !important;
+  width: 100% !important;
 }
-.common-css input:focus-visible {
-  outline: none;
+.common-css * input:focus-visible {
+  outline: none !important;
 }
 @media (max-width: 480px) {
-  .common-css input {
-    font-size: 1.2rem;
+  .common-css * input {
+    font-size: 1.2rem !important;
   }
 }
-.common-css select {
-  color: #172f78;
-  font-weight: 600;
-  font-size: 1.6rem;
-  border: 1px solid #d9d9d9;
-  border-radius: 0.4rem;
-  padding: 0.2rem;
-  background-color: transparent;
-  font-size: 1.4rem;
-  font-weight: 400;
-  width: 100%;
+.common-css * select {
+  color: #172f78 !important;
+  font-weight: 600 !important;
+  font-size: 1.6rem !important;
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 0.4rem !important;
+  padding: 0.2rem !important;
+  background-color: transparent !important;
+  font-size: 1.4rem !important;
+  font-weight: 400 !important;
+  width: 100% !important;
 }
-.common-css select:focus-visible {
-  outline: none;
+.common-css * select:focus-visible {
+  outline: none !important;
 }
 @media (max-width: 480px) {
-  .common-css select {
-    font-size: 1.2rem;
+  .common-css * select {
+    font-size: 1.2rem !important;
   }
 }
-.common-css h1, .common-css h2, .common-css h3, .common-css h4, .common-css h5, .common-css h6 {
-  color: #172f78;
-  font-size: 1.6rem;
-  font-weight: 500;
+.common-css * h1,
+.common-css * h2,
+.common-css * h3,
+.common-css * h4,
+.common-css * h5,
+.common-css * h6 {
+  color: #172f78 !important;
+  font-size: 1.6rem !important;
+  font-weight: 500 !important;
 }
 @media (max-width: 480px) {
-  .common-css h1, .common-css h2, .common-css h3, .common-css h4, .common-css h5, .common-css h6 {
-    font-size: 1.4rem;
+  .common-css * h1,
+  .common-css * h2,
+  .common-css * h3,
+  .common-css * h4,
+  .common-css * h5,
+  .common-css * h6 {
+    font-size: 1.4rem !important;
   }
 }
-.common-css button {
-  font-size: 1.6rem;
-  background-color: #1912d3;
-  border-radius: 0.5rem;
-  padding: 0.8rem 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  cursor: pointer;
-  font-size: 1.4rem;
+.common-css * button {
+  font-size: 1.6rem !important;
+  background-color: #1912d3 !important;
+  border-radius: 0.5rem !important;
+  padding: 0.8rem 1.2rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  cursor: pointer !important;
+  font-size: 1.4rem !important;
 }
-.common-css button span {
-  display: flex;
-  align-items: center;
+.common-css * button span {
+  display: flex !important;
+  align-items: center !important;
 }
-.common-css button p {
-  margin: 0;
-  color: #ffffff;
+.common-css * button p {
+  margin: 0 !important;
+  color: #ffffff !important;
 }
 @media (max-width: 480px) {
-  .common-css button {
-    font-size: 1.2rem;
+  .common-css * button {
+    font-size: 1.2rem !important;
   }
 }/*# sourceMappingURL=main.css.map */
