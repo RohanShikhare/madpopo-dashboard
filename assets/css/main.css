@@ -103,6 +103,7 @@ h6 {
 @media (max-width: 320px) {
   #dashboardSection .dashboardHeader .dashboardDiv h1 {
     font-size: 1.4rem;
+    padding: 2rem 1rem;
   }
 }
 #dashboardSection .dashboardHeader .dashboardDiv .headerInputWrap {
@@ -537,6 +538,11 @@ h6 {
   overflow-y: auto;
   scrollbar-width: none;
 }
+@media (max-width: 576px) {
+  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap svg {
+    height: 15px;
+  }
+}
 #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap {
   margin-left: 1rem;
   background-color: #1912d3;
@@ -565,6 +571,11 @@ h6 {
   #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sideMenuTitle {
     gap: 8px;
     padding: 1.2rem;
+  }
+}
+@media (max-width: 320px) {
+  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sideMenuTitle {
+    font-size: 1.4rem;
   }
 }
 #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sideMenuTitle p {
@@ -621,6 +632,11 @@ h6 {
     font-size: 1.4rem;
   }
 }
+@media (max-width: 320px) {
+  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li div p {
+    font-size: 1.2rem;
+  }
+}
 #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li.open div {
   background-color: #ffffff;
   color: #1912d3;
@@ -650,6 +666,16 @@ h6 {
   color: #ffffff;
   font-size: 1.6rem;
   padding: 1.2rem 2rem;
+}
+@media (max-width: 576px) {
+  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginClient {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 320px) {
+  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginClient {
+    font-size: 1.2rem;
+  }
 }
 #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginClient p {
   margin: 0;
@@ -683,8 +709,16 @@ h6 {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 }
+@media (max-width: 576px) {
+  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .loginDropDownBtn {
+    font-size: 1.4rem;
+  }
+}
 #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .loginDropDownBtn::after {
   display: none;
+}
+#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list {
+  width: 100%;
 }
 #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .login-inputWrap {
   position: relative;
@@ -692,13 +726,21 @@ h6 {
 #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .login-inputWrap input {
   background-color: #ffffff;
   height: 3.6rem;
-  width: 17rem;
+  width: 90%;
   border: 1px solid #000;
   border-radius: 0.5rem;
   color: #000;
   padding-left: 3.5rem;
   font-size: 1.4rem;
   margin: 0 0.5rem;
+}
+@media (max-width: 480px) {
+  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .login-inputWrap input {
+    padding-left: 2.8rem;
+  }
+}
+#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .login-inputWrap input:focus-visible {
+  outline: none;
 }
 #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .login-inputWrap span {
   position: absolute;
@@ -716,9 +758,25 @@ h6 {
   padding: 1rem;
   font-weight: 700;
 }
+@media (max-width: 480px) {
+  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .dropDownNonItem {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 360px) {
+  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .dropDownNonItem {
+    padding: 0.5rem 1rem;
+  }
+}
 #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list li a {
   font-size: 1.4rem;
   padding: 1rem;
+  white-space: normal;
+}
+@media (max-width: 360px) {
+  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list li a {
+    padding: 0.5rem 1rem;
+  }
 }
 #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list li a:hover {
   background-color: #1912d3;
@@ -732,6 +790,11 @@ h6 {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   cursor: pointer;
+}
+@media (max-width: 576px) {
+  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .redirectButton {
+    border: none;
+  }
 }
 #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .redirectButton svg path {
   fill: #ffffff;
@@ -747,7 +810,8 @@ h6 {
 #dashboardSection .BodyWrapper .sideBarDiv.collapsed-sidebar p {
   display: none;
 }
-#dashboardSection .BodyWrapper .sideBarDiv.collapsed-sidebar .loginClient, #dashboardSection .BodyWrapper .sideBarDiv.collapsed-sidebar .loginOptionWrap {
+#dashboardSection .BodyWrapper .sideBarDiv.collapsed-sidebar .loginClient,
+#dashboardSection .BodyWrapper .sideBarDiv.collapsed-sidebar .loginOptionWrap {
   display: none !important;
 }
 #dashboardSection .BodyWrapper .BodyDiv {
@@ -755,7 +819,7 @@ h6 {
   max-width: 100%;
   flex: 1;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap {
   background-color: #ffffff;
   height: 98%;
   border-radius: 1rem;
@@ -770,19 +834,19 @@ h6 {
   height: 86vh;
   background-color: #f1f5ff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow {
   display: flex;
   gap: 10px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide {
   border-radius: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap {
   position: relative;
   background: linear-gradient(90deg, rgb(12, 66, 230) 0%, rgb(0, 55, 128) 100%);
   border-radius: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeTitle {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeTitle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -791,25 +855,25 @@ h6 {
   position: relative;
   z-index: 999;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeTitle h2 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeTitle h2 {
   font-size: 2.6rem;
   font-weight: 700;
   color: #ffffff;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeTitle h2 span {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeTitle h2 span {
   color: #43e3e0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeSubtext {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeSubtext {
   width: 30rem;
   margin: 0 auto;
   padding-bottom: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeSubtext p {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeSubtext p {
   color: #d9d9d9;
   font-size: 1.4rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .userImgDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .userImgDiv {
   background-image: url(/assets/img/user.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -821,22 +885,22 @@ h6 {
   left: 41px;
   z-index: 2;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .logo1Div {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .logo1Div {
   position: absolute;
   bottom: 8px;
   left: 8px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .logo2Div {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .logo2Div {
   position: absolute;
   top: 10px;
   left: 150px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .arrowDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .arrowDiv {
   position: absolute;
   top: -24px;
   right: -19px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap .serverDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .serverDiv {
   background-image: url(/assets/img/serverImg.png);
   background-position: top;
   background-repeat: no-repeat;
@@ -847,7 +911,7 @@ h6 {
   top: 0;
   right: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashWelcomeWrap::after {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap::after {
   content: "";
   background-image: url(/assets/img/dash-wel-flow.svg);
   background-position: bottom;
@@ -859,62 +923,62 @@ h6 {
   top: 0;
   left: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashGraphWrap {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap {
   background-color: #ffffff;
   border-radius: 1rem;
   margin: 1rem 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap {
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap h3 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap h3 {
   color: #172f78;
   font-size: 1.6rem;
   font-weight: 500;
   font-weight: 600;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   gap: 10px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphPaidDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphPaidDiv {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphPaidDiv span {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphPaidDiv span {
   background-color: #001dff;
   border-radius: 50%;
   height: 1rem;
   width: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphPaidDiv h5 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphPaidDiv h5 {
   font-weight: 500;
   font-size: 1rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphInvoiceDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphInvoiceDiv {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphInvoiceDiv span {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphInvoiceDiv span {
   background-color: #ff7664;
   border-radius: 50%;
   height: 1rem;
   width: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphInvoiceDiv h5 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphInvoiceDiv h5 {
   font-weight: 500;
   font-size: 1rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -923,14 +987,14 @@ h6 {
   padding: 0.1rem;
   position: relative;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap span {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap span {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
   border-right: 1px solid #d1d7e2;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap input {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap input {
   border: none;
   padding: 0.5rem;
   width: 7rem;
@@ -939,39 +1003,39 @@ h6 {
   font-size: 1.4rem;
   color: #172f78;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap input:focus-visible {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap input:focus-visible {
   outline: none;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap .graphDateSVG {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap .graphDateSVG {
   position: absolute;
   right: 10px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphDiv {
   padding: 1rem;
   padding-top: 0;
   height: 259px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow {
   display: flex;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv {
   background-color: #ffffff;
   border-radius: 1rem;
   margin-right: 10px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidTitleWrap {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidTitleWrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidTitleWrap h4 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidTitleWrap h4 {
   font-size: 1.4rem;
   font-weight: 600;
   margin: 0;
   color: #172f78;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidTitleWrap span {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidTitleWrap span {
   background-color: #f1f5ff;
   display: flex;
   align-items: center;
@@ -979,7 +1043,7 @@ h6 {
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap {
   height: 46vh;
   position: sticky;
   top: 0;
@@ -988,35 +1052,35 @@ h6 {
   scrollbar-width: none;
   height: 33vh;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable {
   margin-top: 2rem;
   width: 100%;
   width: 90%;
   margin: 0 auto;
   border-radius: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th {
   color: #172f78;
   font-size: 1.6rem;
   font-weight: 500;
   padding: 1rem 2rem;
   text-align: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th:first-child div {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th:first-child div {
   padding-right: 1rem;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th:first-child div input {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th:first-child div input {
   height: 1.6rem;
   width: 1.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th:nth-child(even) {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th:nth-child(even) {
   border-right: 1px solid #dcefff;
   border-left: 1px solid #dcefff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td {
   text-align: center;
   color: #888888;
   font-weight: 400;
@@ -1025,60 +1089,60 @@ h6 {
   padding: 1rem 0;
   text-overflow: ellipsis;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td .tableIcon {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td .tableIcon {
   display: flex;
   gap: 10px;
   align-items: center;
   padding: 0 2rem;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td .tableIcon a {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td .tableIcon a {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td:first-child div {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td:first-child div {
   padding: 1rem 2rem;
   padding-right: 1rem;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td:first-child div input {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td:first-child div input {
   height: 1.6rem;
   width: 1.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td:nth-child(even) {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td:nth-child(even) {
   border-right: 1px solid #dcefff;
   border-left: 1px solid #dcefff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr:nth-child(even) {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr:nth-child(even) {
   background-color: #f9fbff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr:nth-child(odd) {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr:nth-child(odd) {
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr:first-child {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr:first-child {
   background-color: #edf3ff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv {
   background-color: #ffffff;
   border-radius: 1rem;
   margin-right: 10px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .recentTicketTitleWrap {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .recentTicketTitleWrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .recentTicketTitleWrap h4 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .recentTicketTitleWrap h4 {
   font-size: 1.4rem;
   font-weight: 600;
   margin: 0;
   color: #172f78;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .recentTicketTitleWrap span {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .recentTicketTitleWrap span {
   background-color: #f1f5ff;
   display: flex;
   align-items: center;
@@ -1086,7 +1150,7 @@ h6 {
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv {
   height: 46vh;
   position: sticky;
   top: 0;
@@ -1095,7 +1159,7 @@ h6 {
   scrollbar-width: none;
   height: 33vh;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap {
   margin: 0 1rem;
   padding: 1rem 0;
   display: flex;
@@ -1103,46 +1167,46 @@ h6 {
   border-bottom: 1px solid #bfbdff;
   justify-content: space-around;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketCardImg img {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketCardImg img {
   border-radius: 50%;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketDetailsWrap {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketDetailsWrap {
   padding: 0 0.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketDetailsWrap h5 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketDetailsWrap h5 {
   color: #172f78;
   font-size: 1.3rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketDetailsWrap p {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketDetailsWrap p {
   margin: 0;
   font-size: 1rem;
   color: #8e8e8e;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap button {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap button {
   background-color: #ffe6e2;
   color: #b42d16;
   border: none;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv {
   background-color: #ffffff;
   border-radius: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .recentPackagesTitleWrap {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .recentPackagesTitleWrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .recentPackagesTitleWrap h4 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .recentPackagesTitleWrap h4 {
   font-size: 1.4rem;
   font-weight: 600;
   margin: 0;
   color: #172f78;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .recentPackagesTitleWrap span {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .recentPackagesTitleWrap span {
   background-color: #f1f5ff;
   display: flex;
   align-items: center;
@@ -1150,7 +1214,7 @@ h6 {
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv {
   height: 46vh;
   position: sticky;
   top: 0;
@@ -1159,7 +1223,7 @@ h6 {
   scrollbar-width: none;
   height: 33vh;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard {
   display: flex;
   align-items: center;
   margin: 0 2rem;
@@ -1167,23 +1231,23 @@ h6 {
   border-bottom: 1px solid #bfbdff;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard p {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard p {
   color: #7d7d7d;
   font-size: 1rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageInfo h5 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageInfo h5 {
   font-size: 1.3rem;
   color: #172f78;
   font-weight: 400;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageTime {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageTime {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageTime .packageLogoDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageTime .packageLogoDiv {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1191,16 +1255,16 @@ h6 {
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageTime .packagePendingDiv span {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageTime .packagePendingDiv span {
   font-size: 1.2rem;
   color: #172f78;
   font-weight: 500;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide {
   border-radius: 1rem;
   margin-right: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingDomainDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv {
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   display: flex;
@@ -1209,7 +1273,7 @@ h6 {
   justify-content: space-between;
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingDomainDiv .pdlogoDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdlogoDiv {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1217,27 +1281,27 @@ h6 {
   background-color: #e3f8fa;
   border-radius: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv h5 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv h5 {
   font-size: 3rem;
   font-weight: 600;
   color: #172f78;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv p {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv p {
   color: #0c6e7b;
   font-size: 1.6rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingDomainDiv .pdCircleDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdCircleDiv {
   height: 4.6rem;
   width: 4.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingHostingDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv {
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   display: flex;
@@ -1246,7 +1310,7 @@ h6 {
   justify-content: space-between;
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingHostingDiv .phlogoDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phlogoDiv {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1255,33 +1319,33 @@ h6 {
   border-radius: 0.5rem;
   background-color: #fff9dd;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv h5 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv h5 {
   font-size: 3rem;
   font-weight: 600;
   color: #172f78;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv p {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv p {
   color: #0c6e7b;
   font-size: 1.6rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv p {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv p {
   color: #90790d;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv h5 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv h5 {
   color: #90790d;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .pendingHostingDiv .phCircleDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phCircleDiv {
   height: 4.6rem;
   width: 4.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .unpaidInvoicesDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv {
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   display: flex;
@@ -1290,7 +1354,7 @@ h6 {
   justify-content: space-between;
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .unpaidInvoicesDiv .uilogoDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uilogoDiv {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1299,33 +1363,33 @@ h6 {
   border-radius: 0.5rem;
   background-color: #f4e5fd;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv h5 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv h5 {
   font-size: 3rem;
   font-weight: 600;
   color: #172f78;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv p {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv p {
   color: #0c6e7b;
   font-size: 1.6rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv p {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv p {
   color: #611592;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv h5 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv h5 {
   color: #611592;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiCircleDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiCircleDiv {
   height: 4.6rem;
   width: 4.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .activeTicketsDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv {
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   display: flex;
@@ -1334,7 +1398,7 @@ h6 {
   justify-content: space-between;
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .activeTicketsDiv .atlogoDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atlogoDiv {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1343,99 +1407,99 @@ h6 {
   border-radius: 0.5rem;
   background-color: #ffe6e2;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv h5 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv h5 {
   font-size: 3rem;
   font-weight: 600;
   color: #172f78;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv p {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv p {
   color: #0c6e7b;
   font-size: 1.6rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv p {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv p {
   color: #b42d16;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv h5 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv h5 {
   color: #b42d16;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .activeTicketsDiv .atCircleDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atCircleDiv {
   height: 4.6rem;
   width: 4.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart {
   padding: 0.5rem;
   border-radius: 1rem;
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv {
   padding: 0.5rem;
   padding-bottom: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv h3 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv h3 {
   color: #172f78;
   font-weight: 600;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv p {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv p {
   color: #888888;
   font-weight: 400;
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv h3 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv h3 {
   font-size: 1.6rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv p {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv p {
   font-size: 1.2rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieDiv {
   width: 100%;
   height: 25rem;
   background: white;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieChartLegends {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 1rem 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartPaidDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartPaidDiv {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartPaidDiv span {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartPaidDiv span {
   background-color: #001dff;
   border-radius: 50%;
   height: 1rem;
   width: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartPaidDiv h5 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartPaidDiv h5 {
   font-weight: 500;
   font-size: 1rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartOutstandingDiv {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartOutstandingDiv {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartOutstandingDiv span {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartOutstandingDiv span {
   background-color: #ff7664;
   border-radius: 50%;
   height: 1rem;
   width: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #mainBody .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartOutstandingDiv h5 {
+#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartOutstandingDiv h5 {
   font-weight: 500;
   font-size: 1rem;
   margin: 0;
@@ -1990,6 +2054,412 @@ h6 {
 #dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-pagination .order-pagination-wrap .order-pagination li.active {
   color: #ffffff;
   background-color: #1912d3;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap {
+  background-color: #ffffff;
+  height: 98%;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  height: 46vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+  height: 86vh;
+  background-color: #f1f5ff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-title-wrap {
+  padding: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-title-wrap h3 {
+  color: #172f78;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-title-wrap p {
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-last-wrap {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-last-wrap .pt-add-item-div {
+  font-size: 1.6rem;
+  background-color: #1912d3;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-last-wrap .pt-add-item-div span {
+  display: flex;
+  align-items: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-last-wrap .pt-add-item-div p {
+  margin: 0;
+  color: #ffffff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-btn-list {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-btn-list a {
+  font-size: 1.6rem;
+  background-color: #1912d3;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  color: white !important;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-btn-list a span {
+  display: flex;
+  align-items: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-btn-list a p {
+  margin: 0;
+  color: #ffffff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper {
+  background: linear-gradient(90deg, rgb(0, 206, 196) 0%, rgb(31, 139, 139) 100%);
+  padding: 1.5rem;
+  height: 39.5rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer {
+  margin-top: 5px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planTitle {
+  color: #888888;
+  font-weight: 600;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  text-align: center;
+  color: white;
+}
+@media (max-width: 767px) {
+  #dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planTitle {
+    font-size: 1.4rem;
+  }
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planPrice {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planPrice .planPriceUnit {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planPrice .planPriceMonth {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planInfo h3 {
+  font-size: 1.6rem;
+  text-align: center;
+  position: relative;
+  padding: 10px 0;
+  color: white;
+  margin: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planInfo h3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: white;
+  right: 0;
+  transform: translateY(-50%);
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planInfo h3::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: white;
+  left: 0;
+  transform: translateY(-50%);
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .plan-select-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .plan-select-div select {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .plan-select-div select:focus-visible {
+  outline: none;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .plan-select-div select option {
+  background-color: #00cec4;
+  color: white;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planDetailsList ul {
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planDetailsList ul li {
+  padding: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planCutImg {
+  text-align: end;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planCutImg .planBuyBtn {
+  margin-top: 56px;
+  font-size: 1.4rem;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard {
+  background: #e9ffff;
+  position: relative;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .planContainer {
+  position: relative;
+  z-index: 999;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .planContainer .planCutImg .planBuyBtn {
+  margin-top: 15px;
+  background-color: #259a99;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .planContainer .planInfo h3 {
+  margin-bottom: 0px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .firstCardBottomSvg {
+  background: url(/assets/img/firstcard.svg) no-repeat bottom/100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+@media (max-width: 992px) {
+  #dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .firstCardBottomSvg {
+    background: url(/assets/img/firstcard.svg) no-repeat bottom/127%;
+  }
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard {
+  background: url(/assets/img/secondcardtop.svg) no-repeat top/100%;
+  background-color: #ebf2ff;
+  position: relative;
+}
+@media (max-width: 992px) {
+  #dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard {
+    background: url(/assets/img/secondcardtop.svg) no-repeat top/130%;
+  }
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer {
+  margin-top: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planTitle {
+  padding-bottom: 4rem;
+  color: #82a0ff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .plan-select-div select {
+  background-color: transparent;
+  color: black;
+  border-color: black;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .plan-select-div select option {
+  background-color: white;
+  color: black;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planDetailsList ul {
+  color: #888888;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planCutImg {
+  text-align: center;
+  position: relative;
+  z-index: 999;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planCutImg .planBuyBtn {
+  margin-top: 25px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planCutImg .planBuyBtn button {
+  font-size: 1.4rem;
+  background-color: #5c7dff;
+  padding: 0.5rem 4rem;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .secondCardBottomSvg {
+  background: url(/assets/img/secondcardbottom.svg) no-repeat bottom/100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard {
+  background: url(/assets/img/thirdcardtop.svg) no-repeat top/100%;
+  background-color: #f8f8ff;
+  position: relative;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planTitle {
+  text-align: start;
+  color: #82a0ff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planPrice {
+  justify-content: start;
+  padding-bottom: 3.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .plan-select-div select {
+  background-color: transparent;
+  color: black;
+  border-color: black;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .plan-select-div select option {
+  background-color: white;
+  color: black;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planDetailsList ul {
+  color: #888888;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planCutImg {
+  text-align: center;
+  position: relative;
+  z-index: 999;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planCutImg .planBuyBtn {
+  margin-top: 25px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planCutImg .planBuyBtn button {
+  font-size: 1.4rem;
+  background-color: #2752FC;
+  padding: 0.5rem 4rem;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .thirdCardBottomSvg {
+  background: url(/assets/img/thirdcardbottom.svg) no-repeat bottom/100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard {
+  background: white;
+  border: 1px solid black;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer {
+  margin-top: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planLogo h3 {
+  color: #888888;
+  margin-bottom: 0rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planPrice .planPriceUnit {
+  color: #2e0aa3;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planPrice .planPriceMonth {
+  color: #888888;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planTitle {
+  color: #5479f7;
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .plan-select-div select {
+  background-color: transparent;
+  color: black;
+  border-color: black;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .plan-select-div select option {
+  background-color: white;
+  color: black;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planDetailsList ul {
+  color: #888888;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .featuresTag {
+  color: #262626;
+  font-size: 1.4rem;
+  padding-left: 2rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planCutImg {
+  text-align: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planCutImg .planBuyBtn {
+  margin-top: 15px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planCutImg .planBuyBtn button {
+  font-size: 1.4rem;
+  background-color: #2e0aa3;
+  padding: 0.5rem 6rem;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
 }
 
 #add-new-hosting-modalwrap .nh-modal-adjuster {
@@ -2777,12 +3247,14 @@ h6 {
   align-items: center;
   padding: 0.2rem 0.5rem;
 }
-.my-modal .form-group label, .my-modal .form-group span {
+.my-modal .form-group label,
+.my-modal .form-group span {
   color: #172f78;
   font-size: 1.4rem;
   font-weight: 500;
 }
-.my-modal .form-group input, .my-modal .form-group select {
+.my-modal .form-group input,
+.my-modal .form-group select {
   font-weight: 400;
   font-size: 1.4rem;
   border: none;
@@ -2870,21 +3342,21 @@ h6 {
   background-color: #991010;
 }
 
-.clm-layout .nh-modal-adjuster {
+.clm-layout .modal-dialog {
   margin-top: 75px;
   margin-left: 225px;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content {
+.clm-layout .modal-dialog .nh-modal-content {
   width: 1018px;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-header {
+.clm-layout .modal-dialog .nh-modal-content .nh-modal-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
   padding-bottom: 1rem;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-header .nh-modal-title h3 {
+.clm-layout .modal-dialog .nh-modal-content .nh-modal-header .nh-modal-title h3 {
   color: #172f78;
   font-size: 1.4rem;
   font-weight: 500;
@@ -2892,16 +3364,16 @@ h6 {
   font-size: 1.8rem;
   font-weight: 600;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-header .nh-modal-title p {
+.clm-layout .modal-dialog .nh-modal-content .nh-modal-header .nh-modal-title p {
   color: #888888;
   font-weight: 400;
   font-size: 1.4rem;
   margin: 0;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-header .nh-modal-close span {
+.clm-layout .modal-dialog .nh-modal-content .nh-modal-header .nh-modal-close span {
   cursor: pointer;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body {
   padding: 2rem;
   padding-bottom: 0;
   position: sticky;
@@ -2911,38 +3383,38 @@ h6 {
   height: 55vh;
   scrollbar-width: none;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap {
   background-color: #f9fbff;
   border-radius: 0.5rem;
   padding: 1rem;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-1 {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-1 {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-title {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-title {
   display: flex;
   align-items: center;
   gap: 10px;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-title span {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-title span {
   display: flex;
   align-items: center;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-title p {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-title p {
   color: #172f78;
   font-size: 1.4rem;
   font-weight: 500;
   margin: 0;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-input-wrap {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-input-wrap {
   display: flex;
   align-items: center;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-input-wrap select {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-input-wrap select {
   padding: 0.5rem 1rem;
   font-weight: 400;
   font-size: 1.4rem;
@@ -2954,10 +3426,10 @@ h6 {
   background-color: #edf3ff;
   color: #888888;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-input-wrap select:focus-visible {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-input-wrap select:focus-visible {
   outline: none;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-input-wrap .nh-cat-input-add-wrap {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-input-wrap .nh-cat-input-add-wrap {
   cursor: pointer;
   padding: 0.5rem 1rem;
   display: flex;
@@ -2968,13 +3440,13 @@ h6 {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-input-wrap .nh-cat-input-add-wrap p {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-input-wrap .nh-cat-input-add-wrap p {
   margin: 0;
   font-size: 1.4rem;
   font-weight: 600;
   color: #172f78;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-input-wrap .hs-modal-input {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-input-wrap .hs-modal-input {
   background-color: #edf3ff;
   padding: 0.5rem 1rem;
   font-size: 1.4rem;
@@ -2984,36 +3456,36 @@ h6 {
   width: 20rem;
   border-radius: 0.5rem;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-input-wrap .hs-modal-input:focus-visible {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-input-wrap .hs-modal-input:focus-visible {
   outline: none;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-input-wrap.nh-tax-rate select {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-1 .nh-category-select-wrap .nh-category-input-wrap.nh-tax-rate select {
   border: none;
   border-radius: 0.5rem;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-2 {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-2 {
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 1.5rem 1rem;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-category-select-wrap .nh-category-title {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-category-select-wrap .nh-category-title {
   display: flex;
   align-items: center;
   gap: 10px;
   padding-bottom: 0.5rem;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-category-select-wrap .nh-category-title span {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-category-select-wrap .nh-category-title span {
   display: flex;
   align-items: center;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-category-select-wrap .nh-category-title p {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-category-select-wrap .nh-category-title p {
   color: #172f78;
   font-size: 1.4rem;
   font-weight: 500;
   margin: 0;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-category-select-wrap .nh-category-input-wrap .hs-modal-input {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-category-select-wrap .nh-category-input-wrap .hs-modal-input {
   background-color: #edf3ff;
   padding: 0.5rem 1rem;
   font-size: 1.4rem;
@@ -3025,105 +3497,105 @@ h6 {
   height: 5.8rem;
   width: 60rem;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-category-select-wrap .nh-category-input-wrap .hs-modal-input:focus-visible {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-category-select-wrap .nh-category-input-wrap .hs-modal-input:focus-visible {
   outline: none;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-noflex-wrap {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-noflex-wrap {
   padding: 1rem 1.5rem;
   padding-top: 2rem;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-noflex-wrap .nh-category-title {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-noflex-wrap .nh-category-title {
   display: flex;
   align-items: center;
   gap: 10px;
   padding-bottom: 0.5rem;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-noflex-wrap .nh-category-title span {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-noflex-wrap .nh-category-title span {
   display: flex;
   align-items: center;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-noflex-wrap .nh-category-title p {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-noflex-wrap .nh-category-title p {
   color: #172f78;
   font-size: 1.4rem;
   font-weight: 500;
   margin: 0;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-noflex-wrap .nh-input-btnwrap {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-noflex-wrap .nh-input-btnwrap {
   display: flex;
   flex-direction: column;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-noflex-wrap .nh-input-btnwrap .input-btn-div {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-noflex-wrap .nh-input-btnwrap .input-btn-div {
   padding: 0;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-noflex-wrap .nh-input-btnwrap .input-btn-div input {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-2 .nh-noflex-wrap .nh-input-btnwrap .input-btn-div input {
   margin: 0;
   height: 3.3rem;
   width: 6.2rem;
   box-shadow: 1px 1px 5px rgba(228, 228, 228, 0.3);
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-3 {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-3 {
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 0rem 1rem;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-3 .nh-noflex-wrap {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-3 .nh-noflex-wrap {
   padding: 0rem 1.5rem;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-3 .nh-noflex-wrap .nh-category-title {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-3 .nh-noflex-wrap .nh-category-title {
   display: flex;
   align-items: center;
   gap: 10px;
   padding-bottom: 0.5rem;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-3 .nh-noflex-wrap .nh-category-title span {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-3 .nh-noflex-wrap .nh-category-title span {
   display: flex;
   align-items: center;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-3 .nh-noflex-wrap .nh-category-title p {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-3 .nh-noflex-wrap .nh-category-title p {
   color: #172f78;
   font-size: 1.4rem;
   font-weight: 500;
   margin: 0;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-3 .nh-noflex-wrap .nh-input-btnwrap {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-3 .nh-noflex-wrap .nh-input-btnwrap {
   display: flex;
   flex-direction: column;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-3 .nh-noflex-wrap .nh-input-btnwrap .input-btn-div {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-3 .nh-noflex-wrap .nh-input-btnwrap .input-btn-div {
   padding: 0;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-row-3 .nh-noflex-wrap .nh-input-btnwrap .input-btn-div input {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-row-3 .nh-noflex-wrap .nh-input-btnwrap .input-btn-div input {
   margin: 0;
   height: 3.3rem;
   width: 6.2rem;
   box-shadow: 1px 1px 5px rgba(228, 228, 228, 0.3);
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-table-wrap {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-table-wrap {
   padding: 1.5rem 1rem;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-category-title {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-category-title {
   display: flex;
   align-items: center;
   gap: 10px;
   padding-bottom: 0.5rem;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-category-title span {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-category-title span {
   display: flex;
   align-items: center;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-category-title p {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-category-title p {
   color: #172f78;
   font-size: 1.4rem;
   font-weight: 500;
   margin: 0;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-add-pricing {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-add-pricing {
   margin-top: 1rem;
   width: 100%;
   border-radius: 0.5rem;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-add-pricing tr th {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-add-pricing tr th {
   color: #172f78;
   font-size: 1.6rem;
   font-weight: 500;
@@ -3131,11 +3603,11 @@ h6 {
   text-align: center;
   font-size: 1.4rem;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-add-pricing tr th:nth-child(even) {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-add-pricing tr th:nth-child(even) {
   border-right: 1px solid #dcefff;
   border-left: 1px solid #dcefff;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-add-pricing tr td {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-add-pricing tr td {
   text-align: center;
   color: #888888;
   font-weight: 400;
@@ -3144,35 +3616,35 @@ h6 {
   padding: 1rem 0;
   text-overflow: ellipsis;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-add-pricing tr td:nth-child(even) {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-add-pricing tr td:nth-child(even) {
   border-right: 1px solid #dcefff;
   border-left: 1px solid #dcefff;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-add-pricing tr td:nth-child(2) {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-add-pricing tr td:nth-child(2) {
   color: #172f78;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-add-pricing tr:nth-child(even) {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-add-pricing tr:nth-child(even) {
   background-color: #f9fbff;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-add-pricing tr:nth-child(odd) {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-add-pricing tr:nth-child(odd) {
   background-color: #ffffff;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-add-pricing tr:first-child {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-body .nh-data-wrap .nh-data-table-wrap .nh-add-pricing tr:first-child {
   background-color: #edf3ff;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-footer {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-footer {
   padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: end;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-footer .nh-footer-btn-wrap {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-footer .nh-footer-btn-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-footer .nh-footer-btn-wrap .nh-modal-closebtn {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-footer .nh-footer-btn-wrap .nh-modal-closebtn {
   font-size: 1.6rem;
   background-color: #1912d3;
   border-radius: 0.5rem;
@@ -3184,21 +3656,21 @@ h6 {
   cursor: pointer;
   background-color: #edf3ff;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-footer .nh-footer-btn-wrap .nh-modal-closebtn span {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-footer .nh-footer-btn-wrap .nh-modal-closebtn span {
   display: flex;
   align-items: center;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-footer .nh-footer-btn-wrap .nh-modal-closebtn p {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-footer .nh-footer-btn-wrap .nh-modal-closebtn p {
   margin: 0;
   color: #ffffff;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-footer .nh-footer-btn-wrap .nh-modal-closebtn span svg path {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-footer .nh-footer-btn-wrap .nh-modal-closebtn span svg path {
   fill: #888888;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-footer .nh-footer-btn-wrap .nh-modal-closebtn p {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-footer .nh-footer-btn-wrap .nh-modal-closebtn p {
   color: #888888;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-footer .nh-footer-btn-wrap .nh-modal-addbtn {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-footer .nh-footer-btn-wrap .nh-modal-addbtn {
   font-size: 1.6rem;
   background-color: #1912d3;
   border-radius: 0.5rem;
@@ -3209,11 +3681,15 @@ h6 {
   gap: 10px;
   cursor: pointer;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-footer .nh-footer-btn-wrap .nh-modal-addbtn span {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-footer .nh-footer-btn-wrap .nh-modal-addbtn span {
   display: flex;
   align-items: center;
 }
-.clm-layout .nh-modal-adjuster .nh-modal-content .nh-modal-footer .nh-footer-btn-wrap .nh-modal-addbtn p {
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-footer .nh-footer-btn-wrap .nh-modal-addbtn p {
   margin: 0;
   color: #ffffff;
+}
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.4) !important;
 }/*# sourceMappingURL=main.css.map */
