@@ -1334,7 +1334,7 @@ h6 {
         @include mainWrap;
         @include overflow-wrap;
         height: 86vh;
-        background-color: #f1f5ff;
+        background-color: #ffffff;
         .pt-topbar-wrap {
           display: flex;
           justify-content: space-between;
@@ -1562,7 +1562,7 @@ h6 {
                     button {
                       font-size: 1.4rem;
                       background-color: #5c7dff;
-                      padding: .5rem 4rem;
+                      padding: 0.5rem 4rem;
                       border: none;
                       color: white;
                       border-radius: 0.5rem;
@@ -1592,13 +1592,13 @@ h6 {
                 justify-content: start;
                 padding-bottom: 3.5rem;
               }
-              
-              .plan-select-div{
-                select{
+
+              .plan-select-div {
+                select {
                   background-color: transparent;
                   color: black;
                   border-color: black;
-                  option{
+                  option {
                     background-color: white;
                     color: black;
                   }
@@ -1616,8 +1616,8 @@ h6 {
                   margin-top: 25px;
                   button {
                     font-size: 1.4rem;
-                    background-color: #2752FC;
-                    padding: .5rem 4rem;
+                    background-color: #2752fc;
+                    padding: 0.5rem 4rem;
                     border: none;
                     color: white;
                     border-radius: 0.5rem;
@@ -1668,7 +1668,7 @@ h6 {
                   font-size: 1.4rem;
                   padding-bottom: 1rem;
                 }
-                
+
                 .plan-select-div {
                   select {
                     background-color: transparent;
@@ -1696,11 +1696,10 @@ h6 {
                     button {
                       font-size: 1.4rem;
                       background-color: #2e0aa3;
-                      padding: .5rem 6rem;
+                      padding: 0.5rem 6rem;
                       border: none;
                       color: white;
                       border-radius: 0.5rem;
-                      
                     }
                   }
                 }
@@ -1710,6 +1709,120 @@ h6 {
         }
       }
       //pricing-tables-wrap-end
+
+      //menu-wrap-start
+      #menu-wrap {
+        @include mainWrap;
+        @include overflow-wrap;
+        height: 86vh;
+        background-color: #ffffff;
+        .menu-topbar-wrap {
+          display: flex;
+          justify-content: space-between;
+          .menu-title-wrap {
+            @include titleWrap;
+          }
+          .menu-last-wrap {
+            display: flex;
+            align-items: center;
+            padding-top: 1rem;
+            .menu-add-item-div {
+              @include bluebtn;
+            }
+          }
+        }
+        .menu-btn-list {
+          padding: 0.5rem 0;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          flex-wrap: wrap;
+          a {
+            @include bluebtn;
+            color: white !important;
+            font-weight: 500;
+            font-size: 1.4rem;
+            background-color: #2e0aa3;
+          }
+        }
+        .menu-content {
+          background-color: #f9fbff;
+          border-radius: 0.5rem;
+          margin: 1rem;
+          .menu-title-wrap {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            h4 {
+              @include blueHeading;
+              font-size: 1.8rem;
+              font-weight: 600;
+            }
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+          .sub-menu-wrap {
+            display: flex;
+            padding: 2rem 0;
+            .submenu-name-wrap {
+              margin: 0 1rem;
+              h5 {
+                @include blueSmHeading;
+                padding-bottom: 1rem;
+              }
+              input {
+                @include hs-modal-input;
+                width: 100%;
+              }
+            }
+            .submenu-url-wrap {
+              margin: 0 1rem;
+              h5 {
+                @include blueSmHeading;
+                padding-bottom: 1rem;
+              }
+              input {
+                @include hs-modal-input;
+                width: 100%;
+              }
+            }
+            .btn-down {
+              display: flex;
+              align-items: end;
+              .add-submenu-btn {
+                @include bluebtn;
+              }
+            }
+          }
+          .menu-table-wrap{
+            table{
+              @include data-table;
+              margin: 0;
+              tr{
+              th{
+                &:nth-child(2){
+                  border-left: none;
+                }
+              }
+            }
+            }
+          }
+          .menu-save-wrap{
+            display: flex;
+            justify-content: flex-end;
+            .menu-save-btn{
+              @include bluebtn;
+              font-weight: 600;
+              border: none;
+              color: white;
+            }
+          }
+        }
+      }
+      //menu-wrap-end
     }
   }
 }
@@ -2621,3 +2734,52 @@ h6 {
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
 //backdrop-custom-css-end
+
+
+//common-css-for-all-start
+.common-css{
+  label{
+    @include blueSmHeading;
+    @include mobile{
+      font-size: 1.2rem;
+    }
+  }
+  p{
+    @include blueSmHeading;
+    @include mobile{
+      font-size: 1.2rem;
+    }
+  }
+  input{
+   @include hs-modal-input;
+   width: 100%;
+   @include mobile{
+    font-size: 1.2rem;
+  }
+  }
+  select{
+    @include grayBlueSelect;
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: 100%;
+    @include mobile{
+      font-size: 1.2rem;
+    }
+  }
+  h1,h2,h3,h4,h5,h6{
+    @include blueHeading;
+    @include mobile{
+      font-size: 1.4rem;
+    }
+  }
+  button{
+    @include bluebtn;
+    font-size: 1.4rem;
+    @include mobile{
+      font-size: 1.2rem;
+    }
+  }
+}
+//common-css-for-all-end
+
+
