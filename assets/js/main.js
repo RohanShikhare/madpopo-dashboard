@@ -9,6 +9,12 @@ $(document).ready(function () {
       $('[data-bs-toggle="tooltip"]').tooltip("dispose");
     }
   });
+  $(".headerInputSVG").click(function () {
+    $(".responsive-search-wrap").addClass("open");
+  });
+  $(".resSearchClosebtn").click(function () {
+    $(".responsive-search-wrap").removeClass("open");
+  });
   $(".datepicker").datepicker({
     dateFormat: "MM yy",
   });
@@ -26,9 +32,14 @@ $(document).ready(function () {
   $("#bottom-close-btn").on("click", function () {
     $("#add-btn-modal").modal("hide");
   });
-
-  $('.hamburger-icon').click(function() {
-    $('.hamburger-icon').toggleClass('open');
+  $(".hamburger-icon").click(function () {
+    $(".responsiveHeaderMenu").toggleClass("open");
+  });
+  $(".dropdown-activater-1").click(function () {
+    $(".dropdown-activater-1").toggleClass("open");
+  });
+  $(".dropdown-activater-2").click(function () {
+    $(".dropdown-activater-2").toggleClass("open");
   });
 
   //invoice payment doughnut start
@@ -61,15 +72,15 @@ $(document).ready(function () {
         const { x, y } = chart
           .getDatasetMeta(activePoint.datasetIndex)
           .data[activePoint.index].tooltipPosition();
-  
+
         // Draw lines and text only when hovering
-  
+
         const halfheight = height / 2;
         const halfwidth = width / 2;
         const xLine = x >= halfwidth ? x + 50 : x - 50;
         const yLine = y >= halfheight ? y + 50 : y - 50;
         const extraLine = x >= halfwidth ? 20 : -20;
-  
+
         // Line
         ctx.beginPath();
         ctx.moveTo(x, y);
@@ -77,12 +88,12 @@ $(document).ready(function () {
         ctx.lineTo(xLine, yLine + extraLine);
         ctx.strokeStyle = "black";
         ctx.stroke();
-  
-        
+
         // Text
-        const padding = 15; 
+        const padding = 15;
         const textYPosition = y >= halfheight ? "right" : "left";
-        const textXPosition = textYPosition === "right" ? xLine + padding : xLine - padding; 
+        const textXPosition =
+          textYPosition === "right" ? xLine + padding : xLine - padding;
         ctx.font = "12px Work Sans";
         ctx.textAlign = textYPosition;
         const baselinePos = y >= halfheight ? "top" : "bottom";
@@ -91,7 +102,7 @@ $(document).ready(function () {
         ctx.fillText(
           chart.data.labels[activePoint.index],
           textXPosition,
-          yLine + extraLine 
+          yLine + extraLine
         );
       }
     },
