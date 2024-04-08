@@ -2739,100 +2739,8 @@ h6 {
 //common-css-for-all-start
 .common-css {
   div {
-    label {
-      color: #172f78 !important;
-      font-size: 1.4rem !important;
-      font-weight: 500 !important;
-      margin: 0 !important;
-      @include mobile {
-        font-size: 1.2rem !important;
-      }
-    }
-    p {
-      color: #172f78 !important;
-      font-size: 1.4rem !important;
-      font-weight: 500 !important;
-      margin: 0 !important;
-      @include mobile {
-        font-size: 1.2rem !important;
-      }
-    }
-    input {
-      background-color: #edf3ff !important;
-      padding: 0.5rem 1rem !important;
-      font-size: 1.4rem !important;
-      color: #888888 !important;
-      font-weight: 400 !important;
-      border: none !important;
-      width: 20rem !important;
-      border-radius: 0.5rem !important;
-      &:focus-visible {
-        outline: none !important;
-      }
-      width: 100% !important;
-      @include mobile {
-        font-size: 1.2rem !important;
-      }
-    }
-    select {
-      color: #172f78 !important;
-      font-weight: 600 !important;
-      font-size: 1.6rem !important;
-      border: 1px solid #d9d9d9 !important;
-      border-radius: 0.4rem !important;
-      padding: 0.2rem !important;
-      background-color: transparent !important;
-      &:focus-visible {
-        outline: none !important;
-      }
-      font-size: 1.4rem !important;
-      font-weight: 400 !important;
-      width: 100% !important;
-      @include mobile {
-        font-size: 1.2rem !important;
-      }
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: #172f78 !important;
-      font-size: 1.6rem !important;
-      font-weight: 500 !important;
-      @include mobile {
-        font-size: 1.4rem !important;
-      }
-    }
-    button {
-      font-size: 1.6rem !important;
-      background-color: #1912d3 !important;
-      border-radius: 0.5rem !important;
-      padding: 0.8rem 1.2rem !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      gap: 10px !important;
-      cursor: pointer !important;
-      span {
-        display: flex !important;
-        align-items: center !important;
-      }
-      p {
-        margin: 0 !important;
-        color: #ffffff !important;
-      }
-      font-size: 1.4rem !important;
-      @include mobile {
-        font-size: 1.2rem !important;
-      }
-    }
-  }
-  table {
-    tr {
-      th,
-      td {
+    form {
+      div {
         label {
           color: #172f78 !important;
           font-size: 1.4rem !important;
@@ -2920,6 +2828,102 @@ h6 {
           font-size: 1.4rem !important;
           @include mobile {
             font-size: 1.2rem !important;
+          }
+        }
+      }
+      table {
+        tr {
+          th,
+          td {
+            label {
+              color: #172f78 !important;
+              font-size: 1.4rem !important;
+              font-weight: 500 !important;
+              margin: 0 !important;
+              @include mobile {
+                font-size: 1.2rem !important;
+              }
+            }
+            p {
+              color: #172f78 !important;
+              font-size: 1.4rem !important;
+              font-weight: 500 !important;
+              margin: 0 !important;
+              @include mobile {
+                font-size: 1.2rem !important;
+              }
+            }
+            input {
+              background-color: #edf3ff !important;
+              padding: 0.5rem 1rem !important;
+              font-size: 1.4rem !important;
+              color: #888888 !important;
+              font-weight: 400 !important;
+              border: none !important;
+              width: 20rem !important;
+              border-radius: 0.5rem !important;
+              &:focus-visible {
+                outline: none !important;
+              }
+              width: 100% !important;
+              @include mobile {
+                font-size: 1.2rem !important;
+              }
+            }
+            select {
+              color: #172f78 !important;
+              font-weight: 600 !important;
+              font-size: 1.6rem !important;
+              border: 1px solid #d9d9d9 !important;
+              border-radius: 0.4rem !important;
+              padding: 0.2rem !important;
+              background-color: transparent !important;
+              &:focus-visible {
+                outline: none !important;
+              }
+              font-size: 1.4rem !important;
+              font-weight: 400 !important;
+              width: 100% !important;
+              @include mobile {
+                font-size: 1.2rem !important;
+              }
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+              color: #172f78 !important;
+              font-size: 1.6rem !important;
+              font-weight: 500 !important;
+              @include mobile {
+                font-size: 1.4rem !important;
+              }
+            }
+            button {
+              font-size: 1.6rem !important;
+              background-color: #1912d3 !important;
+              border-radius: 0.5rem !important;
+              padding: 0.8rem 1.2rem !important;
+              display: flex !important;
+              align-items: center !important;
+              justify-content: center !important;
+              gap: 10px !important;
+              cursor: pointer !important;
+              span {
+                display: flex !important;
+                align-items: center !important;
+              }
+              p {
+                margin: 0 !important;
+                color: #ffffff !important;
+              }
+              font-size: 1.4rem !important;
+              @include mobile {
+                font-size: 1.2rem !important;
+              }
+            }
           }
         }
       }
