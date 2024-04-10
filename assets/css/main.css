@@ -2646,33 +2646,33 @@ h6 {
   margin: 0;
   color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap table {
+#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table {
   margin-top: 2rem;
   width: 100%;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap table tr th {
+#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr th {
   color: #172f78;
   font-size: 1.6rem;
   font-weight: 500;
   padding: 1rem 2rem;
   text-align: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap table tr th:first-child div {
+#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr th:first-child div {
   padding-right: 1rem;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap table tr th:first-child div input {
+#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr th:first-child div input {
   height: 1.6rem;
   width: 1.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap table tr th:nth-child(even) {
+#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr th:nth-child(even) {
   border-right: 1px solid #dcefff;
   border-left: 1px solid #dcefff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap table tr td {
+#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr td {
   text-align: center;
   color: #888888;
   font-weight: 400;
@@ -2681,46 +2681,61 @@ h6 {
   padding: 1rem 0;
   text-overflow: ellipsis;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap table tr td .tableIcon {
+#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr td .tableIcon {
   display: flex;
   gap: 10px;
   align-items: center;
   padding: 0 2rem;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap table tr td .tableIcon a {
+#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr td .tableIcon a {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap table tr td:first-child div {
+#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr td:first-child div {
   padding: 1rem 2rem;
   padding-right: 1rem;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap table tr td:first-child div input {
+#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr td:first-child div input {
   height: 1.6rem;
   width: 1.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap table tr td:nth-child(even) {
+#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr td:nth-child(even) {
   border-right: 1px solid #dcefff;
   border-left: 1px solid #dcefff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap table tr:nth-child(even) {
+#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr:nth-child(even) {
   background-color: #f9fbff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap table tr:nth-child(odd) {
+#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr:nth-child(odd) {
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap table tr:first-child {
+#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr:first-child {
   background-color: #edf3ff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap table tr th:nth-child(2) {
+#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table thead tr {
+  background-color: #edf3ff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table thead tr th:nth-child(2) {
   border-left: none;
 }
+#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tbody tr:nth-child(odd) {
+  background-color: #f9fbff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tbody tr td .menu-table-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 #dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-save-wrap {
+  margin-top: 1rem;
   display: flex;
   justify-content: flex-end;
   padding: 0.5rem 0;
@@ -2746,6 +2761,257 @@ h6 {
 #dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-save-wrap .menu-save-btn p {
   margin: 0;
   color: #ffffff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap {
+  background-color: #ffffff;
+  height: 98%;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  height: 46vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+  height: 86vh;
+  background-color: #ffffff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-title-wrap {
+  padding: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-title-wrap h3 {
+  color: #172f78;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-title-wrap p {
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-last-wrap {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-last-wrap .slider-add-item-div {
+  font-size: 1.6rem;
+  background-color: #1912d3;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-last-wrap .slider-add-item-div span {
+  display: flex;
+  align-items: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-last-wrap .slider-add-item-div p {
+  margin: 0;
+  color: #ffffff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap {
+  background-color: #f9fbff;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem;
+  border-bottom: 1px solid #dcefff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderShowEntriesWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderShowEntriesWrap span {
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderShowEntriesWrap select {
+  color: #172f78;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+  background-color: transparent;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderShowEntriesWrap select:focus-visible {
+  outline: none;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap button {
+  color: #172f78;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.4rem;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap button span {
+  display: flex;
+  align-items: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap .slider-dateWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap .slider-dateWrap span {
+  position: absolute;
+  width: 1.7rem;
+  height: 1.7rem;
+  text-align: center;
+  top: 7px;
+  left: 11px;
+  display: flex;
+  align-items: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap .slider-dateWrap input {
+  color: #172f78;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+  background-color: transparent;
+  padding-left: 3.5rem;
+  width: 17rem;
+  cursor: pointer;
+  caret-color: transparent;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap .slider-dateWrap input:focus-visible {
+  outline: none;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow {
+  height: 46vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+  height: 44vh;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table {
+  margin-top: 2rem;
+  width: 100%;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr th {
+  color: #172f78;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr th:first-child div {
+  padding-right: 1rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr th:first-child div input {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr th:nth-child(even) {
+  border-right: 1px solid #dcefff;
+  border-left: 1px solid #dcefff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr td {
+  text-align: center;
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  text-overflow: ellipsis;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr td .tableIcon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 0 2rem;
+  justify-content: space-between;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr td .tableIcon a {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr td:first-child div {
+  padding: 1rem 2rem;
+  padding-right: 1rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr td:first-child div input {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr td:nth-child(even) {
+  border-right: 1px solid #dcefff;
+  border-left: 1px solid #dcefff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr:nth-child(even) {
+  background-color: #f9fbff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr:first-child {
+  background-color: #edf3ff;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-pagination {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-pagination .sliderShowingEntriesWrap p {
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-pagination .slider-pagination-wrap .slider-pagination {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-pagination .slider-pagination-wrap .slider-pagination li {
+  background-color: #edf3ff;
+  color: #94a2bc;
+  font-size: 1.4rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.4rem;
+}
+#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-pagination .slider-pagination-wrap .slider-pagination li.active {
+  color: #ffffff;
+  background-color: #1912d3;
 }
 
 #add-new-hosting-modalwrap .nh-modal-adjuster {
@@ -3980,29 +4246,29 @@ h6 {
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
-.common-css div form div label {
+.common-css .common-label {
   color: #172f78 !important;
   font-size: 1.4rem !important;
   font-weight: 500 !important;
   margin: 0 !important;
 }
 @media (max-width: 480px) {
-  .common-css div form div label {
+  .common-css .common-label {
     font-size: 1.2rem !important;
   }
 }
-.common-css div form div p {
+.common-css .common-p {
   color: #172f78 !important;
   font-size: 1.4rem !important;
   font-weight: 500 !important;
   margin: 0 !important;
 }
 @media (max-width: 480px) {
-  .common-css div form div p {
+  .common-css .common-p {
     font-size: 1.2rem !important;
   }
 }
-.common-css div form div input {
+.common-css .common-input {
   background-color: #edf3ff !important;
   padding: 0.5rem 1rem !important;
   font-size: 1.4rem !important;
@@ -4013,15 +4279,15 @@ h6 {
   border-radius: 0.5rem !important;
   width: 100% !important;
 }
-.common-css div form div input:focus-visible {
+.common-css .common-input:focus-visible {
   outline: none !important;
 }
 @media (max-width: 480px) {
-  .common-css div form div input {
+  .common-css .common-input {
     font-size: 1.2rem !important;
   }
 }
-.common-css div form div select {
+.common-css .common-select {
   color: #172f78 !important;
   font-weight: 600 !important;
   font-size: 1.6rem !important;
@@ -4033,35 +4299,25 @@ h6 {
   font-weight: 400 !important;
   width: 100% !important;
 }
-.common-css div form div select:focus-visible {
+.common-css .common-select:focus-visible {
   outline: none !important;
 }
 @media (max-width: 480px) {
-  .common-css div form div select {
+  .common-css .common-select {
     font-size: 1.2rem !important;
   }
 }
-.common-css div form div h1,
-.common-css div form div h2,
-.common-css div form div h3,
-.common-css div form div h4,
-.common-css div form div h5,
-.common-css div form div h6 {
+.common-css .common-h {
   color: #172f78 !important;
   font-size: 1.6rem !important;
   font-weight: 500 !important;
 }
 @media (max-width: 480px) {
-  .common-css div form div h1,
-  .common-css div form div h2,
-  .common-css div form div h3,
-  .common-css div form div h4,
-  .common-css div form div h5,
-  .common-css div form div h6 {
+  .common-css .common-h {
     font-size: 1.4rem !important;
   }
 }
-.common-css div form div button {
+.common-css .common-button {
   font-size: 1.6rem !important;
   background-color: #1912d3 !important;
   border-radius: 0.5rem !important;
@@ -4073,148 +4329,16 @@ h6 {
   cursor: pointer !important;
   font-size: 1.4rem !important;
 }
-.common-css div form div button span {
+.common-css .common-button span {
   display: flex !important;
   align-items: center !important;
 }
-.common-css div form div button p {
+.common-css .common-button p {
   margin: 0 !important;
   color: #ffffff !important;
 }
 @media (max-width: 480px) {
-  .common-css div form div button {
-    font-size: 1.2rem !important;
-  }
-}
-.common-css div form table tr th label,
-.common-css div form table tr td label {
-  color: #172f78 !important;
-  font-size: 1.4rem !important;
-  font-weight: 500 !important;
-  margin: 0 !important;
-}
-@media (max-width: 480px) {
-  .common-css div form table tr th label,
-  .common-css div form table tr td label {
-    font-size: 1.2rem !important;
-  }
-}
-.common-css div form table tr th p,
-.common-css div form table tr td p {
-  color: #172f78 !important;
-  font-size: 1.4rem !important;
-  font-weight: 500 !important;
-  margin: 0 !important;
-}
-@media (max-width: 480px) {
-  .common-css div form table tr th p,
-  .common-css div form table tr td p {
-    font-size: 1.2rem !important;
-  }
-}
-.common-css div form table tr th input,
-.common-css div form table tr td input {
-  background-color: #edf3ff !important;
-  padding: 0.5rem 1rem !important;
-  font-size: 1.4rem !important;
-  color: #888888 !important;
-  font-weight: 400 !important;
-  border: none !important;
-  width: 20rem !important;
-  border-radius: 0.5rem !important;
-  width: 100% !important;
-}
-.common-css div form table tr th input:focus-visible,
-.common-css div form table tr td input:focus-visible {
-  outline: none !important;
-}
-@media (max-width: 480px) {
-  .common-css div form table tr th input,
-  .common-css div form table tr td input {
-    font-size: 1.2rem !important;
-  }
-}
-.common-css div form table tr th select,
-.common-css div form table tr td select {
-  color: #172f78 !important;
-  font-weight: 600 !important;
-  font-size: 1.6rem !important;
-  border: 1px solid #d9d9d9 !important;
-  border-radius: 0.4rem !important;
-  padding: 0.2rem !important;
-  background-color: transparent !important;
-  font-size: 1.4rem !important;
-  font-weight: 400 !important;
-  width: 100% !important;
-}
-.common-css div form table tr th select:focus-visible,
-.common-css div form table tr td select:focus-visible {
-  outline: none !important;
-}
-@media (max-width: 480px) {
-  .common-css div form table tr th select,
-  .common-css div form table tr td select {
-    font-size: 1.2rem !important;
-  }
-}
-.common-css div form table tr th h1,
-.common-css div form table tr th h2,
-.common-css div form table tr th h3,
-.common-css div form table tr th h4,
-.common-css div form table tr th h5,
-.common-css div form table tr th h6,
-.common-css div form table tr td h1,
-.common-css div form table tr td h2,
-.common-css div form table tr td h3,
-.common-css div form table tr td h4,
-.common-css div form table tr td h5,
-.common-css div form table tr td h6 {
-  color: #172f78 !important;
-  font-size: 1.6rem !important;
-  font-weight: 500 !important;
-}
-@media (max-width: 480px) {
-  .common-css div form table tr th h1,
-  .common-css div form table tr th h2,
-  .common-css div form table tr th h3,
-  .common-css div form table tr th h4,
-  .common-css div form table tr th h5,
-  .common-css div form table tr th h6,
-  .common-css div form table tr td h1,
-  .common-css div form table tr td h2,
-  .common-css div form table tr td h3,
-  .common-css div form table tr td h4,
-  .common-css div form table tr td h5,
-  .common-css div form table tr td h6 {
-    font-size: 1.4rem !important;
-  }
-}
-.common-css div form table tr th button,
-.common-css div form table tr td button {
-  font-size: 1.6rem !important;
-  background-color: #1912d3 !important;
-  border-radius: 0.5rem !important;
-  padding: 0.8rem 1.2rem !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 10px !important;
-  cursor: pointer !important;
-  font-size: 1.4rem !important;
-}
-.common-css div form table tr th button span,
-.common-css div form table tr td button span {
-  display: flex !important;
-  align-items: center !important;
-}
-.common-css div form table tr th button p,
-.common-css div form table tr td button p {
-  margin: 0 !important;
-  color: #ffffff !important;
-}
-@media (max-width: 480px) {
-  .common-css div form table tr th button,
-  .common-css div form table tr td button {
+  .common-css .common-button {
     font-size: 1.2rem !important;
   }
 }/*# sourceMappingURL=main.css.map */

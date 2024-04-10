@@ -18,6 +18,9 @@ $(document).ready(function () {
   $(".datepicker").datepicker({
     dateFormat: "MM yy",
   });
+  $(".slider-datepicker").datepicker({
+    dateFormat: "MM yy",
+  });
   $(".graphDatePicker").datepicker({
     dateFormat: "yy", // Show only the year
     changeMonth: false, // Disable month selection
@@ -41,6 +44,11 @@ $(document).ready(function () {
   $(".dropdown-activater-2").click(function () {
     $(".dropdown-activater-2").toggleClass("open");
   });
+  //menu-table-drag-sort-start
+  $(".menu-table tbody").sortable({
+    handle: '.menu-table-icon'
+  }).disableSelection();
+  //menu-table-drag-sort-end
 
   //invoice payment doughnut start
   const data = {
