@@ -46,24 +46,25 @@ h6 {
   background-color: #1912d3;
   height: 100%;
 }
-#dashboardSection .dashboardHeader {
+
+.dashboardHeader {
   height: 65px;
 }
 @media (max-width: 991px) {
-  #dashboardSection .dashboardHeader {
+  .dashboardHeader {
     height: 57px;
   }
 }
 @media (max-width: 320px) {
-  #dashboardSection .dashboardHeader {
+  .dashboardHeader {
     height: 55px;
   }
 }
-#dashboardSection .dashboardHeader .dashboardDiv {
+.dashboardHeader .dashboardDiv {
   display: flex;
   width: 100%;
 }
-#dashboardSection .dashboardHeader .dashboardDiv h1 {
+.dashboardHeader .dashboardDiv h1 {
   font-size: 2.4rem;
   color: #ffffff;
   padding: 1.6rem;
@@ -71,56 +72,56 @@ h6 {
   margin: 0;
 }
 @media (max-width: 1190px) {
-  #dashboardSection .dashboardHeader .dashboardDiv h1 {
+  .dashboardHeader .dashboardDiv h1 {
     font-size: 2rem;
   }
 }
 @media (max-width: 991px) {
-  #dashboardSection .dashboardHeader .dashboardDiv h1 {
+  .dashboardHeader .dashboardDiv h1 {
     font-size: 1.7rem;
   }
 }
 @media (max-width: 834px) {
-  #dashboardSection .dashboardHeader .dashboardDiv h1 {
+  .dashboardHeader .dashboardDiv h1 {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 768px) {
-  #dashboardSection .dashboardHeader .dashboardDiv h1 {
+  .dashboardHeader .dashboardDiv h1 {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 767px) {
-  #dashboardSection .dashboardHeader .dashboardDiv h1 {
+  .dashboardHeader .dashboardDiv h1 {
     font-size: 1.8rem;
   }
 }
 @media (max-width: 576px) {
-  #dashboardSection .dashboardHeader .dashboardDiv h1 {
+  .dashboardHeader .dashboardDiv h1 {
     text-align: start;
   }
 }
 @media (max-width: 320px) {
-  #dashboardSection .dashboardHeader .dashboardDiv h1 {
+  .dashboardHeader .dashboardDiv h1 {
     font-size: 1.4rem;
     padding: 2rem 1rem;
   }
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerInputWrap {
+.dashboardHeader .dashboardDiv .headerInputWrap {
   position: relative;
   margin-top: 1.6rem;
 }
 @media (max-width: 991px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerInputWrap {
+  .dashboardHeader .dashboardDiv .headerInputWrap {
     margin-top: 1.2rem;
   }
 }
 @media (max-width: 576px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerInputWrap {
+  .dashboardHeader .dashboardDiv .headerInputWrap {
     position: static;
   }
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerInputWrap .headerInputSVG {
+.dashboardHeader .dashboardDiv .headerInputWrap .headerInputSVG {
   position: absolute;
   width: 1.7rem;
   height: 1.7rem;
@@ -128,19 +129,19 @@ h6 {
   top: 9px;
   left: 11px;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerInputWrap .headerInputSVG svg {
+.dashboardHeader .dashboardDiv .headerInputWrap .headerInputSVG svg {
   height: 1.7rem;
   width: 1.7rem;
 }
 @media (max-width: 576px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerInputWrap .headerInputSVG {
+  .dashboardHeader .dashboardDiv .headerInputWrap .headerInputSVG {
     cursor: pointer;
     left: unset;
     top: 2rem;
     right: 16rem;
   }
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerInputWrap input {
+.dashboardHeader .dashboardDiv .headerInputWrap input {
   background-color: #2048e8;
   height: 3.6rem;
   width: 21rem;
@@ -151,41 +152,41 @@ h6 {
   font-size: 1.4rem;
 }
 @media (max-width: 991px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerInputWrap input {
+  .dashboardHeader .dashboardDiv .headerInputWrap input {
     width: 15rem;
   }
 }
 @media (max-width: 768px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerInputWrap input {
+  .dashboardHeader .dashboardDiv .headerInputWrap input {
     width: 16.5rem;
   }
 }
 @media (max-width: 576px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerInputWrap input {
+  .dashboardHeader .dashboardDiv .headerInputWrap input {
     display: none;
   }
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerInputWrap input:focus-visible {
+.dashboardHeader .dashboardDiv .headerInputWrap input:focus-visible {
   outline: none;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerInputWrap input::-moz-placeholder {
+.dashboardHeader .dashboardDiv .headerInputWrap input::-moz-placeholder {
   color: #d1d7e2;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerInputWrap input::placeholder {
+.dashboardHeader .dashboardDiv .headerInputWrap input::placeholder {
   color: #d1d7e2;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav {
+.dashboardHeader .dashboardDiv .headerNav {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 @media (max-width: 834px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav {
+  .dashboardHeader .dashboardDiv .headerNav {
     justify-content: flex-end;
   }
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList {
+.dashboardHeader .dashboardDiv .headerNav .headerNavList {
   flex-grow: 1;
   justify-content: end;
   padding: 1.6rem;
@@ -196,78 +197,78 @@ h6 {
   margin: 0;
 }
 @media (max-width: 1190px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList {
+  .dashboardHeader .dashboardDiv .headerNav .headerNavList {
     gap: 6px;
   }
 }
 @media (max-width: 991px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList {
+  .dashboardHeader .dashboardDiv .headerNav .headerNavList {
     gap: 4px;
   }
 }
 @media (max-width: 834px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList {
+  .dashboardHeader .dashboardDiv .headerNav .headerNavList {
     display: none;
   }
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList li {
+.dashboardHeader .dashboardDiv .headerNav .headerNavList li {
   color: #c0d6ff;
   font-size: 1.6rem;
   font-weight: 500;
   cursor: pointer;
 }
 @media (max-width: 1190px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList li {
+  .dashboardHeader .dashboardDiv .headerNav .headerNavList li {
     font-size: 1.4rem;
   }
 }
 @media (max-width: 991px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList li {
+  .dashboardHeader .dashboardDiv .headerNav .headerNavList li {
     font-size: 1.2rem;
   }
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList li span {
+.dashboardHeader .dashboardDiv .headerNav .headerNavList li span {
   padding-left: 0.2rem;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList li.active {
+.dashboardHeader .dashboardDiv .headerNav .headerNavList li.active {
   color: #ffffff;
   font-weight: 700;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList li .header-dropdown-wrap .header-dropdown {
+.dashboardHeader .dashboardDiv .headerNav .headerNavList li .header-dropdown-wrap .header-dropdown {
   color: #c0d6ff;
   font-size: 1.6rem;
   font-weight: 500;
   cursor: pointer;
 }
 @media (max-width: 1190px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList li .header-dropdown-wrap .header-dropdown {
+  .dashboardHeader .dashboardDiv .headerNav .headerNavList li .header-dropdown-wrap .header-dropdown {
     font-size: 1.4rem;
   }
 }
 @media (max-width: 991px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList li .header-dropdown-wrap .header-dropdown {
+  .dashboardHeader .dashboardDiv .headerNav .headerNavList li .header-dropdown-wrap .header-dropdown {
     font-size: 1.2rem;
   }
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList li .header-dropdown-wrap .header-dropdown.btn {
+.dashboardHeader .dashboardDiv .headerNav .headerNavList li .header-dropdown-wrap .header-dropdown.btn {
   border: none;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList li .header-dropdown-wrap .header-dropdown::after {
+.dashboardHeader .dashboardDiv .headerNav .headerNavList li .header-dropdown-wrap .header-dropdown::after {
   display: none;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList li .header-dropdown-wrap ul li {
+.dashboardHeader .dashboardDiv .headerNav .headerNavList li .header-dropdown-wrap ul li {
   color: #1912d3;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .headerNavList li .header-dropdown-wrap:focus-visible {
+.dashboardHeader .dashboardDiv .headerNav .headerNavList li .header-dropdown-wrap:focus-visible {
   outline: none;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .navLastBlock {
+.dashboardHeader .dashboardDiv .headerNav .navLastBlock {
   height: 100%;
   display: flex;
   align-items: center;
   padding: 0 0.4rem;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .navLastBlock .notificationWrap {
+.dashboardHeader .dashboardDiv .headerNav .navLastBlock .notificationWrap {
   height: 40px;
   width: 40px;
   background-color: #2048e8;
@@ -278,12 +279,12 @@ h6 {
   position: relative;
   cursor: pointer;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .navLastBlock .notificationWrap .notificationIcon {
+.dashboardHeader .dashboardDiv .headerNav .navLastBlock .notificationWrap .notificationIcon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .navLastBlock .notificationWrap .notificationDot {
+.dashboardHeader .dashboardDiv .headerNav .navLastBlock .notificationWrap .notificationDot {
   position: absolute;
   height: 10px;
   width: 10px;
@@ -292,7 +293,7 @@ h6 {
   top: 8px;
   right: 8px;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock {
+.dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock {
   font-size: 1.4rem;
   font-weight: 500;
   display: flex;
@@ -300,35 +301,35 @@ h6 {
   align-items: center;
   gap: 10px;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock h3 {
+.dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock h3 {
   cursor: pointer;
   color: #82a0ff;
   margin: 0;
 }
 @media (max-width: 1190px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock h3 {
+  .dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock h3 {
     font-size: 1.4rem;
   }
 }
 @media (max-width: 991px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock h3 {
+  .dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock h3 {
     font-size: 1.2rem;
   }
 }
 @media (max-width: 768px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock h3 {
+  .dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock h3 {
     font-size: 1.3rem;
   }
 }
 @media (max-width: 576px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock h3 {
+  .dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock h3 {
     display: none;
   }
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock h3 span {
+.dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock h3 span {
   color: #ffffff;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock .headerUserIconWrap {
+.dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock .headerUserIconWrap {
   cursor: pointer;
   height: 40px;
   width: 40px;
@@ -338,42 +339,42 @@ h6 {
   align-items: center;
   justify-content: center;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock .headerUserIconWrap .headerUserIcon {
+.dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock .headerUserIconWrap .headerUserIcon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu {
+.dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu {
   display: none;
 }
 @media (max-width: 834px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu {
+  .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu {
     display: block;
   }
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu.open .hamburger-icon span:first-child {
+.dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu.open .hamburger-icon span:first-child {
   transform: rotate(45deg);
   top: 10px;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu.open .hamburger-icon span:nth-child(2) {
+.dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu.open .hamburger-icon span:nth-child(2) {
   opacity: 0;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu.open .hamburger-icon span:nth-child(3) {
+.dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu.open .hamburger-icon span:nth-child(3) {
   transform: rotate(-45deg);
   top: 10px;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu.open .responsiveMenu-wrap {
+.dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu.open .responsiveMenu-wrap {
   width: 50vw;
 }
 @media (max-width: 480px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu.open .responsiveMenu-wrap {
+  .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu.open .responsiveMenu-wrap {
     width: 100%;
   }
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu.open .responsiveMenu-wrap h1 {
+  .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu.open .responsiveMenu-wrap h1 {
     text-align: center;
   }
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .hamburger-icon {
+.dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .hamburger-icon {
   display: block;
   width: 30px;
   height: 20px;
@@ -383,7 +384,7 @@ h6 {
   z-index: 999;
   cursor: pointer;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .hamburger-icon span {
+.dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .hamburger-icon span {
   display: block;
   height: 3px;
   width: 100%;
@@ -391,13 +392,13 @@ h6 {
   position: absolute;
   transition: transform 0.3s ease;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .hamburger-icon span:nth-child(2) {
+.dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .hamburger-icon span:nth-child(2) {
   top: 7px;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .hamburger-icon span:nth-child(3) {
+.dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .hamburger-icon span:nth-child(3) {
   top: 14px;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsiveMenu-wrap {
+.dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsiveMenu-wrap {
   position: absolute;
   height: 100vh;
   width: 0vw;
@@ -408,29 +409,29 @@ h6 {
   overflow-x: hidden;
   transition: width 0.5s ease;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsiveMenu-wrap h1 {
+.dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsiveMenu-wrap h1 {
   font-size: 2.2rem;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsiveMenu-wrap ul {
+.dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsiveMenu-wrap ul {
   color: #fff;
   margin: 0;
   padding: 0;
   text-align: center;
   font-size: 1.6rem;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsiveMenu-wrap ul li {
+.dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsiveMenu-wrap ul li {
   padding: 1rem;
   border-bottom: 1px solid #888888;
   cursor: pointer;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsiveMenu-wrap ul li .li-dropdown {
+.dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsiveMenu-wrap ul li .li-dropdown {
   height: 0;
   transition: all 0.3s ease;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsiveMenu-wrap ul li .li-dropdown ul {
+.dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsiveMenu-wrap ul li .li-dropdown ul {
   background-color: #fff;
   color: #001dff;
   display: none;
@@ -439,26 +440,26 @@ h6 {
           user-select: none;
   transition: all 0.3s ease;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsiveMenu-wrap ul li .li-dropdown ul li {
+.dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsiveMenu-wrap ul li .li-dropdown ul li {
   border-bottom: 1px solid #001dff;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
   transition: all 0.3s ease;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsiveMenu-wrap ul li.open .li-dropdown {
+.dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsiveMenu-wrap ul li.open .li-dropdown {
   height: -moz-fit-content;
   height: fit-content;
   margin: 1rem;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsiveMenu-wrap ul li.open .li-dropdown ul {
+.dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsiveMenu-wrap ul li.open .li-dropdown ul {
   display: block;
 }
-#dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap {
+.dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap {
   display: none;
 }
 @media (max-width: 480px) {
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap {
+  .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap {
     display: block;
     height: 100%;
     width: 100%;
@@ -470,11 +471,11 @@ h6 {
     z-index: -999;
     transition: all 0.3s ease;
   }
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap .resHeaderInputWrap {
+  .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap .resHeaderInputWrap {
     position: relative;
     padding: 0rem 1rem;
   }
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap .resHeaderInputWrap span {
+  .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap .resHeaderInputWrap span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -484,7 +485,7 @@ h6 {
     top: 10px;
     left: 20px;
   }
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap .resHeaderInputWrap input {
+  .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap .resHeaderInputWrap input {
     background-color: #2048e8;
     height: 3.6rem;
     width: 100%;
@@ -494,43 +495,44 @@ h6 {
     font-size: 1.4rem;
     border: 1px solid #7d7d7d;
   }
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap .resHeaderInputWrap input:focus-visible {
+  .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap .resHeaderInputWrap input:focus-visible {
     outline: none;
   }
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap .resHeaderInputWrap input::-moz-placeholder {
+  .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap .resHeaderInputWrap input::-moz-placeholder {
     color: #d1d7e2;
   }
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap .resHeaderInputWrap input::placeholder {
+  .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap .resHeaderInputWrap input::placeholder {
     color: #d1d7e2;
   }
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap .resSearchClose {
+  .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap .resSearchClose {
     padding: 1rem;
     display: flex;
     justify-content: space-between;
   }
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap .resSearchClose h1 {
+  .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap .resSearchClose h1 {
     font-size: 2rem;
     text-align: center;
     padding: 0;
     width: 100%;
   }
-  #dashboardSection .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap.open {
+  .dashboardHeader .dashboardDiv .headerNav .responsiveHeaderMenu .responsive-search-wrap.open {
     opacity: 1;
     z-index: 9999;
   }
 }
-#dashboardSection .BodyWrapper {
+
+.BodyWrapper {
   display: flex;
 }
-#dashboardSection .BodyWrapper .sideBarDiv {
+.BodyWrapper .sideBarDiv {
   transition: width 250ms ease-out;
   max-width: 100%;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar {
+.BodyWrapper .sideBarDiv #sidebar {
   height: 100%;
   background-color: #1912d3;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap {
   height: 87vh;
   position: sticky;
   top: 0;
@@ -539,20 +541,20 @@ h6 {
   scrollbar-width: none;
 }
 @media (max-width: 576px) {
-  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap svg {
+  .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap svg {
     height: 15px;
   }
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap {
   margin-left: 1rem;
   background-color: #1912d3;
 }
 @media (max-width: 768px) {
-  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap {
+  .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap {
     margin: 0;
   }
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sideMenuTitle {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sideMenuTitle {
   padding: 1.2rem 1.5rem;
   display: flex;
   font-size: 1.8rem;
@@ -563,22 +565,22 @@ h6 {
   cursor: pointer;
 }
 @media (max-width: 991px) {
-  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sideMenuTitle {
+  .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sideMenuTitle {
     font-size: 1.6rem;
   }
 }
 @media (max-width: 768px) {
-  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sideMenuTitle {
+  .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sideMenuTitle {
     gap: 8px;
     padding: 1.2rem;
   }
 }
 @media (max-width: 320px) {
-  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sideMenuTitle {
+  .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sideMenuTitle {
     font-size: 1.4rem;
   }
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sideMenuTitle p {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sideMenuTitle p {
   color: #ffffff;
   margin: 0;
   transition-property: opacity, transform;
@@ -586,115 +588,115 @@ h6 {
   transition-timing-function: ease-out;
   transition-delay: 100ms;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sideMenuTitle span {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sideMenuTitle span {
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sideMenuTitle span svg path {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sideMenuTitle span svg path {
   fill: #ffffff;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList {
   margin: 0;
   padding: 0;
   color: #ffffff;
   margin-bottom: 1rem;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li {
   background-color: #1912d3;
   color: #c0d6ff;
   cursor: pointer;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li div {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li div {
   padding: 1.2rem 1.5rem;
   display: flex;
   gap: 15px;
   align-items: center;
 }
 @media (max-width: 768px) {
-  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li div {
+  .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li div {
     padding: 1.2rem;
     gap: 8px;
   }
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li div span {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li div span {
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li div span svg path {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li div span svg path {
   fill: #c0d6ff;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li div p {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li div p {
   margin: 0;
   font-size: 1.6rem;
 }
 @media (max-width: 991px) {
-  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li div p {
+  .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li div p {
     font-size: 1.4rem;
   }
 }
 @media (max-width: 320px) {
-  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li div p {
+  .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li div p {
     font-size: 1.2rem;
   }
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li.open div {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li.open div {
   background-color: #ffffff;
   color: #1912d3;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   font-weight: 700;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li.open div span svg path {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li.open div span svg path {
   fill: #1912d3;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li.before-open {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li.before-open {
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li.before-open div {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li.before-open div {
   background-color: #1912d3;
   border-bottom-right-radius: 25px;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li.after-open {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li.after-open {
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li.after-open div {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .sideMenuListWrap .sidebarMenuList li.after-open div {
   background-color: #1912d3;
   border-top-right-radius: 25px;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginClient {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginClient {
   background-color: #172f78;
   color: #ffffff;
   font-size: 1.6rem;
   padding: 1.2rem 2rem;
 }
 @media (max-width: 576px) {
-  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginClient {
+  .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginClient {
     font-size: 1.4rem;
   }
 }
 @media (max-width: 320px) {
-  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginClient {
+  .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginClient {
     font-size: 1.2rem;
   }
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginClient p {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginClient p {
   margin: 0;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap {
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
   margin-bottom: 1rem;
 }
 @media (max-width: 991px) {
-  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap {
+  .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap {
     padding: 1rem;
   }
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown {
   flex-grow: 1;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .loginDropDownBtn {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .loginDropDownBtn {
   color: #c0d6ff !important;
   font-size: 1.6rem;
   width: 100%;
@@ -710,20 +712,20 @@ h6 {
   border-bottom-left-radius: 0.5rem;
 }
 @media (max-width: 576px) {
-  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .loginDropDownBtn {
+  .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .loginDropDownBtn {
     font-size: 1.4rem;
   }
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .loginDropDownBtn::after {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .loginDropDownBtn::after {
   display: none;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list {
   width: 100%;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .login-inputWrap {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .login-inputWrap {
   position: relative;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .login-inputWrap input {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .login-inputWrap input {
   background-color: #ffffff;
   height: 3.6rem;
   width: 90%;
@@ -735,14 +737,14 @@ h6 {
   margin: 0 0.5rem;
 }
 @media (max-width: 480px) {
-  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .login-inputWrap input {
+  .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .login-inputWrap input {
     padding-left: 2.8rem;
   }
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .login-inputWrap input:focus-visible {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .login-inputWrap input:focus-visible {
   outline: none;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .login-inputWrap span {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .login-inputWrap span {
   position: absolute;
   width: 1.7rem;
   height: 1.7rem;
@@ -750,39 +752,39 @@ h6 {
   top: 9px;
   left: 11px;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .login-inputWrap span svg path {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .login-inputWrap span svg path {
   fill: #000;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .dropDownNonItem {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .dropDownNonItem {
   font-size: 1.6rem;
   padding: 1rem;
   font-weight: 700;
 }
 @media (max-width: 480px) {
-  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .dropDownNonItem {
+  .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .dropDownNonItem {
     font-size: 1.4rem;
   }
 }
 @media (max-width: 360px) {
-  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .dropDownNonItem {
+  .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list .dropDownNonItem {
     padding: 0.5rem 1rem;
   }
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list li a {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list li a {
   font-size: 1.4rem;
   padding: 1rem;
   white-space: normal;
 }
 @media (max-width: 360px) {
-  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list li a {
+  .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list li a {
     padding: 0.5rem 1rem;
   }
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list li a:hover {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .loginDropdown .login-dropdown-list li a:hover {
   background-color: #1912d3;
   color: #ffffff;
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .redirectButton {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .redirectButton {
   display: flex;
   align-items: center;
   border: 1px solid #ffffff;
@@ -792,34 +794,34 @@ h6 {
   cursor: pointer;
 }
 @media (max-width: 576px) {
-  #dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .redirectButton {
+  .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .redirectButton {
     border: none;
   }
 }
-#dashboardSection .BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .redirectButton svg path {
+.BodyWrapper .sideBarDiv #sidebar .sidebarMenuWrap .loginOptionWrap .redirectButton svg path {
   fill: #ffffff;
 }
-#dashboardSection .BodyWrapper .sideBarDiv.collapsed-sidebar {
+.BodyWrapper .sideBarDiv.collapsed-sidebar {
   width: 6rem;
 }
 @media (max-width: 768px) {
-  #dashboardSection .BodyWrapper .sideBarDiv.collapsed-sidebar {
+  .BodyWrapper .sideBarDiv.collapsed-sidebar {
     width: 4.2rem;
   }
 }
-#dashboardSection .BodyWrapper .sideBarDiv.collapsed-sidebar p {
+.BodyWrapper .sideBarDiv.collapsed-sidebar p {
   display: none;
 }
-#dashboardSection .BodyWrapper .sideBarDiv.collapsed-sidebar .loginClient,
-#dashboardSection .BodyWrapper .sideBarDiv.collapsed-sidebar .loginOptionWrap {
+.BodyWrapper .sideBarDiv.collapsed-sidebar .loginClient,
+.BodyWrapper .sideBarDiv.collapsed-sidebar .loginOptionWrap {
   display: none !important;
 }
-#dashboardSection .BodyWrapper .BodyDiv {
+.BodyWrapper .BodyDiv {
   transition: width 250ms ease-out;
   max-width: 100%;
   flex: 1;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap {
+.BodyWrapper .BodyDiv #dashboardWrap {
   background-color: #ffffff;
   height: 98%;
   border-radius: 1rem;
@@ -834,19 +836,19 @@ h6 {
   height: 86vh;
   background-color: #f1f5ff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow {
   display: flex;
   gap: 10px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide {
   border-radius: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap {
   position: relative;
   background: linear-gradient(90deg, rgb(12, 66, 230) 0%, rgb(0, 55, 128) 100%);
   border-radius: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeTitle {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeTitle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -855,25 +857,25 @@ h6 {
   position: relative;
   z-index: 999;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeTitle h2 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeTitle h2 {
   font-size: 2.6rem;
   font-weight: 700;
   color: #ffffff;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeTitle h2 span {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeTitle h2 span {
   color: #43e3e0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeSubtext {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeSubtext {
   width: 30rem;
   margin: 0 auto;
   padding-bottom: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeSubtext p {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeSubtext p {
   color: #d9d9d9;
   font-size: 1.4rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .userImgDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .userImgDiv {
   background-image: url(/assets/img/user.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -885,22 +887,22 @@ h6 {
   left: 41px;
   z-index: 2;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .logo1Div {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .logo1Div {
   position: absolute;
   bottom: 8px;
   left: 8px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .logo2Div {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .logo2Div {
   position: absolute;
   top: 10px;
   left: 150px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .arrowDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .arrowDiv {
   position: absolute;
   top: -24px;
   right: -19px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .serverDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .serverDiv {
   background-image: url(/assets/img/serverImg.png);
   background-position: top;
   background-repeat: no-repeat;
@@ -911,7 +913,7 @@ h6 {
   top: 0;
   right: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap::after {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap::after {
   content: "";
   background-image: url(/assets/img/dash-wel-flow.svg);
   background-position: bottom;
@@ -923,62 +925,62 @@ h6 {
   top: 0;
   left: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap {
   background-color: #ffffff;
   border-radius: 1rem;
   margin: 1rem 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap {
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap h3 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap h3 {
   color: #172f78;
   font-size: 1.6rem;
   font-weight: 500;
   font-weight: 600;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   gap: 10px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphPaidDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphPaidDiv {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphPaidDiv span {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphPaidDiv span {
   background-color: #001dff;
   border-radius: 50%;
   height: 1rem;
   width: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphPaidDiv h5 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphPaidDiv h5 {
   font-weight: 500;
   font-size: 1rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphInvoiceDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphInvoiceDiv {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphInvoiceDiv span {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphInvoiceDiv span {
   background-color: #ff7664;
   border-radius: 50%;
   height: 1rem;
   width: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphInvoiceDiv h5 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphLegends .graphInvoiceDiv h5 {
   font-weight: 500;
   font-size: 1rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -987,14 +989,14 @@ h6 {
   padding: 0.1rem;
   position: relative;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap span {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap span {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
   border-right: 1px solid #d1d7e2;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap input {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap input {
   border: none;
   padding: 0.5rem;
   width: 7rem;
@@ -1003,39 +1005,39 @@ h6 {
   font-size: 1.4rem;
   color: #172f78;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap input:focus-visible {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap input:focus-visible {
   outline: none;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap .graphDateSVG {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap .graphDateWrap .graphDateSVG {
   position: absolute;
   right: 10px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphDiv {
   padding: 1rem;
   padding-top: 0;
   height: 259px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow {
   display: flex;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv {
   background-color: #ffffff;
   border-radius: 1rem;
   margin-right: 10px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidTitleWrap {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidTitleWrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidTitleWrap h4 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidTitleWrap h4 {
   font-size: 1.4rem;
   font-weight: 600;
   margin: 0;
   color: #172f78;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidTitleWrap span {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidTitleWrap span {
   background-color: #f1f5ff;
   display: flex;
   align-items: center;
@@ -1043,7 +1045,7 @@ h6 {
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap {
   height: 46vh;
   position: sticky;
   top: 0;
@@ -1052,35 +1054,35 @@ h6 {
   scrollbar-width: none;
   height: 33vh;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable {
   margin-top: 2rem;
   width: 100%;
   width: 90%;
   margin: 0 auto;
   border-radius: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th {
   color: #172f78;
   font-size: 1.6rem;
   font-weight: 500;
   padding: 1rem 2rem;
   text-align: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th:first-child div {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th:first-child div {
   padding-right: 1rem;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th:first-child div input {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th:first-child div input {
   height: 1.6rem;
   width: 1.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th:nth-child(even) {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th:nth-child(even) {
   border-right: 1px solid #dcefff;
   border-left: 1px solid #dcefff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td {
   text-align: center;
   color: #888888;
   font-weight: 400;
@@ -1089,60 +1091,60 @@ h6 {
   padding: 1rem 0;
   text-overflow: ellipsis;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td .tableIcon {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td .tableIcon {
   display: flex;
   gap: 10px;
   align-items: center;
   padding: 0 2rem;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td .tableIcon a {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td .tableIcon a {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td:first-child div {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td:first-child div {
   padding: 1rem 2rem;
   padding-right: 1rem;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td:first-child div input {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td:first-child div input {
   height: 1.6rem;
   width: 1.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td:nth-child(even) {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td:nth-child(even) {
   border-right: 1px solid #dcefff;
   border-left: 1px solid #dcefff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr:nth-child(even) {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr:nth-child(even) {
   background-color: #f9fbff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr:nth-child(odd) {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr:nth-child(odd) {
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr:first-child {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr:first-child {
   background-color: #edf3ff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv {
   background-color: #ffffff;
   border-radius: 1rem;
   margin-right: 10px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .recentTicketTitleWrap {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .recentTicketTitleWrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .recentTicketTitleWrap h4 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .recentTicketTitleWrap h4 {
   font-size: 1.4rem;
   font-weight: 600;
   margin: 0;
   color: #172f78;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .recentTicketTitleWrap span {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .recentTicketTitleWrap span {
   background-color: #f1f5ff;
   display: flex;
   align-items: center;
@@ -1150,7 +1152,7 @@ h6 {
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv {
   height: 46vh;
   position: sticky;
   top: 0;
@@ -1159,7 +1161,7 @@ h6 {
   scrollbar-width: none;
   height: 33vh;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap {
   margin: 0 1rem;
   padding: 1rem 0;
   display: flex;
@@ -1167,46 +1169,46 @@ h6 {
   border-bottom: 1px solid #bfbdff;
   justify-content: space-around;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketCardImg img {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketCardImg img {
   border-radius: 50%;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketDetailsWrap {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketDetailsWrap {
   padding: 0 0.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketDetailsWrap h5 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketDetailsWrap h5 {
   color: #172f78;
   font-size: 1.3rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketDetailsWrap p {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketDetailsWrap p {
   margin: 0;
   font-size: 1rem;
   color: #8e8e8e;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap button {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap button {
   background-color: #ffe6e2;
   color: #b42d16;
   border: none;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv {
   background-color: #ffffff;
   border-radius: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .recentPackagesTitleWrap {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .recentPackagesTitleWrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .recentPackagesTitleWrap h4 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .recentPackagesTitleWrap h4 {
   font-size: 1.4rem;
   font-weight: 600;
   margin: 0;
   color: #172f78;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .recentPackagesTitleWrap span {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .recentPackagesTitleWrap span {
   background-color: #f1f5ff;
   display: flex;
   align-items: center;
@@ -1214,7 +1216,7 @@ h6 {
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv {
   height: 46vh;
   position: sticky;
   top: 0;
@@ -1223,7 +1225,7 @@ h6 {
   scrollbar-width: none;
   height: 33vh;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard {
   display: flex;
   align-items: center;
   margin: 0 2rem;
@@ -1231,23 +1233,23 @@ h6 {
   border-bottom: 1px solid #bfbdff;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard p {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard p {
   color: #7d7d7d;
   font-size: 1rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageInfo h5 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageInfo h5 {
   font-size: 1.3rem;
   color: #172f78;
   font-weight: 400;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageTime {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageTime {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageTime .packageLogoDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageTime .packageLogoDiv {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1255,16 +1257,16 @@ h6 {
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageTime .packagePendingDiv span {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard .packageTime .packagePendingDiv span {
   font-size: 1.2rem;
   color: #172f78;
   font-weight: 500;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide {
   border-radius: 1rem;
   margin-right: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv {
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   display: flex;
@@ -1273,7 +1275,7 @@ h6 {
   justify-content: space-between;
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdlogoDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdlogoDiv {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1281,27 +1283,27 @@ h6 {
   background-color: #e3f8fa;
   border-radius: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv h5 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv h5 {
   font-size: 3rem;
   font-weight: 600;
   color: #172f78;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv p {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv p {
   color: #0c6e7b;
   font-size: 1.6rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdCircleDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdCircleDiv {
   height: 4.6rem;
   width: 4.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv {
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   display: flex;
@@ -1310,7 +1312,7 @@ h6 {
   justify-content: space-between;
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phlogoDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phlogoDiv {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1319,33 +1321,33 @@ h6 {
   border-radius: 0.5rem;
   background-color: #fff9dd;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv h5 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv h5 {
   font-size: 3rem;
   font-weight: 600;
   color: #172f78;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv p {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv p {
   color: #0c6e7b;
   font-size: 1.6rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv p {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv p {
   color: #90790d;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv h5 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv h5 {
   color: #90790d;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phCircleDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phCircleDiv {
   height: 4.6rem;
   width: 4.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv {
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   display: flex;
@@ -1354,7 +1356,7 @@ h6 {
   justify-content: space-between;
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uilogoDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uilogoDiv {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1363,33 +1365,33 @@ h6 {
   border-radius: 0.5rem;
   background-color: #f4e5fd;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv h5 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv h5 {
   font-size: 3rem;
   font-weight: 600;
   color: #172f78;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv p {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv p {
   color: #0c6e7b;
   font-size: 1.6rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv p {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv p {
   color: #611592;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv h5 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv h5 {
   color: #611592;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiCircleDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiCircleDiv {
   height: 4.6rem;
   width: 4.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv {
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   display: flex;
@@ -1398,7 +1400,7 @@ h6 {
   justify-content: space-between;
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atlogoDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atlogoDiv {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1407,140 +1409,140 @@ h6 {
   border-radius: 0.5rem;
   background-color: #ffe6e2;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv h5 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv h5 {
   font-size: 3rem;
   font-weight: 600;
   color: #172f78;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv p {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv p {
   color: #0c6e7b;
   font-size: 1.6rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv p {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv p {
   color: #b42d16;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv h5 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv h5 {
   color: #b42d16;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atCircleDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atCircleDiv {
   height: 4.6rem;
   width: 4.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart {
   padding: 0.5rem;
   border-radius: 1rem;
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv {
   padding: 0.5rem;
   padding-bottom: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv h3 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv h3 {
   color: #172f78;
   font-weight: 600;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv p {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv p {
   color: #888888;
   font-weight: 400;
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv h3 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv h3 {
   font-size: 1.6rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv p {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv p {
   font-size: 1.2rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieDiv {
   width: 100%;
   height: 25rem;
   background: white;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 1rem 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartPaidDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartPaidDiv {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartPaidDiv span {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartPaidDiv span {
   background-color: #001dff;
   border-radius: 50%;
   height: 1rem;
   width: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartPaidDiv h5 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartPaidDiv h5 {
   font-weight: 500;
   font-size: 1rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartOutstandingDiv {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartOutstandingDiv {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartOutstandingDiv span {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartOutstandingDiv span {
   background-color: #ff7664;
   border-radius: 50%;
   height: 1rem;
   width: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartOutstandingDiv h5 {
+.BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieChartLegends .pieChartOutstandingDiv h5 {
   font-weight: 500;
   font-size: 1rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap {
+.BodyWrapper .BodyDiv #hosting-services-wrap {
   background-color: #ffffff;
   height: 98%;
   border-radius: 1rem;
   margin-right: 1rem;
   padding: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap {
   display: flex;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-title-wrap {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-title-wrap {
   padding: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-title-wrap h3 {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-title-wrap h3 {
   color: #172f78;
   font-weight: 600;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-title-wrap p {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-title-wrap p {
   color: #888888;
   font-weight: 400;
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-search-wrap {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-search-wrap {
   display: flex;
   gap: 10px;
   justify-content: flex-end;
   align-items: center;
   padding: 0rem 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-search-wrap .hs-InputWrap {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-search-wrap .hs-InputWrap {
   position: relative;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-search-wrap .hs-InputWrap span {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-search-wrap .hs-InputWrap span {
   position: absolute;
   width: 1.6rem;
   height: 1.6rem;
@@ -1548,10 +1550,10 @@ h6 {
   top: 9px;
   left: 11px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-search-wrap .hs-InputWrap span svg path {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-search-wrap .hs-InputWrap span svg path {
   fill: #172f78;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-search-wrap .hs-InputWrap input {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-search-wrap .hs-InputWrap input {
   background-color: #edf3ff;
   height: 3.6rem;
   width: 25rem;
@@ -1561,10 +1563,10 @@ h6 {
   padding-left: 3.5rem;
   font-size: 1.4rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-search-wrap .hs-InputWrap input:focus-visible {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-search-wrap .hs-InputWrap input:focus-visible {
   outline: none;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-search-wrap .new-hosting-div {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-search-wrap .new-hosting-div {
   font-size: 1.6rem;
   background-color: #1912d3;
   border-radius: 0.5rem;
@@ -1575,37 +1577,37 @@ h6 {
   gap: 10px;
   cursor: pointer;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-search-wrap .new-hosting-div span {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-search-wrap .new-hosting-div span {
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-search-wrap .new-hosting-div p {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-topbar-wrap .hs-search-wrap .new-hosting-div p {
   margin: 0;
   color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap {
   background-color: #f9fbff;
   border-radius: 0.5rem;
   margin: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead {
   display: flex;
   justify-content: space-between;
   padding: 1.4rem;
   border-bottom: 1px solid #dcefff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .showEntriesWrap {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .showEntriesWrap {
   display: flex;
   align-items: center;
   gap: 10px;
   justify-content: flex-start;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .showEntriesWrap span {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .showEntriesWrap span {
   color: #888888;
   font-weight: 400;
   font-size: 1.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .showEntriesWrap select {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .showEntriesWrap select {
   color: #172f78;
   font-weight: 600;
   font-size: 1.6rem;
@@ -1614,15 +1616,15 @@ h6 {
   padding: 0.2rem;
   background-color: transparent;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .showEntriesWrap select:focus-visible {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .showEntriesWrap select:focus-visible {
   outline: none;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .filterWrap {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .filterWrap {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .filterWrap button {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .filterWrap button {
   color: #172f78;
   font-weight: 600;
   font-size: 1.6rem;
@@ -1635,16 +1637,16 @@ h6 {
   justify-content: center;
   gap: 5px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .filterWrap button span {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .filterWrap button span {
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .filterWrap .hs-dateWrap {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .filterWrap .hs-dateWrap {
   position: relative;
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .filterWrap .hs-dateWrap span {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .filterWrap .hs-dateWrap span {
   position: absolute;
   width: 1.7rem;
   height: 1.7rem;
@@ -1654,7 +1656,7 @@ h6 {
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .filterWrap .hs-dateWrap input {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .filterWrap .hs-dateWrap input {
   color: #172f78;
   font-weight: 600;
   font-size: 1.6rem;
@@ -1667,10 +1669,10 @@ h6 {
   cursor: pointer;
   caret-color: transparent;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .filterWrap .hs-dateWrap input:focus-visible {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .tableInfoHead .filterWrap .hs-dateWrap input:focus-visible {
   outline: none;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow {
   height: 46vh;
   position: sticky;
   top: 0;
@@ -1678,32 +1680,32 @@ h6 {
   overflow-y: auto;
   scrollbar-width: none;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table {
   margin-top: 2rem;
   width: 100%;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr th {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr th {
   color: #172f78;
   font-size: 1.6rem;
   font-weight: 500;
   padding: 1rem 2rem;
   text-align: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr th:first-child div {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr th:first-child div {
   padding-right: 1rem;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr th:first-child div input {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr th:first-child div input {
   height: 1.6rem;
   width: 1.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr th:nth-child(even) {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr th:nth-child(even) {
   border-right: 1px solid #dcefff;
   border-left: 1px solid #dcefff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr td {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr td {
   text-align: center;
   color: #888888;
   font-weight: 400;
@@ -1712,106 +1714,106 @@ h6 {
   padding: 1rem 0;
   text-overflow: ellipsis;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr td .tableIcon {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr td .tableIcon {
   display: flex;
   gap: 10px;
   align-items: center;
   padding: 0 2rem;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr td .tableIcon a {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr td .tableIcon a {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr td:first-child div {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr td:first-child div {
   padding: 1rem 2rem;
   padding-right: 1rem;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr td:first-child div input {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr td:first-child div input {
   height: 1.6rem;
   width: 1.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr td:nth-child(even) {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr td:nth-child(even) {
   border-right: 1px solid #dcefff;
   border-left: 1px solid #dcefff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr:nth-child(even) {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr:nth-child(even) {
   background-color: #f9fbff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr:nth-child(odd) {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr:nth-child(odd) {
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr:first-child {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-overflow .hs-table tr:first-child {
   background-color: #edf3ff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-pagination {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-pagination {
   display: flex;
   justify-content: space-between;
   padding: 1.4rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-pagination .showingEntriesWrap p {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-pagination .showingEntriesWrap p {
   color: #888888;
   font-weight: 400;
   font-size: 1.6rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-pagination .hs-pagination-wrap .hs-pagination {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-pagination .hs-pagination-wrap .hs-pagination {
   display: flex;
   gap: 10px;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-pagination .hs-pagination-wrap .hs-pagination li {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-pagination .hs-pagination-wrap .hs-pagination li {
   background-color: #edf3ff;
   color: #94a2bc;
   font-size: 1.4rem;
   padding: 0.6rem 1.2rem;
   border-radius: 0.4rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-pagination .hs-pagination-wrap .hs-pagination li.active {
+.BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-pagination .hs-pagination-wrap .hs-pagination li.active {
   color: #ffffff;
   background-color: #1912d3;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap {
+.BodyWrapper .BodyDiv #orders-wrap {
   background-color: #ffffff;
   height: 98%;
   border-radius: 1rem;
   margin-right: 1rem;
   padding: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap {
+.BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap {
   display: flex;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-title-wrap {
+.BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-title-wrap {
   padding: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-title-wrap h3 {
+.BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-title-wrap h3 {
   color: #172f78;
   font-weight: 600;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-title-wrap p {
+.BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-title-wrap p {
   color: #888888;
   font-weight: 400;
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap {
+.BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap {
   display: flex;
   gap: 10px;
   justify-content: flex-end;
   align-items: center;
   padding: 0rem 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .orders-InputWrap {
+.BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .orders-InputWrap {
   position: relative;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .orders-InputWrap span {
+.BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .orders-InputWrap span {
   position: absolute;
   width: 1.6rem;
   height: 1.6rem;
@@ -1819,10 +1821,10 @@ h6 {
   top: 9px;
   left: 11px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .orders-InputWrap span svg path {
+.BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .orders-InputWrap span svg path {
   fill: #172f78;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .orders-InputWrap input {
+.BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .orders-InputWrap input {
   background-color: #edf3ff;
   height: 3.6rem;
   width: 25rem;
@@ -1832,10 +1834,10 @@ h6 {
   padding-left: 3.5rem;
   font-size: 1.4rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .orders-InputWrap input:focus-visible {
+.BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .orders-InputWrap input:focus-visible {
   outline: none;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .new-order-div {
+.BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .new-order-div {
   font-size: 1.6rem;
   background-color: #1912d3;
   border-radius: 0.5rem;
@@ -1846,37 +1848,37 @@ h6 {
   gap: 10px;
   cursor: pointer;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .new-order-div span {
+.BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .new-order-div span {
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .new-order-div p {
+.BodyWrapper .BodyDiv #orders-wrap .orders-topbar-wrap .orders-search-wrap .new-order-div p {
   margin: 0;
   color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap {
   background-color: #f9fbff;
   border-radius: 0.5rem;
   margin: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead {
   display: flex;
   justify-content: space-between;
   padding: 1.4rem;
   border-bottom: 1px solid #dcefff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .showOrderEntries {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .showOrderEntries {
   display: flex;
   align-items: center;
   gap: 10px;
   justify-content: flex-start;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .showOrderEntries span {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .showOrderEntries span {
   color: #888888;
   font-weight: 400;
   font-size: 1.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .showOrderEntries select {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .showOrderEntries select {
   color: #172f78;
   font-weight: 600;
   font-size: 1.6rem;
@@ -1885,15 +1887,15 @@ h6 {
   padding: 0.2rem;
   background-color: transparent;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .showOrderEntries select:focus-visible {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .showOrderEntries select:focus-visible {
   outline: none;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap button {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap button {
   color: #172f78;
   font-weight: 600;
   font-size: 1.6rem;
@@ -1906,16 +1908,16 @@ h6 {
   justify-content: center;
   gap: 5px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap button span {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap button span {
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap .order-dateWrap {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap .order-dateWrap {
   position: relative;
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap .order-dateWrap span {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap .order-dateWrap span {
   position: absolute;
   width: 1.7rem;
   height: 1.7rem;
@@ -1925,7 +1927,7 @@ h6 {
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap .order-dateWrap input {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap .order-dateWrap input {
   color: #172f78;
   font-weight: 600;
   font-size: 1.6rem;
@@ -1938,10 +1940,10 @@ h6 {
   cursor: pointer;
   caret-color: transparent;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap .order-dateWrap input:focus-visible {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .orders-table-infoHead .orderFilterWrap .order-dateWrap input:focus-visible {
   outline: none;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow {
   height: 46vh;
   position: sticky;
   top: 0;
@@ -1949,32 +1951,32 @@ h6 {
   overflow-y: auto;
   scrollbar-width: none;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table {
   margin-top: 2rem;
   width: 100%;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr th {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr th {
   color: #172f78;
   font-size: 1.6rem;
   font-weight: 500;
   padding: 1rem 2rem;
   text-align: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr th:first-child div {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr th:first-child div {
   padding-right: 1rem;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr th:first-child div input {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr th:first-child div input {
   height: 1.6rem;
   width: 1.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr th:nth-child(even) {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr th:nth-child(even) {
   border-right: 1px solid #dcefff;
   border-left: 1px solid #dcefff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr td {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr td {
   text-align: center;
   color: #888888;
   font-weight: 400;
@@ -1983,79 +1985,79 @@ h6 {
   padding: 1rem 0;
   text-overflow: ellipsis;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr td .tableIcon {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr td .tableIcon {
   display: flex;
   gap: 10px;
   align-items: center;
   padding: 0 2rem;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr td .tableIcon a {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr td .tableIcon a {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr td:first-child div {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr td:first-child div {
   padding: 1rem 2rem;
   padding-right: 1rem;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr td:first-child div input {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr td:first-child div input {
   height: 1.6rem;
   width: 1.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr td:nth-child(even) {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr td:nth-child(even) {
   border-right: 1px solid #dcefff;
   border-left: 1px solid #dcefff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr:nth-child(even) {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr:nth-child(even) {
   background-color: #f9fbff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr:nth-child(odd) {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr:nth-child(odd) {
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr:first-child {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table tr:first-child {
   background-color: #edf3ff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table td .orderTableIcon {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table td .orderTableIcon {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table td .orderTableIcon a {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-overflow .order-table td .orderTableIcon a {
   cursor: pointer;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-pagination {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-pagination {
   display: flex;
   justify-content: space-between;
   padding: 1.4rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-pagination .orderEntriesWrap p {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-pagination .orderEntriesWrap p {
   color: #888888;
   font-weight: 400;
   font-size: 1.6rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-pagination .order-pagination-wrap .order-pagination {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-pagination .order-pagination-wrap .order-pagination {
   display: flex;
   gap: 10px;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-pagination .order-pagination-wrap .order-pagination li {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-pagination .order-pagination-wrap .order-pagination li {
   background-color: #edf3ff;
   color: #94a2bc;
   font-size: 1.4rem;
   padding: 0.6rem 1.2rem;
   border-radius: 0.4rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-pagination .order-pagination-wrap .order-pagination li.active {
+.BodyWrapper .BodyDiv #orders-wrap .orders-table-wrap .order-table-pagination .order-pagination-wrap .order-pagination li.active {
   color: #ffffff;
   background-color: #1912d3;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap {
+.BodyWrapper .BodyDiv #pt-wrap {
   background-color: #ffffff;
   height: 98%;
   border-radius: 1rem;
@@ -2070,31 +2072,31 @@ h6 {
   height: 86vh;
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap {
+.BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap {
   display: flex;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-title-wrap {
+.BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-title-wrap {
   padding: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-title-wrap h3 {
+.BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-title-wrap h3 {
   color: #172f78;
   font-weight: 600;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-title-wrap p {
+.BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-title-wrap p {
   color: #888888;
   font-weight: 400;
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-last-wrap {
+.BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-last-wrap {
   display: flex;
   align-items: center;
   padding-top: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-last-wrap .pt-add-item-div {
+.BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-last-wrap .pt-add-item-div {
   font-size: 1.6rem;
   background-color: #1912d3;
   border-radius: 0.5rem;
@@ -2105,15 +2107,15 @@ h6 {
   gap: 10px;
   cursor: pointer;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-last-wrap .pt-add-item-div span {
+.BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-last-wrap .pt-add-item-div span {
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-last-wrap .pt-add-item-div p {
+.BodyWrapper .BodyDiv #pt-wrap .pt-topbar-wrap .pt-last-wrap .pt-add-item-div p {
   margin: 0;
   color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-btn-list {
+.BodyWrapper .BodyDiv #pt-wrap .pt-btn-list {
   padding: 1rem 0;
   display: flex;
   align-items: center;
@@ -2121,7 +2123,7 @@ h6 {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-btn-list a {
+.BodyWrapper .BodyDiv #pt-wrap .pt-btn-list a {
   font-size: 1.6rem;
   background-color: #1912d3;
   border-radius: 0.5rem;
@@ -2135,32 +2137,32 @@ h6 {
   font-weight: 500;
   font-size: 1.4rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-btn-list a span {
+.BodyWrapper .BodyDiv #pt-wrap .pt-btn-list a span {
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-btn-list a p {
+.BodyWrapper .BodyDiv #pt-wrap .pt-btn-list a p {
   margin: 0;
   color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper {
   background: linear-gradient(90deg, rgb(0, 206, 196) 0%, rgb(31, 139, 139) 100%);
   padding: 1.5rem;
   height: 39.5rem;
   border-radius: 1rem;
   margin: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer {
   margin-top: 5px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planTitle {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planTitle {
   color: #888888;
   font-weight: 600;
   margin-bottom: 0;
@@ -2169,16 +2171,16 @@ h6 {
   color: white;
 }
 @media (max-width: 767px) {
-  #dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planTitle {
+  .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planTitle {
     font-size: 1.4rem;
   }
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planPrice {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planPrice {
   display: flex;
   justify-content: center;
   gap: 5px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planPrice .planPriceUnit {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planPrice .planPriceUnit {
   display: flex;
   justify-content: end;
   align-items: center;
@@ -2186,7 +2188,7 @@ h6 {
   font-size: 3.5rem;
   font-weight: 600;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planPrice .planPriceMonth {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planPrice .planPriceMonth {
   display: flex;
   justify-content: end;
   align-items: center;
@@ -2194,7 +2196,7 @@ h6 {
   font-size: 1.8rem;
   font-weight: 500;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planInfo h3 {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planInfo h3 {
   font-size: 1.6rem;
   text-align: center;
   position: relative;
@@ -2202,7 +2204,7 @@ h6 {
   color: white;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planInfo h3::after {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planInfo h3::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -2212,7 +2214,7 @@ h6 {
   right: 0;
   transform: translateY(-50%);
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planInfo h3::before {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planInfo h3::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -2222,12 +2224,12 @@ h6 {
   left: 0;
   transform: translateY(-50%);
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .plan-select-div {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .plan-select-div {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .plan-select-div select {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .plan-select-div select {
   padding: 0.5rem;
   margin-bottom: 1rem;
   background-color: transparent;
@@ -2237,25 +2239,25 @@ h6 {
   font-size: 1.6rem;
   font-weight: 500;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .plan-select-div select:focus-visible {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .plan-select-div select:focus-visible {
   outline: none;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .plan-select-div select option {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .plan-select-div select option {
   background-color: #00cec4;
   color: white;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planDetailsList ul {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planDetailsList ul {
   text-align: center;
   font-size: 1.2rem;
   color: white;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planDetailsList ul li {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planDetailsList ul li {
   padding: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planCutImg {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planCutImg {
   text-align: end;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planCutImg .planBuyBtn {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planCutImg .planBuyBtn {
   margin-top: 56px;
   font-size: 1.4rem;
   border: none;
@@ -2264,22 +2266,22 @@ h6 {
   color: white;
   background-color: transparent;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard {
   background: #e9ffff;
   position: relative;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .planContainer {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .planContainer {
   position: relative;
   z-index: 999;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .planContainer .planCutImg .planBuyBtn {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .planContainer .planCutImg .planBuyBtn {
   margin-top: 15px;
   background-color: #259a99;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .planContainer .planInfo h3 {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .planContainer .planInfo h3 {
   margin-bottom: 0px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .firstCardBottomSvg {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .firstCardBottomSvg {
   background: url(/assets/img/firstcard.svg) no-repeat bottom/100%;
   position: absolute;
   bottom: 0;
@@ -2290,48 +2292,48 @@ h6 {
   border-top-right-radius: 1rem;
 }
 @media (max-width: 992px) {
-  #dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .firstCardBottomSvg {
+  .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .firstCardBottomSvg {
     background: url(/assets/img/firstcard.svg) no-repeat bottom/127%;
   }
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard {
   background: url(/assets/img/secondcardtop.svg) no-repeat top/100%;
   background-color: #ebf2ff;
   position: relative;
 }
 @media (max-width: 992px) {
-  #dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard {
+  .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard {
     background: url(/assets/img/secondcardtop.svg) no-repeat top/130%;
   }
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer {
   margin-top: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planTitle {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planTitle {
   padding-bottom: 4rem;
   color: #82a0ff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .plan-select-div select {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .plan-select-div select {
   background-color: transparent;
   color: black;
   border-color: black;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .plan-select-div select option {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .plan-select-div select option {
   background-color: white;
   color: black;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planDetailsList ul {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planDetailsList ul {
   color: #888888;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planCutImg {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planCutImg {
   text-align: center;
   position: relative;
   z-index: 999;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planCutImg .planBuyBtn {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planCutImg .planBuyBtn {
   margin-top: 25px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planCutImg .planBuyBtn button {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planCutImg .planBuyBtn button {
   font-size: 1.4rem;
   background-color: #5c7dff;
   padding: 0.5rem 4rem;
@@ -2339,7 +2341,7 @@ h6 {
   color: white;
   border-radius: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .secondCardBottomSvg {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .secondCardBottomSvg {
   background: url(/assets/img/secondcardbottom.svg) no-repeat bottom/100%;
   height: 50px;
   position: absolute;
@@ -2347,40 +2349,40 @@ h6 {
   left: 0;
   width: 100%;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard {
   background: url(/assets/img/thirdcardtop.svg) no-repeat top/100%;
   background-color: #f8f8ff;
   position: relative;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planTitle {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planTitle {
   text-align: start;
   color: #82a0ff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planPrice {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planPrice {
   justify-content: start;
   padding-bottom: 3.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .plan-select-div select {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .plan-select-div select {
   background-color: transparent;
   color: black;
   border-color: black;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .plan-select-div select option {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .plan-select-div select option {
   background-color: white;
   color: black;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planDetailsList ul {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planDetailsList ul {
   color: #888888;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planCutImg {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planCutImg {
   text-align: center;
   position: relative;
   z-index: 999;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planCutImg .planBuyBtn {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planCutImg .planBuyBtn {
   margin-top: 25px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planCutImg .planBuyBtn button {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planCutImg .planBuyBtn button {
   font-size: 1.4rem;
   background-color: #2752fc;
   padding: 0.5rem 4rem;
@@ -2388,7 +2390,7 @@ h6 {
   color: white;
   border-radius: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .thirdCardBottomSvg {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .thirdCardBottomSvg {
   background: url(/assets/img/thirdcardbottom.svg) no-repeat bottom/100%;
   position: absolute;
   bottom: 0px;
@@ -2398,62 +2400,62 @@ h6 {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard {
   background: white;
   border: 1px solid black;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer {
   margin-top: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planLogo {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planLogo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planLogo h3 {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planLogo h3 {
   color: #888888;
   margin-bottom: 0rem;
   font-size: 1.2rem;
   font-weight: 400;
   text-align: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planPrice .planPriceUnit {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planPrice .planPriceUnit {
   color: #2e0aa3;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planPrice .planPriceMonth {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planPrice .planPriceMonth {
   color: #888888;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planTitle {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planTitle {
   color: #5479f7;
   font-size: 1.4rem;
   padding-bottom: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .plan-select-div select {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .plan-select-div select {
   background-color: transparent;
   color: black;
   border-color: black;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .plan-select-div select option {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .plan-select-div select option {
   background-color: white;
   color: black;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planDetailsList ul {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planDetailsList ul {
   color: #888888;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .featuresTag {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .featuresTag {
   color: #262626;
   font-size: 1.4rem;
   padding-left: 2rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planCutImg {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planCutImg {
   text-align: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planCutImg .planBuyBtn {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planCutImg .planBuyBtn {
   margin-top: 15px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planCutImg .planBuyBtn button {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planCutImg .planBuyBtn button {
   font-size: 1.4rem;
   background-color: #2e0aa3;
   padding: 0.5rem 6rem;
@@ -2461,7 +2463,7 @@ h6 {
   color: white;
   border-radius: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap {
+.BodyWrapper .BodyDiv #menu-wrap {
   background-color: #ffffff;
   height: 98%;
   border-radius: 1rem;
@@ -2476,31 +2478,31 @@ h6 {
   height: 86vh;
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-topbar-wrap {
+.BodyWrapper .BodyDiv #menu-wrap .menu-topbar-wrap {
   display: flex;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-topbar-wrap .menu-title-wrap {
+.BodyWrapper .BodyDiv #menu-wrap .menu-topbar-wrap .menu-title-wrap {
   padding: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-topbar-wrap .menu-title-wrap h3 {
+.BodyWrapper .BodyDiv #menu-wrap .menu-topbar-wrap .menu-title-wrap h3 {
   color: #172f78;
   font-weight: 600;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-topbar-wrap .menu-title-wrap p {
+.BodyWrapper .BodyDiv #menu-wrap .menu-topbar-wrap .menu-title-wrap p {
   color: #888888;
   font-weight: 400;
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-topbar-wrap .menu-last-wrap {
+.BodyWrapper .BodyDiv #menu-wrap .menu-topbar-wrap .menu-last-wrap {
   display: flex;
   align-items: center;
   padding-top: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-topbar-wrap .menu-last-wrap .menu-add-item-div {
+.BodyWrapper .BodyDiv #menu-wrap .menu-topbar-wrap .menu-last-wrap .menu-add-item-div {
   font-size: 1.6rem;
   background-color: #1912d3;
   border-radius: 0.5rem;
@@ -2511,22 +2513,22 @@ h6 {
   gap: 10px;
   cursor: pointer;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-topbar-wrap .menu-last-wrap .menu-add-item-div span {
+.BodyWrapper .BodyDiv #menu-wrap .menu-topbar-wrap .menu-last-wrap .menu-add-item-div span {
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-topbar-wrap .menu-last-wrap .menu-add-item-div p {
+.BodyWrapper .BodyDiv #menu-wrap .menu-topbar-wrap .menu-last-wrap .menu-add-item-div p {
   margin: 0;
   color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-btn-list {
+.BodyWrapper .BodyDiv #menu-wrap .menu-btn-list {
   padding: 0.5rem 0;
   display: flex;
   align-items: center;
   gap: 15px;
   flex-wrap: wrap;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-btn-list a {
+.BodyWrapper .BodyDiv #menu-wrap .menu-btn-list a {
   font-size: 1.6rem;
   background-color: #1912d3;
   border-radius: 0.5rem;
@@ -2541,51 +2543,51 @@ h6 {
   font-size: 1.4rem;
   background-color: #2e0aa3;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-btn-list a span {
+.BodyWrapper .BodyDiv #menu-wrap .menu-btn-list a span {
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-btn-list a p {
+.BodyWrapper .BodyDiv #menu-wrap .menu-btn-list a p {
   margin: 0;
   color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content {
   background-color: #f9fbff;
   border-radius: 0.5rem;
   margin: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-title-wrap {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-title-wrap {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-title-wrap h4 {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-title-wrap h4 {
   color: #172f78;
   font-size: 1.6rem;
   font-weight: 500;
   font-size: 1.8rem;
   font-weight: 600;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-title-wrap a {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-title-wrap a {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap {
   display: flex;
   padding: 2rem 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .submenu-name-wrap {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .submenu-name-wrap {
   margin: 0 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .submenu-name-wrap h5 {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .submenu-name-wrap h5 {
   color: #172f78;
   font-size: 1.4rem;
   font-weight: 500;
   margin: 0;
   padding-bottom: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .submenu-name-wrap input {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .submenu-name-wrap input {
   background-color: #edf3ff;
   padding: 0.5rem 1rem;
   font-size: 1.4rem;
@@ -2596,20 +2598,20 @@ h6 {
   border-radius: 0.5rem;
   width: 100%;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .submenu-name-wrap input:focus-visible {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .submenu-name-wrap input:focus-visible {
   outline: none;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .submenu-url-wrap {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .submenu-url-wrap {
   margin: 0 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .submenu-url-wrap h5 {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .submenu-url-wrap h5 {
   color: #172f78;
   font-size: 1.4rem;
   font-weight: 500;
   margin: 0;
   padding-bottom: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .submenu-url-wrap input {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .submenu-url-wrap input {
   background-color: #edf3ff;
   padding: 0.5rem 1rem;
   font-size: 1.4rem;
@@ -2620,14 +2622,14 @@ h6 {
   border-radius: 0.5rem;
   width: 100%;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .submenu-url-wrap input:focus-visible {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .submenu-url-wrap input:focus-visible {
   outline: none;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .btn-down {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .btn-down {
   display: flex;
   align-items: end;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .btn-down .add-submenu-btn {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .btn-down .add-submenu-btn {
   font-size: 1.6rem;
   background-color: #1912d3;
   border-radius: 0.5rem;
@@ -2638,41 +2640,41 @@ h6 {
   gap: 10px;
   cursor: pointer;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .btn-down .add-submenu-btn span {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .btn-down .add-submenu-btn span {
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .btn-down .add-submenu-btn p {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .sub-menu-wrap .btn-down .add-submenu-btn p {
   margin: 0;
   color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table {
   margin-top: 2rem;
   width: 100%;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr th {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr th {
   color: #172f78;
   font-size: 1.6rem;
   font-weight: 500;
   padding: 1rem 2rem;
   text-align: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr th:first-child div {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr th:first-child div {
   padding-right: 1rem;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr th:first-child div input {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr th:first-child div input {
   height: 1.6rem;
   width: 1.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr th:nth-child(even) {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr th:nth-child(even) {
   border-right: 1px solid #dcefff;
   border-left: 1px solid #dcefff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr td {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr td {
   text-align: center;
   color: #888888;
   font-weight: 400;
@@ -2681,66 +2683,66 @@ h6 {
   padding: 1rem 0;
   text-overflow: ellipsis;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr td .tableIcon {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr td .tableIcon {
   display: flex;
   gap: 10px;
   align-items: center;
   padding: 0 2rem;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr td .tableIcon a {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr td .tableIcon a {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr td:first-child div {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr td:first-child div {
   padding: 1rem 2rem;
   padding-right: 1rem;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr td:first-child div input {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr td:first-child div input {
   height: 1.6rem;
   width: 1.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr td:nth-child(even) {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr td:nth-child(even) {
   border-right: 1px solid #dcefff;
   border-left: 1px solid #dcefff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr:nth-child(even) {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr:nth-child(even) {
   background-color: #f9fbff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr:nth-child(odd) {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr:nth-child(odd) {
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr:first-child {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tr:first-child {
   background-color: #edf3ff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table thead tr {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table thead tr {
   background-color: #edf3ff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table thead tr th:nth-child(2) {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table thead tr th:nth-child(2) {
   border-left: none;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tbody tr:nth-child(odd) {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tbody tr:nth-child(odd) {
   background-color: #f9fbff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tbody tr:nth-child(even) {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tbody tr:nth-child(even) {
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tbody tr td .menu-table-actions {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-table-wrap .menu-table tbody tr td .menu-table-actions {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-save-wrap {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-save-wrap {
   margin-top: 1rem;
   display: flex;
   justify-content: flex-end;
   padding: 0.5rem 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-save-wrap .menu-save-btn {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-save-wrap .menu-save-btn {
   font-size: 1.6rem;
   background-color: #1912d3;
   border-radius: 0.5rem;
@@ -2754,15 +2756,15 @@ h6 {
   border: none;
   color: white;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-save-wrap .menu-save-btn span {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-save-wrap .menu-save-btn span {
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-save-wrap .menu-save-btn p {
+.BodyWrapper .BodyDiv #menu-wrap .menu-content .menu-save-wrap .menu-save-btn p {
   margin: 0;
   color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap {
+.BodyWrapper .BodyDiv #slider-wrap {
   background-color: #ffffff;
   height: 98%;
   border-radius: 1rem;
@@ -2777,31 +2779,31 @@ h6 {
   height: 86vh;
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap {
+.BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap {
   display: flex;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-title-wrap {
+.BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-title-wrap {
   padding: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-title-wrap h3 {
+.BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-title-wrap h3 {
   color: #172f78;
   font-weight: 600;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-title-wrap p {
+.BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-title-wrap p {
   color: #888888;
   font-weight: 400;
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-last-wrap {
+.BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-last-wrap {
   display: flex;
   align-items: center;
   padding-top: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-last-wrap .slider-add-item-div {
+.BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-last-wrap .slider-add-item-div {
   font-size: 1.6rem;
   background-color: #1912d3;
   border-radius: 0.5rem;
@@ -2812,37 +2814,37 @@ h6 {
   gap: 10px;
   cursor: pointer;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-last-wrap .slider-add-item-div span {
+.BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-last-wrap .slider-add-item-div span {
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-last-wrap .slider-add-item-div p {
+.BodyWrapper .BodyDiv #slider-wrap .slider-topbar-wrap .slider-last-wrap .slider-add-item-div p {
   margin: 0;
   color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap {
   background-color: #f9fbff;
   border-radius: 0.5rem;
   margin: 1rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead {
   display: flex;
   justify-content: space-between;
   padding: 1.4rem;
   border-bottom: 1px solid #dcefff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderShowEntriesWrap {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderShowEntriesWrap {
   display: flex;
   align-items: center;
   gap: 10px;
   justify-content: flex-start;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderShowEntriesWrap span {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderShowEntriesWrap span {
   color: #888888;
   font-weight: 400;
   font-size: 1.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderShowEntriesWrap select {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderShowEntriesWrap select {
   color: #172f78;
   font-weight: 600;
   font-size: 1.6rem;
@@ -2851,15 +2853,15 @@ h6 {
   padding: 0.2rem;
   background-color: transparent;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderShowEntriesWrap select:focus-visible {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderShowEntriesWrap select:focus-visible {
   outline: none;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap button {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap button {
   color: #172f78;
   font-weight: 600;
   font-size: 1.6rem;
@@ -2872,16 +2874,16 @@ h6 {
   justify-content: center;
   gap: 5px;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap button span {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap button span {
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap .slider-dateWrap {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap .slider-dateWrap {
   position: relative;
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap .slider-dateWrap span {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap .slider-dateWrap span {
   position: absolute;
   width: 1.7rem;
   height: 1.7rem;
@@ -2891,7 +2893,7 @@ h6 {
   display: flex;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap .slider-dateWrap input {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap .slider-dateWrap input {
   color: #172f78;
   font-weight: 600;
   font-size: 1.6rem;
@@ -2904,10 +2906,10 @@ h6 {
   cursor: pointer;
   caret-color: transparent;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap .slider-dateWrap input:focus-visible {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .sliderTableInfoHead .sliderFilterWrap .slider-dateWrap input:focus-visible {
   outline: none;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow {
   height: 46vh;
   position: sticky;
   top: 0;
@@ -2916,32 +2918,32 @@ h6 {
   scrollbar-width: none;
   height: 44vh;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table {
   margin-top: 2rem;
   width: 100%;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr th {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr th {
   color: #172f78;
   font-size: 1.6rem;
   font-weight: 500;
   padding: 1rem 2rem;
   text-align: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr th:first-child div {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr th:first-child div {
   padding-right: 1rem;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr th:first-child div input {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr th:first-child div input {
   height: 1.6rem;
   width: 1.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr th:nth-child(even) {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr th:nth-child(even) {
   border-right: 1px solid #dcefff;
   border-left: 1px solid #dcefff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr td {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr td {
   text-align: center;
   color: #888888;
   font-weight: 400;
@@ -2950,66 +2952,66 @@ h6 {
   padding: 1rem 0;
   text-overflow: ellipsis;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr td .tableIcon {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr td .tableIcon {
   display: flex;
   gap: 10px;
   align-items: center;
   padding: 0 2rem;
   justify-content: space-between;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr td .tableIcon a {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr td .tableIcon a {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr td:first-child div {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr td:first-child div {
   padding: 1rem 2rem;
   padding-right: 1rem;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr td:first-child div input {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr td:first-child div input {
   height: 1.6rem;
   width: 1.6rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr td:nth-child(even) {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr td:nth-child(even) {
   border-right: 1px solid #dcefff;
   border-left: 1px solid #dcefff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr:nth-child(even) {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr:nth-child(even) {
   background-color: #f9fbff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr:nth-child(odd) {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr:nth-child(odd) {
   background-color: #ffffff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr:first-child {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr:first-child {
   background-color: #edf3ff;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-pagination {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-pagination {
   display: flex;
   justify-content: space-between;
   padding: 1.4rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-pagination .sliderShowingEntriesWrap p {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-pagination .sliderShowingEntriesWrap p {
   color: #888888;
   font-weight: 400;
   font-size: 1.6rem;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-pagination .slider-pagination-wrap .slider-pagination {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-pagination .slider-pagination-wrap .slider-pagination {
   display: flex;
   gap: 10px;
   margin: 0;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-pagination .slider-pagination-wrap .slider-pagination li {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-pagination .slider-pagination-wrap .slider-pagination li {
   background-color: #edf3ff;
   color: #94a2bc;
   font-size: 1.4rem;
   padding: 0.6rem 1.2rem;
   border-radius: 0.4rem;
 }
-#dashboardSection .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-pagination .slider-pagination-wrap .slider-pagination li.active {
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-pagination .slider-pagination-wrap .slider-pagination li.active {
   color: #ffffff;
   background-color: #1912d3;
 }
@@ -4246,29 +4248,31 @@ h6 {
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
-.common-css .common-label {
+.common-label {
   color: #172f78 !important;
   font-size: 1.4rem !important;
   font-weight: 500 !important;
   margin: 0 !important;
 }
 @media (max-width: 480px) {
-  .common-css .common-label {
+  .common-label {
     font-size: 1.2rem !important;
   }
 }
-.common-css .common-p {
+
+.common-p {
   color: #172f78 !important;
   font-size: 1.4rem !important;
   font-weight: 500 !important;
   margin: 0 !important;
 }
 @media (max-width: 480px) {
-  .common-css .common-p {
+  .common-p {
     font-size: 1.2rem !important;
   }
 }
-.common-css .common-input {
+
+.common-input {
   background-color: #edf3ff !important;
   padding: 0.5rem 1rem !important;
   font-size: 1.4rem !important;
@@ -4279,15 +4283,16 @@ h6 {
   border-radius: 0.5rem !important;
   width: 100% !important;
 }
-.common-css .common-input:focus-visible {
+.common-input:focus-visible {
   outline: none !important;
 }
 @media (max-width: 480px) {
-  .common-css .common-input {
+  .common-input {
     font-size: 1.2rem !important;
   }
 }
-.common-css .common-select {
+
+.common-select {
   color: #172f78 !important;
   font-weight: 600 !important;
   font-size: 1.6rem !important;
@@ -4299,25 +4304,27 @@ h6 {
   font-weight: 400 !important;
   width: 100% !important;
 }
-.common-css .common-select:focus-visible {
+.common-select:focus-visible {
   outline: none !important;
 }
 @media (max-width: 480px) {
-  .common-css .common-select {
+  .common-select {
     font-size: 1.2rem !important;
   }
 }
-.common-css .common-h {
+
+.common-h {
   color: #172f78 !important;
   font-size: 1.6rem !important;
   font-weight: 500 !important;
 }
 @media (max-width: 480px) {
-  .common-css .common-h {
+  .common-h {
     font-size: 1.4rem !important;
   }
 }
-.common-css .common-button {
+
+.common-button {
   font-size: 1.6rem !important;
   background-color: #1912d3 !important;
   border-radius: 0.5rem !important;
@@ -4329,16 +4336,20 @@ h6 {
   cursor: pointer !important;
   font-size: 1.4rem !important;
 }
-.common-css .common-button span {
+.common-button span {
   display: flex !important;
   align-items: center !important;
 }
-.common-css .common-button p {
+.common-button p {
   margin: 0 !important;
   color: #ffffff !important;
 }
 @media (max-width: 480px) {
-  .common-css .common-button {
+  .common-button {
     font-size: 1.2rem !important;
   }
+}
+
+.common-form {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
