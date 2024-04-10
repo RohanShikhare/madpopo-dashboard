@@ -3067,6 +3067,7 @@ h6 {
 .BodyWrapper .BodyDiv #manage-account .m-acc-content-wrap .m-acc-row {
   display: flex;
   align-items: center;
+  padding: 0.3rem;
 }
 .BodyWrapper .BodyDiv #manage-account .m-acc-content-wrap .m-acc-row label {
   color: #172f78;
@@ -3084,7 +3085,8 @@ h6 {
   border-radius: 0.4rem;
   padding: 0.2rem;
   background-color: transparent;
-  width: 50%;
+  color: #888888;
+  width: 60%;
   background-color: #edf3ff;
 }
 .BodyWrapper .BodyDiv #manage-account .m-acc-content-wrap .m-acc-row select:focus-visible {
@@ -3102,6 +3104,36 @@ h6 {
 }
 .BodyWrapper .BodyDiv #manage-account .m-acc-content-wrap .m-acc-row input:focus-visible {
   outline: none;
+}
+.BodyWrapper .BodyDiv #manage-account .m-acc-content-wrap .m-acc-row input.fullWidth {
+  width: 85%;
+}
+.BodyWrapper .BodyDiv #manage-account .m-acc-content-wrap .m-acc-save-wrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem;
+}
+.BodyWrapper .BodyDiv #manage-account .m-acc-content-wrap .m-acc-save-wrap button {
+  font-size: 1.6rem;
+  background-color: #1912d3;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+.BodyWrapper .BodyDiv #manage-account .m-acc-content-wrap .m-acc-save-wrap button span {
+  display: flex;
+  align-items: center;
+}
+.BodyWrapper .BodyDiv #manage-account .m-acc-content-wrap .m-acc-save-wrap button p {
+  margin: 0;
+  color: #ffffff;
 }
 
 #add-new-hosting-modalwrap .nh-modal-adjuster {

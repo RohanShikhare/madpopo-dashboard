@@ -1959,6 +1959,7 @@ h6 {
         .m-acc-row {
           display: flex;
           align-items: center;
+          padding: .3rem;
           label {
             @include blueSmHeading;
             width: 100%;
@@ -1966,11 +1967,26 @@ h6 {
           }
           select {
             @include grayBlueSelect;
-            width: 50%;
+            color: #888888;
+            width: 60%;
             background-color: #edf3ff;
           }
           input {
             @include hs-modal-input;
+            &.fullWidth{
+              width: 85%;
+            }
+          }
+        }
+        .m-acc-save-wrap{
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding: 2rem;
+          button{
+            @include bluebtn;
+            border: none;
+            color: white;
           }
         }
       }

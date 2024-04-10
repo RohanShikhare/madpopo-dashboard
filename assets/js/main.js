@@ -21,6 +21,13 @@ $(document).ready(function () {
   $(".slider-datepicker").datepicker({
     dateFormat: "MM yy",
   });
+  $(".m-acc-created").datepicker({
+    dateFormat: "dd MM yy",
+});
+$(".m-acc-due").datepicker({
+  dateFormat: "dd MM yy",
+});
+
   $(".graphDatePicker").datepicker({
     dateFormat: "yy", // Show only the year
     changeMonth: false, // Disable month selection
