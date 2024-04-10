@@ -3002,6 +3002,12 @@ h6 {
   width: 14rem;
   height: 5rem;
 }
+.BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-overflow .slider-table tr td div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 .BodyWrapper .BodyDiv #slider-wrap .slider-table-wrap .slider-table-pagination {
   display: flex;
   justify-content: space-between;
