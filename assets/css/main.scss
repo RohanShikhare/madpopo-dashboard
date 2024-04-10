@@ -43,184 +43,238 @@ h6 {
   background-color: #1912d3;
   height: 100%;
 }
- .dashboardHeader {
-    height: 65px;
-    @include mid-991-tab {
-      height: 57px;
-    }
-    @include xss-mobile {
-      height: 55px;
-    }
-    .dashboardDiv {
-      display: flex;
-      width: 100%;
+.dashboardHeader {
+  height: 65px;
+  @include mid-991-tab {
+    height: 57px;
+  }
+  @include xss-mobile {
+    height: 55px;
+  }
+  .dashboardDiv {
+    display: flex;
+    width: 100%;
 
-      h1 {
-        font-size: 2.4rem;
-        color: #ffffff;
-        padding: 1.6rem;
+    h1 {
+      font-size: 2.4rem;
+      color: #ffffff;
+      padding: 1.6rem;
+      text-align: center;
+      margin: 0;
+      @include d-1190-desktop {
+        font-size: 2rem;
+      }
+      @include mid-991-tab {
+        font-size: 1.7rem;
+      }
+      @include md-tablet {
+        font-size: 1.5rem;
+      }
+      @include x-tablet {
+        font-size: 1.5rem;
+      }
+      @include x-767-tablet {
+        font-size: 1.8rem;
+      }
+      @include md-mobile {
+        text-align: start;
+      }
+      @include xss-mobile {
+        font-size: 1.4rem;
+        padding: 2rem 1rem;
+      }
+    }
+    .headerInputWrap {
+      position: relative;
+      margin-top: 1.6rem;
+      @include mid-991-tab {
+        margin-top: 1.2rem;
+      }
+      @include md-mobile {
+        position: static;
+      }
+
+      .headerInputSVG {
+        position: absolute;
+        width: 1.7rem;
+        height: 1.7rem;
         text-align: center;
-        margin: 0;
-        @include d-1190-desktop {
-          font-size: 2rem;
+        top: 9px;
+        left: 11px;
+        svg {
+          height: 1.7rem;
+          width: 1.7rem;
         }
+        @include md-mobile {
+          cursor: pointer;
+          left: unset;
+          top: 2rem;
+          right: 16rem;
+        }
+      }
+      input {
+        background-color: #2048e8;
+        height: 3.6rem;
+        width: 21rem;
+        border: none;
+        border-radius: 0.5rem;
+        color: #d1d7e2;
+        padding-left: 3.5rem;
+        font-size: 1.4rem;
         @include mid-991-tab {
-          font-size: 1.7rem;
-        }
-        @include md-tablet {
-          font-size: 1.5rem;
+          width: 15rem;
         }
         @include x-tablet {
-          font-size: 1.5rem;
-        }
-        @include x-767-tablet {
-          font-size: 1.8rem;
+          width: 16.5rem;
         }
         @include md-mobile {
-          text-align: start;
+          display: none;
         }
-        @include xss-mobile {
-          font-size: 1.4rem;
-          padding: 2rem 1rem;
+        &:focus-visible {
+          outline: none;
+        }
+        &::placeholder {
+          color: #d1d7e2;
         }
       }
-      .headerInputWrap {
-        position: relative;
-        margin-top: 1.6rem;
-        @include mid-991-tab {
-          margin-top: 1.2rem;
+    }
+    .headerNav {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include md-tablet {
+        justify-content: flex-end;
+      }
+
+      .headerNavList {
+        flex-grow: 1;
+        justify-content: end;
+        padding: 1.6rem;
+        display: flex;
+        gap: 20px;
+        height: 100%;
+        align-items: center;
+        margin: 0;
+        @include d-1190-desktop {
+          gap: 6px;
         }
-        @include md-mobile {
-          position: static;
+        @include mid-991-tab {
+          gap: 4px;
+        }
+        @include md-tablet {
+          display: none;
         }
 
-        .headerInputSVG {
-          position: absolute;
-          width: 1.7rem;
-          height: 1.7rem;
-          text-align: center;
-          top: 9px;
-          left: 11px;
-          svg {
-            height: 1.7rem;
-            width: 1.7rem;
+        li {
+          color: #c0d6ff;
+          font-size: 1.6rem;
+          font-weight: 500;
+          cursor: pointer;
+          @include d-1190-desktop {
+            font-size: 1.4rem;
           }
-          @include md-mobile {
-            cursor: pointer;
-            left: unset;
-            top: 2rem;
-            right: 16rem;
-          }
-        }
-        input {
-          background-color: #2048e8;
-          height: 3.6rem;
-          width: 21rem;
-          border: none;
-          border-radius: 0.5rem;
-          color: #d1d7e2;
-          padding-left: 3.5rem;
-          font-size: 1.4rem;
           @include mid-991-tab {
-            width: 15rem;
+            font-size: 1.2rem;
           }
-          @include x-tablet {
-            width: 16.5rem;
+          span {
+            padding-left: 0.2rem;
           }
-          @include md-mobile {
-            display: none;
+          &.active {
+            color: #ffffff;
+            font-weight: 700;
           }
-          &:focus-visible {
-            outline: none;
-          }
-          &::placeholder {
-            color: #d1d7e2;
+          .header-dropdown-wrap {
+            .header-dropdown {
+              color: #c0d6ff;
+              font-size: 1.6rem;
+              font-weight: 500;
+              cursor: pointer;
+              @include d-1190-desktop {
+                font-size: 1.4rem;
+              }
+              @include mid-991-tab {
+                font-size: 1.2rem;
+              }
+              &.btn {
+                border: none;
+              }
+              &::after {
+                display: none;
+              }
+            }
+            ul {
+              li {
+                color: #1912d3;
+              }
+            }
+            &:focus-visible {
+              outline: none;
+            }
           }
         }
       }
-      .headerNav {
+      .navLastBlock {
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        @include md-tablet {
-          justify-content: flex-end;
-        }
+        padding: 0 0.4rem;
 
-        .headerNavList {
-          flex-grow: 1;
-          justify-content: end;
-          padding: 1.6rem;
+        .notificationWrap {
+          height: 40px;
+          width: 40px;
+          background-color: #2048e8;
+          border-radius: 50%;
           display: flex;
-          gap: 20px;
-          height: 100%;
           align-items: center;
-          margin: 0;
-          @include d-1190-desktop {
-            gap: 6px;
+          justify-content: center;
+          position: relative;
+          cursor: pointer;
+          .notificationIcon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
-          @include mid-991-tab {
-            gap: 4px;
+          .notificationDot {
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background-color: red;
+            border-radius: 50%;
+            top: 8px;
+            right: 8px;
           }
-          @include md-tablet {
-            display: none;
-          }
+        }
+        .headerUserBlock {
+          font-size: 1.4rem;
+          font-weight: 500;
+          display: flex;
+          padding: 0 0.8rem;
+          align-items: center;
+          gap: 10px;
 
-          li {
-            color: #c0d6ff;
-            font-size: 1.6rem;
-            font-weight: 500;
+          h3 {
             cursor: pointer;
+            color: #82a0ff;
+            margin: 0;
             @include d-1190-desktop {
               font-size: 1.4rem;
             }
             @include mid-991-tab {
               font-size: 1.2rem;
             }
+            @include x-tablet {
+              font-size: 1.3rem;
+            }
+            @include md-mobile {
+              display: none;
+            }
             span {
-              padding-left: 0.2rem;
-            }
-            &.active {
               color: #ffffff;
-              font-weight: 700;
-            }
-            .header-dropdown-wrap {
-              .header-dropdown {
-                color: #c0d6ff;
-                font-size: 1.6rem;
-                font-weight: 500;
-                cursor: pointer;
-                @include d-1190-desktop {
-                  font-size: 1.4rem;
-                }
-                @include mid-991-tab {
-                  font-size: 1.2rem;
-                }
-                &.btn {
-                  border: none;
-                }
-                &::after {
-                  display: none;
-                }
-              }
-              ul {
-                li {
-                  color: #1912d3;
-                }
-              }
-              &:focus-visible {
-                outline: none;
-              }
             }
           }
-        }
-        .navLastBlock {
-          height: 100%;
-          display: flex;
-          align-items: center;
-          padding: 0 0.4rem;
-
-          .notificationWrap {
+          .headerUserIconWrap {
+            cursor: pointer;
             height: 40px;
             width: 40px;
             background-color: #2048e8;
@@ -228,927 +282,580 @@ h6 {
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
-            cursor: pointer;
-            .notificationIcon {
+            .headerUserIcon {
               display: flex;
               justify-content: center;
               align-items: center;
-            }
-            .notificationDot {
-              position: absolute;
-              height: 10px;
-              width: 10px;
-              background-color: red;
-              border-radius: 50%;
-              top: 8px;
-              right: 8px;
-            }
-          }
-          .headerUserBlock {
-            font-size: 1.4rem;
-            font-weight: 500;
-            display: flex;
-            padding: 0 0.8rem;
-            align-items: center;
-            gap: 10px;
-
-            h3 {
-              cursor: pointer;
-              color: #82a0ff;
-              margin: 0;
-              @include d-1190-desktop {
-                font-size: 1.4rem;
-              }
-              @include mid-991-tab {
-                font-size: 1.2rem;
-              }
-              @include x-tablet {
-                font-size: 1.3rem;
-              }
-              @include md-mobile {
-                display: none;
-              }
-              span {
-                color: #ffffff;
-              }
-            }
-            .headerUserIconWrap {
-              cursor: pointer;
-              height: 40px;
-              width: 40px;
-              background-color: #2048e8;
-              border-radius: 50%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              .headerUserIcon {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              }
             }
           }
         }
-        .responsiveHeaderMenu {
-          display: none;
-          @include md-tablet {
-            display: block;
-          }
-          &.open {
-            .hamburger-icon {
-              span {
-                &:first-child {
-                  transform: rotate(45deg);
-                  top: 10px;
-                }
-                &:nth-child(2) {
-                  opacity: 0;
-                }
-                &:nth-child(3) {
-                  transform: rotate(-45deg);
-                  top: 10px;
-                }
-              }
-            }
-            .responsiveMenu-wrap {
-              width: 50vw;
-              @include mobile {
-                width: 100%;
-                h1 {
-                  text-align: center;
-                }
-              }
-            }
-          }
+      }
+      .responsiveHeaderMenu {
+        display: none;
+        @include md-tablet {
+          display: block;
+        }
+        &.open {
           .hamburger-icon {
-            display: block;
-            width: 30px;
-            height: 20px;
-            position: relative;
-            margin: 2rem;
-            margin-left: 0;
-            z-index: 999;
-            cursor: pointer;
             span {
-              display: block;
-              height: 3px;
-              width: 100%;
-              background: #fff;
-              position: absolute;
-              transition: transform 0.3s ease;
+              &:first-child {
+                transform: rotate(45deg);
+                top: 10px;
+              }
               &:nth-child(2) {
-                top: 7px;
+                opacity: 0;
               }
               &:nth-child(3) {
-                top: 14px;
+                transform: rotate(-45deg);
+                top: 10px;
               }
             }
           }
           .responsiveMenu-wrap {
-            position: absolute;
-            height: 100vh;
-            width: 0vw;
-            top: 0;
-            right: 0;
-            background-color: #172f78;
-            z-index: 99;
-            overflow-x: hidden;
-            transition: width 0.5s ease;
-            h1 {
-              font-size: 2.2rem;
+            width: 50vw;
+            @include mobile {
+              width: 100%;
+              h1 {
+                text-align: center;
+              }
             }
-            ul {
-              color: #fff;
-              margin: 0;
-              padding: 0;
-              text-align: center;
-              font-size: 1.6rem;
-              li {
-                padding: 1rem;
-                border-bottom: 1px solid #888888;
-                cursor: pointer;
-                .li-dropdown {
-                  height: 0;
-                  transition: all 0.3s ease;
+          }
+        }
+        .hamburger-icon {
+          display: block;
+          width: 30px;
+          height: 20px;
+          position: relative;
+          margin: 2rem;
+          margin-left: 0;
+          z-index: 999;
+          cursor: pointer;
+          span {
+            display: block;
+            height: 3px;
+            width: 100%;
+            background: #fff;
+            position: absolute;
+            transition: transform 0.3s ease;
+            &:nth-child(2) {
+              top: 7px;
+            }
+            &:nth-child(3) {
+              top: 14px;
+            }
+          }
+        }
+        .responsiveMenu-wrap {
+          position: absolute;
+          height: 100vh;
+          width: 0vw;
+          top: 0;
+          right: 0;
+          background-color: #172f78;
+          z-index: 99;
+          overflow-x: hidden;
+          transition: width 0.5s ease;
+          h1 {
+            font-size: 2.2rem;
+          }
+          ul {
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-size: 1.6rem;
+            li {
+              padding: 1rem;
+              border-bottom: 1px solid #888888;
+              cursor: pointer;
+              .li-dropdown {
+                height: 0;
+                transition: all 0.3s ease;
+                user-select: none;
+                ul {
+                  background-color: #fff;
+                  color: #001dff;
+                  display: none;
                   user-select: none;
-                  ul {
-                    background-color: #fff;
-                    color: #001dff;
-                    display: none;
+                  transition: all 0.3s ease;
+                  li {
+                    border-bottom: 1px solid #001dff;
                     user-select: none;
                     transition: all 0.3s ease;
-                    li {
-                      border-bottom: 1px solid #001dff;
-                      user-select: none;
-                      transition: all 0.3s ease;
-                    }
                   }
                 }
-                &.open {
-                  .li-dropdown {
-                    height: fit-content;
-                    margin: 1rem;
-                    ul {
-                      display: block;
-                    }
+              }
+              &.open {
+                .li-dropdown {
+                  height: fit-content;
+                  margin: 1rem;
+                  ul {
+                    display: block;
                   }
                 }
               }
             }
           }
-          .responsive-search-wrap {
-            display: none;
-            @include mobile {
-              display: block;
-              height: 100%;
-              width: 100%;
-              background-color: #172f78;
-              position: absolute;
-              top: 0;
-              left: 0;
-              opacity: 0;
-              z-index: -999;
-              transition: all 0.3s ease;
-              .resHeaderInputWrap {
-                position: relative;
-                padding: 0rem 1rem;
-                span {
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  position: absolute;
-                  width: 1.7rem;
-                  height: 1.7rem;
-                  top: 10px;
-                  left: 20px;
-                }
-                input {
-                  background-color: #2048e8;
-                  height: 3.6rem;
-                  width: 100%;
-                  border-radius: 0.5rem;
-                  color: #d1d7e2;
-                  padding-left: 3.5rem;
-                  font-size: 1.4rem;
-                  border: 1px solid #7d7d7d;
-                  &:focus-visible {
-                    outline: none;
-                  }
-                  &::placeholder {
-                    color: #d1d7e2;
-                  }
-                }
-              }
-              .resSearchClose {
-                padding: 1rem;
+        }
+        .responsive-search-wrap {
+          display: none;
+          @include mobile {
+            display: block;
+            height: 100%;
+            width: 100%;
+            background-color: #172f78;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            z-index: -999;
+            transition: all 0.3s ease;
+            .resHeaderInputWrap {
+              position: relative;
+              padding: 0rem 1rem;
+              span {
                 display: flex;
-                justify-content: space-between;
-                h1 {
-                  font-size: 2rem;
-                  text-align: center;
-                  padding: 0;
-                  width: 100%;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 1.7rem;
+                height: 1.7rem;
+                top: 10px;
+                left: 20px;
+              }
+              input {
+                background-color: #2048e8;
+                height: 3.6rem;
+                width: 100%;
+                border-radius: 0.5rem;
+                color: #d1d7e2;
+                padding-left: 3.5rem;
+                font-size: 1.4rem;
+                border: 1px solid #7d7d7d;
+                &:focus-visible {
+                  outline: none;
+                }
+                &::placeholder {
+                  color: #d1d7e2;
                 }
               }
-              &.open {
-                opacity: 1;
-                z-index: 9999;
+            }
+            .resSearchClose {
+              padding: 1rem;
+              display: flex;
+              justify-content: space-between;
+              h1 {
+                font-size: 2rem;
+                text-align: center;
+                padding: 0;
+                width: 100%;
               }
+            }
+            &.open {
+              opacity: 1;
+              z-index: 9999;
             }
           }
         }
       }
     }
   }
-  .BodyWrapper {
-    display: flex;
-    .sideBarDiv {
-      transition: width 250ms ease-out;
-      max-width: 100%;
-      #sidebar {
-        height: 100%;
-        background-color: #1912d3;
-        .sidebarMenuWrap {
-          height: 87vh;
-          position: sticky;
-          top: 0;
-          left: 0;
-          overflow-y: auto;
-          scrollbar-width: none;
-          @include md-mobile {
-            svg {
-              height: 15px;
-            }
+}
+.BodyWrapper {
+  display: flex;
+  .sideBarDiv {
+    transition: width 250ms ease-out;
+    max-width: 100%;
+    #sidebar {
+      height: 100%;
+      background-color: #1912d3;
+      .sidebarMenuWrap {
+        height: 87vh;
+        position: sticky;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+        scrollbar-width: none;
+        @include md-mobile {
+          svg {
+            height: 15px;
           }
-          .sideMenuListWrap {
-            margin-left: 1rem;
-            background-color: #1912d3;
+        }
+        .sideMenuListWrap {
+          margin-left: 1rem;
+          background-color: #1912d3;
+          @include x-tablet {
+            margin: 0;
+          }
+          .sideMenuTitle {
+            padding: 1.2rem 1.5rem;
+            display: flex;
+            font-size: 1.8rem;
+            font-weight: 700;
+            align-items: center;
+            gap: 15px;
+            border-bottom: 1px solid #2249e8;
+            cursor: pointer;
+            @include mid-991-tab {
+              font-size: 1.6rem;
+            }
             @include x-tablet {
-              margin: 0;
-            }
-            .sideMenuTitle {
-              padding: 1.2rem 1.5rem;
-              display: flex;
-              font-size: 1.8rem;
-              font-weight: 700;
-              align-items: center;
-              gap: 15px;
-              border-bottom: 1px solid #2249e8;
-              cursor: pointer;
-              @include mid-991-tab {
-                font-size: 1.6rem;
-              }
-              @include x-tablet {
-                gap: 8px;
-                padding: 1.2rem;
-              }
-              @include xss-mobile {
-                font-size: 1.4rem;
-              }
-              p {
-                color: #ffffff;
-                margin: 0;
-                transition-property: opacity, transform;
-                transition-duration: 250ms;
-                transition-timing-function: ease-out;
-                transition-delay: 100ms;
-              }
-              span {
-                display: flex;
-                align-items: center;
-                svg path {
-                  fill: #ffffff;
-                }
-              }
-            }
-
-            .sidebarMenuList {
-              margin: 0;
-              padding: 0;
-              color: #ffffff;
-              margin-bottom: 1rem;
-              li {
-                background-color: #1912d3;
-                color: #c0d6ff;
-                cursor: pointer;
-                div {
-                  padding: 1.2rem 1.5rem;
-                  display: flex;
-                  gap: 15px;
-                  align-items: center;
-                  @include x-tablet {
-                    padding: 1.2rem;
-                    gap: 8px;
-                  }
-                  span {
-                    display: flex;
-                    align-items: center;
-                    svg path {
-                      fill: #c0d6ff;
-                    }
-                  }
-                  p {
-                    margin: 0;
-                    font-size: 1.6rem;
-                    @include mid-991-tab {
-                      font-size: 1.4rem;
-                    }
-                    @include xss-mobile {
-                      font-size: 1.2rem;
-                    }
-                  }
-                }
-
-                &.open {
-                  div {
-                    background-color: #ffffff;
-                    color: #1912d3;
-                    border-top-left-radius: 25px;
-                    border-bottom-left-radius: 25px;
-                    font-weight: 700;
-                    span svg path {
-                      fill: #1912d3;
-                    }
-                  }
-                }
-
-                &.before-open {
-                  background-color: #ffffff;
-
-                  div {
-                    background-color: #1912d3;
-                    border-bottom-right-radius: 25px;
-                  }
-                }
-
-                &.after-open {
-                  background-color: #ffffff;
-
-                  div {
-                    background-color: #1912d3;
-                    border-top-right-radius: 25px;
-                  }
-                }
-              }
-            }
-          }
-          .loginClient {
-            background-color: #172f78;
-            color: #ffffff;
-            font-size: 1.6rem;
-            padding: 1.2rem 2rem;
-            @include md-mobile {
-              font-size: 1.4rem;
+              gap: 8px;
+              padding: 1.2rem;
             }
             @include xss-mobile {
-              font-size: 1.2rem;
+              font-size: 1.4rem;
             }
             p {
+              color: #ffffff;
               margin: 0;
+              transition-property: opacity, transform;
+              transition-duration: 250ms;
+              transition-timing-function: ease-out;
+              transition-delay: 100ms;
+            }
+            span {
+              display: flex;
+              align-items: center;
+              svg path {
+                fill: #ffffff;
+              }
             }
           }
-          .loginOptionWrap {
-            display: flex;
-            align-items: center;
-            padding: 1rem 2rem;
-            margin-bottom: 1rem;
-            @include mid-991-tab {
-              padding: 1rem;
-            }
 
-            .loginDropdown {
-              flex-grow: 1;
-              .loginDropDownBtn {
-                color: #c0d6ff !important;
-                font-size: 1.6rem;
-                width: 100%;
-                text-align: left;
-                border: 1px solid #ffffff;
-                border-radius: 0;
-                padding: 0.6rem;
-                cursor: pointer;
+          .sidebarMenuList {
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            li {
+              background-color: #1912d3;
+              color: #c0d6ff;
+              cursor: pointer;
+              div {
+                padding: 1.2rem 1.5rem;
                 display: flex;
+                gap: 15px;
                 align-items: center;
-                justify-content: space-between;
-                border-top-left-radius: 0.5rem;
-                border-bottom-left-radius: 0.5rem;
-                @include md-mobile {
-                  font-size: 1.4rem;
+                @include x-tablet {
+                  padding: 1.2rem;
+                  gap: 8px;
                 }
-                &::after {
-                  display: none;
+                span {
+                  display: flex;
+                  align-items: center;
+                  svg path {
+                    fill: #c0d6ff;
+                  }
+                }
+                p {
+                  margin: 0;
+                  font-size: 1.6rem;
+                  @include mid-991-tab {
+                    font-size: 1.4rem;
+                  }
+                  @include xss-mobile {
+                    font-size: 1.2rem;
+                  }
                 }
               }
-              .login-dropdown-list {
-                width: 100%;
-                .login-inputWrap {
-                  position: relative;
-                  input {
-                    background-color: #ffffff;
-                    height: 3.6rem;
-                    width: 90%;
-                    border: 1px solid #000;
-                    border-radius: 0.5rem;
-                    color: #000;
-                    padding-left: 3.5rem;
-                    font-size: 1.4rem;
-                    margin: 0 0.5rem;
-                    @include mobile {
-                      padding-left: 2.8rem;
-                    }
-                    &:focus-visible {
-                      outline: none;
-                    }
+
+              &.open {
+                div {
+                  background-color: #ffffff;
+                  color: #1912d3;
+                  border-top-left-radius: 25px;
+                  border-bottom-left-radius: 25px;
+                  font-weight: 700;
+                  span svg path {
+                    fill: #1912d3;
                   }
-                  span {
-                    position: absolute;
-                    width: 1.7rem;
-                    height: 1.7rem;
-                    text-align: center;
-                    top: 9px;
-                    left: 11px;
-                    svg {
-                      path {
-                        fill: #000;
-                      }
+                }
+              }
+
+              &.before-open {
+                background-color: #ffffff;
+
+                div {
+                  background-color: #1912d3;
+                  border-bottom-right-radius: 25px;
+                }
+              }
+
+              &.after-open {
+                background-color: #ffffff;
+
+                div {
+                  background-color: #1912d3;
+                  border-top-right-radius: 25px;
+                }
+              }
+            }
+          }
+        }
+        .loginClient {
+          background-color: #172f78;
+          color: #ffffff;
+          font-size: 1.6rem;
+          padding: 1.2rem 2rem;
+          @include md-mobile {
+            font-size: 1.4rem;
+          }
+          @include xss-mobile {
+            font-size: 1.2rem;
+          }
+          p {
+            margin: 0;
+          }
+        }
+        .loginOptionWrap {
+          display: flex;
+          align-items: center;
+          padding: 1rem 2rem;
+          margin-bottom: 1rem;
+          @include mid-991-tab {
+            padding: 1rem;
+          }
+
+          .loginDropdown {
+            flex-grow: 1;
+            .loginDropDownBtn {
+              color: #c0d6ff !important;
+              font-size: 1.6rem;
+              width: 100%;
+              text-align: left;
+              border: 1px solid #ffffff;
+              border-radius: 0;
+              padding: 0.6rem;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              border-top-left-radius: 0.5rem;
+              border-bottom-left-radius: 0.5rem;
+              @include md-mobile {
+                font-size: 1.4rem;
+              }
+              &::after {
+                display: none;
+              }
+            }
+            .login-dropdown-list {
+              width: 100%;
+              .login-inputWrap {
+                position: relative;
+                input {
+                  background-color: #ffffff;
+                  height: 3.6rem;
+                  width: 90%;
+                  border: 1px solid #000;
+                  border-radius: 0.5rem;
+                  color: #000;
+                  padding-left: 3.5rem;
+                  font-size: 1.4rem;
+                  margin: 0 0.5rem;
+                  @include mobile {
+                    padding-left: 2.8rem;
+                  }
+                  &:focus-visible {
+                    outline: none;
+                  }
+                }
+                span {
+                  position: absolute;
+                  width: 1.7rem;
+                  height: 1.7rem;
+                  text-align: center;
+                  top: 9px;
+                  left: 11px;
+                  svg {
+                    path {
+                      fill: #000;
                     }
                   }
                 }
-                .dropDownNonItem {
-                  font-size: 1.6rem;
+              }
+              .dropDownNonItem {
+                font-size: 1.6rem;
+                padding: 1rem;
+                font-weight: 700;
+                @include mobile {
+                  font-size: 1.4rem;
+                }
+                @include xssm_360_mobile {
+                  padding: 0.5rem 1rem;
+                }
+              }
+              li {
+                a {
+                  font-size: 1.4rem;
                   padding: 1rem;
-                  font-weight: 700;
-                  @include mobile {
-                    font-size: 1.4rem;
-                  }
+                  white-space: normal;
                   @include xssm_360_mobile {
                     padding: 0.5rem 1rem;
                   }
-                }
-                li {
-                  a {
-                    font-size: 1.4rem;
-                    padding: 1rem;
-                    white-space: normal;
-                    @include xssm_360_mobile {
-                      padding: 0.5rem 1rem;
-                    }
-                    &:hover {
-                      background-color: #1912d3;
-                      color: #ffffff;
-                    }
+                  &:hover {
+                    background-color: #1912d3;
+                    color: #ffffff;
                   }
                 }
               }
             }
+          }
 
-            .redirectButton {
-              display: flex;
-              align-items: center;
-              border: 1px solid #ffffff;
-              padding: 1rem;
-              border-top-right-radius: 0.5rem;
-              border-bottom-right-radius: 0.5rem;
-              cursor: pointer;
-              @include md-mobile {
-                border: none;
-              }
-              svg {
-                path {
-                  fill: #ffffff;
-                }
+          .redirectButton {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ffffff;
+            padding: 1rem;
+            border-top-right-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+            cursor: pointer;
+            @include md-mobile {
+              border: none;
+            }
+            svg {
+              path {
+                fill: #ffffff;
               }
             }
           }
-        }
-      }
-      &.collapsed-sidebar {
-        width: 6rem;
-        @include x-tablet {
-          width: 4.2rem;
-        }
-        p {
-          display: none;
-        }
-        .loginClient,
-        .loginOptionWrap {
-          display: none !important;
         }
       }
     }
-    .BodyDiv {
-      transition: width 250ms ease-out;
-      max-width: 100%;
-      flex: 1;
-      #dashboardWrap {
-        @include mainWrap;
-        @include overflow-wrap;
-        height: 86vh;
-        background-color: #f1f5ff;
-        .dashboardRow {
-          display: flex;
-          gap: 10px;
-          .dashLeftSide {
+    &.collapsed-sidebar {
+      width: 6rem;
+      @include x-tablet {
+        width: 4.2rem;
+      }
+      p {
+        display: none;
+      }
+      .loginClient,
+      .loginOptionWrap {
+        display: none !important;
+      }
+    }
+  }
+  .BodyDiv {
+    transition: width 250ms ease-out;
+    max-width: 100%;
+    flex: 1;
+    #dashboardWrap {
+      @include mainWrap;
+      @include overflow-wrap;
+      height: 86vh;
+      background-color: #f1f5ff;
+      .dashboardRow {
+        display: flex;
+        gap: 10px;
+        .dashLeftSide {
+          border-radius: 1rem;
+          .dashWelcomeWrap {
+            position: relative;
+            background: linear-gradient(
+              90deg,
+              rgba(12, 66, 230, 1) 0%,
+              rgba(0, 55, 128, 1) 100%
+            );
             border-radius: 1rem;
-            .dashWelcomeWrap {
-              position: relative;
-              background: linear-gradient(
-                90deg,
-                rgba(12, 66, 230, 1) 0%,
-                rgba(0, 55, 128, 1) 100%
-              );
-              border-radius: 1rem;
-              .dashWelcomeTitle {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 10px;
-                padding: 1rem 0;
-                position: relative;
-                z-index: 999;
-                h2 {
-                  font-size: 2.6rem;
-                  font-weight: 700;
-                  color: #ffffff;
-                  margin: 0;
-                  span {
-                    color: #43e3e0;
-                  }
-                }
-              }
-              .dashWelcomeSubtext {
-                width: 30rem;
-                margin: 0 auto;
-                padding-bottom: 1rem;
-                p {
-                  color: #d9d9d9;
-                  font-size: 1.4rem;
-                }
-              }
-              .userImgDiv {
-                background-image: url(/assets/img/user.png);
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-position: 100%;
-                height: 13rem;
-                width: 14rem;
-                position: absolute;
-                top: -10px;
-                left: 41px;
-                z-index: 2;
-              }
-              .logo1Div {
-                position: absolute;
-                bottom: 8px;
-                left: 8px;
-              }
-              .logo2Div {
-                position: absolute;
-                top: 10px;
-                left: 150px;
-              }
-              .arrowDiv {
-                position: absolute;
-                top: -24px;
-                right: -19px;
-              }
-              .serverDiv {
-                background-image: url(/assets/img/serverImg.png);
-                background-position: top;
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: absolute;
-                height: 13.2rem;
-                width: 13.1rem;
-                top: 0;
-                right: 0;
-              }
-              &::after {
-                content: "";
-                background-image: url(/assets/img/dash-wel-flow.svg);
-                background-position: bottom;
-                background-repeat: no-repeat;
-                background-size: 98%;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-              }
-            }
-            .dashGraphWrap {
-              background-color: #ffffff;
-              border-radius: 1rem;
-              margin: 1rem 0;
-              .dashGraphHeaderWrap {
-                padding: 1rem;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                h3 {
-                  @include blueHeading;
-                  font-weight: 600;
-                }
-                .graphLegends {
-                  display: flex;
-                  align-items: center;
-                  justify-content: space-evenly;
-                  gap: 10px;
-                  .graphPaidDiv {
-                    display: flex;
-                    align-items: center;
-                    gap: 5px;
-                    span {
-                      background-color: #001dff;
-                      border-radius: 50%;
-                      height: 1rem;
-                      width: 1rem;
-                    }
-                    h5 {
-                      font-weight: 500;
-                      font-size: 1rem;
-                      margin: 0;
-                    }
-                  }
-                  .graphInvoiceDiv {
-                    display: flex;
-                    align-items: center;
-                    gap: 5px;
-                    span {
-                      background-color: #ff7664;
-                      border-radius: 50%;
-                      height: 1rem;
-                      width: 1rem;
-                    }
-                    h5 {
-                      font-weight: 500;
-                      font-size: 1rem;
-                      margin: 0;
-                    }
-                  }
-                }
-                .graphDateWrap {
-                  display: flex;
-                  align-items: center;
-                  cursor: pointer;
-                  border: 1px solid #d1d7e2;
-                  border-radius: 0.5rem;
-                  padding: 0.1rem;
-                  position: relative;
-                  span {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 0.5rem;
-                    border-right: 1px solid #d1d7e2;
-                  }
-                  input {
-                    border: none;
-                    padding: 0.5rem;
-                    width: 7rem;
-                    cursor: pointer;
-                    caret-color: transparent;
-                    font-size: 1.4rem;
-                    color: #172f78;
-                    &:focus-visible {
-                      outline: none;
-                    }
-                  }
-                  .graphDateSVG {
-                    position: absolute;
-                    right: 10px;
-                  }
-                }
-              }
-              .dashGraphDiv {
-                padding: 1rem;
-                padding-top: 0;
-                height: 259px;
-              }
-            }
-            .dashRecentRow {
+            .dashWelcomeTitle {
               display: flex;
-              .recentlyPaidDiv {
-                background-color: #ffffff;
-                border-radius: 1rem;
-                margin-right: 10px;
-                .recentlyPaidTitleWrap {
-                  @include dashTitles;
-                }
-                .recentlyPaidOverflowWrap {
-                  @include overflow-wrap;
-                  height: 33vh;
-                  .recentlyPaidTable {
-                    @include data-table;
-                    width: 90%;
-                    margin: 0 auto;
-                    border-radius: 0.5rem;
-                  }
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+              padding: 1rem 0;
+              position: relative;
+              z-index: 999;
+              h2 {
+                font-size: 2.6rem;
+                font-weight: 700;
+                color: #ffffff;
+                margin: 0;
+                span {
+                  color: #43e3e0;
                 }
               }
-              .recentTicketsDiv {
-                background-color: #ffffff;
-                border-radius: 1rem;
-                margin-right: 10px;
-                .recentTicketTitleWrap {
-                  @include dashTitles;
-                }
-                .ticketsOverflowDiv {
-                  @include overflow-wrap;
-                  height: 33vh;
-                  .ticketCardsWrap {
-                    margin: 0 1rem;
-                    padding: 1rem 0;
-                    display: flex;
-                    align-items: center;
-                    border-bottom: 1px solid #bfbdff;
-                    justify-content: space-around;
-                    .ticketCardImg {
-                      img {
-                        border-radius: 50%;
-                      }
-                    }
-                    .ticketDetailsWrap {
-                      padding: 0 0.6rem;
-                      h5 {
-                        color: #172f78;
-                        font-size: 1.3rem;
-                        margin: 0;
-                      }
-                      p {
-                        margin: 0;
-                        font-size: 1rem;
-                        color: #8e8e8e;
-                      }
-                    }
-                    button {
-                      background-color: #ffe6e2;
-                      color: #b42d16;
-                      border: none;
-                      border-radius: 0.5rem;
-                      padding: 0.5rem 1rem;
-                    }
-                  }
-                }
+            }
+            .dashWelcomeSubtext {
+              width: 30rem;
+              margin: 0 auto;
+              padding-bottom: 1rem;
+              p {
+                color: #d9d9d9;
+                font-size: 1.4rem;
               }
-              .recentPackagesDiv {
-                background-color: #ffffff;
-                border-radius: 1rem;
-                .recentPackagesTitleWrap {
-                  @include dashTitles;
-                }
-                .packagesOverflowDiv {
-                  @include overflow-wrap;
-                  height: 33vh;
-                  .packageCard {
-                    display: flex;
-                    align-items: center;
-                    margin: 0 2rem;
-                    padding: 1rem 0;
-                    border-bottom: 1px solid #bfbdff;
-                    justify-content: space-between;
-                    p {
-                      color: #7d7d7d;
-                      font-size: 1rem;
-                      margin: 0;
-                    }
-                    .packageInfo {
-                      h5 {
-                        font-size: 1.3rem;
-                        color: #172f78;
-                        font-weight: 400;
-                        margin: 0;
-                      }
-                    }
-                    .packageTime {
-                      display: flex;
-                      align-items: center;
-                      gap: 5px;
-
-                      .packageLogoDiv {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        background-color: #f4e5fd;
-                        padding: 0.5rem;
-                        border-radius: 0.5rem;
-                      }
-                      .packagePendingDiv {
-                        span {
-                          font-size: 1.2rem;
-                          color: #172f78;
-                          font-weight: 500;
-                        }
-                      }
-                    }
-                  }
-                }
-              }
+            }
+            .userImgDiv {
+              background-image: url(/assets/img/user.png);
+              background-repeat: no-repeat;
+              background-size: 100%;
+              background-position: 100%;
+              height: 13rem;
+              width: 14rem;
+              position: absolute;
+              top: -10px;
+              left: 41px;
+              z-index: 2;
+            }
+            .logo1Div {
+              position: absolute;
+              bottom: 8px;
+              left: 8px;
+            }
+            .logo2Div {
+              position: absolute;
+              top: 10px;
+              left: 150px;
+            }
+            .arrowDiv {
+              position: absolute;
+              top: -24px;
+              right: -19px;
+            }
+            .serverDiv {
+              background-image: url(/assets/img/serverImg.png);
+              background-position: top;
+              background-repeat: no-repeat;
+              background-size: cover;
+              position: absolute;
+              height: 13.2rem;
+              width: 13.1rem;
+              top: 0;
+              right: 0;
+            }
+            &::after {
+              content: "";
+              background-image: url(/assets/img/dash-wel-flow.svg);
+              background-position: bottom;
+              background-repeat: no-repeat;
+              background-size: 98%;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
             }
           }
-          .dashRightSide {
+          .dashGraphWrap {
+            background-color: #ffffff;
             border-radius: 1rem;
-            margin-right: 1rem;
-            .pendingDomainDiv {
-              @include rsPendingCardDiv;
-              .pdlogoDiv {
-                @include svgDiv;
+            margin: 1rem 0;
+            .dashGraphHeaderWrap {
+              padding: 1rem;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              h3 {
+                @include blueHeading;
+                font-weight: 600;
               }
-              .pdDetailDiv {
-                @include pendingCardTextDiv;
-              }
-              .pdCircleDiv {
-                height: 4.6rem;
-                width: 4.6rem;
-              }
-            }
-            .pendingHostingDiv {
-              @include rsPendingCardDiv;
-              .phlogoDiv {
-                @include svgDiv;
-                background-color: #fff9dd;
-              }
-              .phDetailDiv {
-                @include pendingCardTextDiv;
-                p {
-                  color: #90790d;
-                }
-                h5 {
-                  color: #90790d;
-                }
-              }
-              .phCircleDiv {
-                height: 4.6rem;
-                width: 4.6rem;
-              }
-            }
-            .unpaidInvoicesDiv {
-              @include rsPendingCardDiv;
-              .uilogoDiv {
-                @include svgDiv;
-                background-color: #f4e5fd;
-              }
-              .uiDetailDiv {
-                @include pendingCardTextDiv;
-                p {
-                  color: #611592;
-                }
-                h5 {
-                  color: #611592;
-                }
-              }
-              .uiCircleDiv {
-                height: 4.6rem;
-                width: 4.6rem;
-              }
-            }
-            .activeTicketsDiv {
-              @include rsPendingCardDiv;
-              .atlogoDiv {
-                @include svgDiv;
-                background-color: #ffe6e2;
-              }
-              .atDetailDiv {
-                @include pendingCardTextDiv;
-                p {
-                  color: #b42d16;
-                }
-                h5 {
-                  color: #b42d16;
-                }
-              }
-              .atCircleDiv {
-                height: 4.6rem;
-                width: 4.6rem;
-              }
-            }
-            .dashPieChart {
-              padding: 0.5rem;
-              border-radius: 1rem;
-              background-color: #ffffff;
-              .pieTitleDiv {
-                @include titleWrap;
-                padding-bottom: 1rem;
-                h3 {
-                  font-size: 1.6rem;
-                  margin: 0;
-                }
-                p {
-                  font-size: 1.2rem;
-                }
-              }
-              .pieDiv {
-                width: 100%;
-                height: 25rem;
-                background: white;
-              }
-              .pieChartLegends {
+              .graphLegends {
                 display: flex;
                 align-items: center;
                 justify-content: space-evenly;
-                padding: 1rem 0;
-                .pieChartPaidDiv {
+                gap: 10px;
+                .graphPaidDiv {
                   display: flex;
                   align-items: center;
                   gap: 5px;
@@ -1164,7 +871,7 @@ h6 {
                     margin: 0;
                   }
                 }
-                .pieChartOutstandingDiv {
+                .graphInvoiceDiv {
                   display: flex;
                   align-items: center;
                   gap: 5px;
@@ -1181,417 +888,653 @@ h6 {
                   }
                 }
               }
-            }
-          }
-        }
-      }
-      //  hosting-services-started
-      #hosting-services-wrap {
-        @include mainWrap;
-        .hs-topbar-wrap {
-          display: flex;
-          justify-content: space-between;
-          .hs-title-wrap {
-            @include titleWrap;
-          }
-          .hs-search-wrap {
-            @include searchBarWrap;
-            .hs-InputWrap {
-              @include inputWrap;
-            }
-            .new-hosting-div {
-              @include bluebtn;
-            }
-          }
-        }
-        .hs-table-wrap {
-          background-color: #f9fbff;
-          border-radius: 0.5rem;
-          margin: 1rem;
-          .tableInfoHead {
-            @include tableInfoHead;
-            .showEntriesWrap {
-              @include entryWrap;
-            }
-            .filterWrap {
-              display: flex;
-              align-items: center;
-              gap: 10px;
-              button {
-                @include filterBtn;
-              }
-              .hs-dateWrap {
-                @include dateWrap;
-              }
-            }
-          }
-          .hs-table-overflow {
-            @include overflow-wrap;
-            .hs-table {
-              @include data-table;
-            }
-          }
-          .hs-table-pagination {
-            display: flex;
-            justify-content: space-between;
-            padding: 1.4rem;
-            .showingEntriesWrap {
-              p {
-                @include grayTitle;
-                margin: 0;
-              }
-            }
-            .hs-pagination-wrap {
-              .hs-pagination {
-                @include paginationDiv;
-              }
-            }
-          }
-        }
-      }
-      // hosting-services-ended
-
-      //orders page started
-      #orders-wrap {
-        @include mainWrap;
-        .orders-topbar-wrap {
-          display: flex;
-          justify-content: space-between;
-          .orders-title-wrap {
-            @include titleWrap;
-          }
-          .orders-search-wrap {
-            @include searchBarWrap;
-
-            .orders-InputWrap {
-              @include inputWrap;
-            }
-            .new-order-div {
-              @include bluebtn;
-            }
-          }
-        }
-        .orders-table-wrap {
-          background-color: #f9fbff;
-          border-radius: 0.5rem;
-          margin: 1rem;
-          .orders-table-infoHead {
-            @include tableInfoHead;
-            .showOrderEntries {
-              @include entryWrap;
-            }
-            .orderFilterWrap {
-              display: flex;
-              align-items: center;
-              gap: 10px;
-              button {
-                @include filterBtn;
-              }
-              .order-dateWrap {
-                @include dateWrap;
-              }
-            }
-          }
-          .order-table-overflow {
-            @include overflow-wrap;
-            .order-table {
-              @include data-table;
-              td {
-                .orderTableIcon {
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  gap: 10px;
-
-                  a {
-                    cursor: pointer;
-                  }
-                }
-              }
-            }
-          }
-          .order-table-pagination {
-            display: flex;
-            justify-content: space-between;
-            padding: 1.4rem;
-            .orderEntriesWrap {
-              p {
-                @include grayTitle;
-                margin: 0;
-              }
-            }
-            .order-pagination-wrap {
-              .order-pagination {
-                @include paginationDiv;
-              }
-            }
-          }
-        }
-      }
-      //orders page ended
-
-      //pricing-tables-wrap-start
-      #pt-wrap {
-        @include mainWrap;
-        @include overflow-wrap;
-        height: 86vh;
-        background-color: #ffffff;
-        .pt-topbar-wrap {
-          display: flex;
-          justify-content: space-between;
-          .pt-title-wrap {
-            @include titleWrap;
-          }
-          .pt-last-wrap {
-            display: flex;
-            align-items: center;
-            padding-top: 1rem;
-            .pt-add-item-div {
-              @include bluebtn;
-            }
-          }
-        }
-        .pt-btn-list {
-          padding: 1rem 0;
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          justify-content: space-between;
-          flex-wrap: wrap;
-          a {
-            @include bluebtn;
-            color: white !important;
-            font-weight: 500;
-            font-size: 1.4rem;
-          }
-        }
-        .pt-card-wraps {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          flex-wrap: wrap;
-          padding: 2rem 0;
-
-          .planningWrapper {
-            background: linear-gradient(
-              90deg,
-              rgba(0, 206, 196, 1) 0%,
-              rgba(31, 139, 139, 1) 100%
-            );
-            padding: 1.5rem;
-            height: 39.5rem;
-            border-radius: 1rem;
-            margin: 1rem;
-            .planContainer {
-              margin-top: 5px;
-
-              .planTitle {
-                color: #888888;
-                font-weight: 600;
-                margin-bottom: 0;
-                font-size: 1.6rem;
-                text-align: center;
-                color: white;
-                @include x-767-tablet {
-                  font-size: 1.4rem;
-                }
-              }
-              .planPrice {
-                display: flex;
-                justify-content: center;
-                gap: 5px;
-                .planPriceUnit {
-                  display: flex;
-                  justify-content: end;
-                  align-items: center;
-                  color: white;
-                  font-size: 3.5rem;
-                  font-weight: 600;
-                }
-                .planPriceMonth {
-                  display: flex;
-                  justify-content: end;
-                  align-items: center;
-                  color: white;
-                  font-size: 1.8rem;
-                  font-weight: 500;
-                }
-              }
-              .planInfo {
-                h3 {
-                  font-size: 1.6rem;
-                  text-align: center;
-                  position: relative;
-                  padding: 10px 0;
-                  color: white;
-                  margin: 0;
-                  &::after {
-                    content: "";
-                    position: absolute;
-                    top: 50%;
-                    width: 40%;
-                    height: 1px;
-                    background-color: white;
-                    right: 0;
-                    transform: translateY(-50%);
-                  }
-                  &::before {
-                    content: "";
-                    position: absolute;
-                    top: 50%;
-                    width: 40%;
-                    height: 1px;
-                    background-color: white;
-                    left: 0;
-                    transform: translateY(-50%);
-                  }
-                }
-              }
-              .plan-select-div {
+              .graphDateWrap {
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                select {
+                cursor: pointer;
+                border: 1px solid #d1d7e2;
+                border-radius: 0.5rem;
+                padding: 0.1rem;
+                position: relative;
+                span {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
                   padding: 0.5rem;
-                  margin-bottom: 1rem;
-                  background-color: transparent;
-                  color: white;
-                  border: 1px solid white;
-                  border-radius: 0.5rem;
-                  font-size: 1.6rem;
-                  font-weight: 500;
+                  border-right: 1px solid #d1d7e2;
+                }
+                input {
+                  border: none;
+                  padding: 0.5rem;
+                  width: 7rem;
+                  cursor: pointer;
+                  caret-color: transparent;
+                  font-size: 1.4rem;
+                  color: #172f78;
                   &:focus-visible {
                     outline: none;
                   }
-                  option {
-                    background-color: #00cec4;
-                    color: white;
-                  }
                 }
-              }
-              .planDetailsList {
-                ul {
-                  text-align: center;
-                  font-size: 1.2rem;
-                  color: white;
-                  li {
-                    padding: 0.5rem;
-                  }
-                }
-              }
-              .planCutImg {
-                text-align: end;
-                .planBuyBtn {
-                  margin-top: 56px;
-                  font-size: 1.4rem;
-                  border: none;
-                  padding: 0.5rem 2rem;
-                  border-radius: 5px;
-                  color: white;
-                  background-color: transparent;
+                .graphDateSVG {
+                  position: absolute;
+                  right: 10px;
                 }
               }
             }
-
-            &.firstCard {
-              background: #e9ffff;
-              position: relative;
-              .planContainer {
-                position: relative;
-                z-index: 999;
+            .dashGraphDiv {
+              padding: 1rem;
+              padding-top: 0;
+              height: 259px;
+            }
+          }
+          .dashRecentRow {
+            display: flex;
+            .recentlyPaidDiv {
+              background-color: #ffffff;
+              border-radius: 1rem;
+              margin-right: 10px;
+              .recentlyPaidTitleWrap {
+                @include dashTitles;
               }
-              .planContainer .planCutImg .planBuyBtn {
-                margin-top: 15px;
-                background-color: #259a99;
-              }
-              .planContainer .planInfo h3 {
-                margin-bottom: 0px;
-              }
-              .firstCardBottomSvg {
-                background: url(/assets/img/firstcard.svg) no-repeat bottom /
-                  100%;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                border-top-left-radius: 1rem;
-                border-top-right-radius: 1rem;
-                @include mid-tab {
-                  background: url(/assets/img/firstcard.svg) no-repeat bottom /
-                    127%;
+              .recentlyPaidOverflowWrap {
+                @include overflow-wrap;
+                height: 33vh;
+                .recentlyPaidTable {
+                  @include data-table;
+                  width: 90%;
+                  margin: 0 auto;
+                  border-radius: 0.5rem;
                 }
               }
             }
-            &.secondCard {
-              background: url(/assets/img/secondcardtop.svg) no-repeat top /
-                100%;
-              background-color: #ebf2ff;
-              position: relative;
-              @include mid-tab {
-                background: url(/assets/img/secondcardtop.svg) no-repeat top /
-                  130%;
+            .recentTicketsDiv {
+              background-color: #ffffff;
+              border-radius: 1rem;
+              margin-right: 10px;
+              .recentTicketTitleWrap {
+                @include dashTitles;
               }
-              .planContainer {
-                margin-top: 0;
-                .planTitle {
-                  padding-bottom: 4rem;
-                  color: #82a0ff;
-                }
-
-                .plan-select-div {
-                  select {
-                    background-color: transparent;
-                    color: black;
-                    border-color: black;
-                    option {
-                      background-color: white;
-                      color: black;
+              .ticketsOverflowDiv {
+                @include overflow-wrap;
+                height: 33vh;
+                .ticketCardsWrap {
+                  margin: 0 1rem;
+                  padding: 1rem 0;
+                  display: flex;
+                  align-items: center;
+                  border-bottom: 1px solid #bfbdff;
+                  justify-content: space-around;
+                  .ticketCardImg {
+                    img {
+                      border-radius: 50%;
                     }
                   }
+                  .ticketDetailsWrap {
+                    padding: 0 0.6rem;
+                    h5 {
+                      color: #172f78;
+                      font-size: 1.3rem;
+                      margin: 0;
+                    }
+                    p {
+                      margin: 0;
+                      font-size: 1rem;
+                      color: #8e8e8e;
+                    }
+                  }
+                  button {
+                    background-color: #ffe6e2;
+                    color: #b42d16;
+                    border: none;
+                    border-radius: 0.5rem;
+                    padding: 0.5rem 1rem;
+                  }
                 }
+              }
+            }
+            .recentPackagesDiv {
+              background-color: #ffffff;
+              border-radius: 1rem;
+              .recentPackagesTitleWrap {
+                @include dashTitles;
+              }
+              .packagesOverflowDiv {
+                @include overflow-wrap;
+                height: 33vh;
+                .packageCard {
+                  display: flex;
+                  align-items: center;
+                  margin: 0 2rem;
+                  padding: 1rem 0;
+                  border-bottom: 1px solid #bfbdff;
+                  justify-content: space-between;
+                  p {
+                    color: #7d7d7d;
+                    font-size: 1rem;
+                    margin: 0;
+                  }
+                  .packageInfo {
+                    h5 {
+                      font-size: 1.3rem;
+                      color: #172f78;
+                      font-weight: 400;
+                      margin: 0;
+                    }
+                  }
+                  .packageTime {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
 
-                .planDetailsList ul {
-                  color: #888888;
-                }
-                .planCutImg {
-                  text-align: center;
-                  position: relative;
-                  z-index: 999;
-                  .planBuyBtn {
-                    margin-top: 25px;
-                    button {
-                      font-size: 1.4rem;
-                      background-color: #5c7dff;
-                      padding: 0.5rem 4rem;
-                      border: none;
-                      color: white;
+                    .packageLogoDiv {
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      background-color: #f4e5fd;
+                      padding: 0.5rem;
                       border-radius: 0.5rem;
                     }
+                    .packagePendingDiv {
+                      span {
+                        font-size: 1.2rem;
+                        color: #172f78;
+                        font-weight: 500;
+                      }
+                    }
                   }
                 }
               }
-              .secondCardBottomSvg {
-                background: url(/assets/img/secondcardbottom.svg) no-repeat
-                  bottom / 100%;
-                height: 50px;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
+            }
+          }
+        }
+        .dashRightSide {
+          border-radius: 1rem;
+          margin-right: 1rem;
+          .pendingDomainDiv {
+            @include rsPendingCardDiv;
+            .pdlogoDiv {
+              @include svgDiv;
+            }
+            .pdDetailDiv {
+              @include pendingCardTextDiv;
+            }
+            .pdCircleDiv {
+              height: 4.6rem;
+              width: 4.6rem;
+            }
+          }
+          .pendingHostingDiv {
+            @include rsPendingCardDiv;
+            .phlogoDiv {
+              @include svgDiv;
+              background-color: #fff9dd;
+            }
+            .phDetailDiv {
+              @include pendingCardTextDiv;
+              p {
+                color: #90790d;
+              }
+              h5 {
+                color: #90790d;
               }
             }
-            &.thirdCard {
-              background: url(/assets/img/thirdcardtop.svg) no-repeat top / 100%;
-              background-color: #f8f8ff;
-              position: relative;
-              .planTitle {
-                text-align: start;
-                color: #82a0ff;
+            .phCircleDiv {
+              height: 4.6rem;
+              width: 4.6rem;
+            }
+          }
+          .unpaidInvoicesDiv {
+            @include rsPendingCardDiv;
+            .uilogoDiv {
+              @include svgDiv;
+              background-color: #f4e5fd;
+            }
+            .uiDetailDiv {
+              @include pendingCardTextDiv;
+              p {
+                color: #611592;
               }
-              .planPrice {
-                justify-content: start;
-                padding-bottom: 3.5rem;
+              h5 {
+                color: #611592;
+              }
+            }
+            .uiCircleDiv {
+              height: 4.6rem;
+              width: 4.6rem;
+            }
+          }
+          .activeTicketsDiv {
+            @include rsPendingCardDiv;
+            .atlogoDiv {
+              @include svgDiv;
+              background-color: #ffe6e2;
+            }
+            .atDetailDiv {
+              @include pendingCardTextDiv;
+              p {
+                color: #b42d16;
+              }
+              h5 {
+                color: #b42d16;
+              }
+            }
+            .atCircleDiv {
+              height: 4.6rem;
+              width: 4.6rem;
+            }
+          }
+          .dashPieChart {
+            padding: 0.5rem;
+            border-radius: 1rem;
+            background-color: #ffffff;
+            .pieTitleDiv {
+              @include titleWrap;
+              padding-bottom: 1rem;
+              h3 {
+                font-size: 1.6rem;
+                margin: 0;
+              }
+              p {
+                font-size: 1.2rem;
+              }
+            }
+            .pieDiv {
+              width: 100%;
+              height: 25rem;
+              background: white;
+            }
+            .pieChartLegends {
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+              padding: 1rem 0;
+              .pieChartPaidDiv {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                span {
+                  background-color: #001dff;
+                  border-radius: 50%;
+                  height: 1rem;
+                  width: 1rem;
+                }
+                h5 {
+                  font-weight: 500;
+                  font-size: 1rem;
+                  margin: 0;
+                }
+              }
+              .pieChartOutstandingDiv {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                span {
+                  background-color: #ff7664;
+                  border-radius: 50%;
+                  height: 1rem;
+                  width: 1rem;
+                }
+                h5 {
+                  font-weight: 500;
+                  font-size: 1rem;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    //  hosting-services-started
+    #hosting-services-wrap {
+      @include mainWrap;
+      .hs-topbar-wrap {
+        display: flex;
+        justify-content: space-between;
+        .hs-title-wrap {
+          @include titleWrap;
+        }
+        .hs-search-wrap {
+          @include searchBarWrap;
+          .hs-InputWrap {
+            @include inputWrap;
+          }
+          .new-hosting-div {
+            @include bluebtn;
+          }
+        }
+      }
+      .hs-table-wrap {
+        background-color: #f9fbff;
+        border-radius: 0.5rem;
+        margin: 1rem;
+        .tableInfoHead {
+          @include tableInfoHead;
+          .showEntriesWrap {
+            @include entryWrap;
+          }
+          .filterWrap {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            button {
+              @include filterBtn;
+            }
+            .hs-dateWrap {
+              @include dateWrap;
+            }
+          }
+        }
+        .hs-table-overflow {
+          @include overflow-wrap;
+          .hs-table {
+            @include data-table;
+          }
+        }
+        .hs-table-pagination {
+          display: flex;
+          justify-content: space-between;
+          padding: 1.4rem;
+          .showingEntriesWrap {
+            p {
+              @include grayTitle;
+              margin: 0;
+            }
+          }
+          .hs-pagination-wrap {
+            .hs-pagination {
+              @include paginationDiv;
+            }
+          }
+        }
+      }
+    }
+    // hosting-services-ended
+
+    //orders page started
+    #orders-wrap {
+      @include mainWrap;
+      .orders-topbar-wrap {
+        display: flex;
+        justify-content: space-between;
+        .orders-title-wrap {
+          @include titleWrap;
+        }
+        .orders-search-wrap {
+          @include searchBarWrap;
+
+          .orders-InputWrap {
+            @include inputWrap;
+          }
+          .new-order-div {
+            @include bluebtn;
+          }
+        }
+      }
+      .orders-table-wrap {
+        background-color: #f9fbff;
+        border-radius: 0.5rem;
+        margin: 1rem;
+        .orders-table-infoHead {
+          @include tableInfoHead;
+          .showOrderEntries {
+            @include entryWrap;
+          }
+          .orderFilterWrap {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            button {
+              @include filterBtn;
+            }
+            .order-dateWrap {
+              @include dateWrap;
+            }
+          }
+        }
+        .order-table-overflow {
+          @include overflow-wrap;
+          .order-table {
+            @include data-table;
+            td {
+              .orderTableIcon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                a {
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+        .order-table-pagination {
+          display: flex;
+          justify-content: space-between;
+          padding: 1.4rem;
+          .orderEntriesWrap {
+            p {
+              @include grayTitle;
+              margin: 0;
+            }
+          }
+          .order-pagination-wrap {
+            .order-pagination {
+              @include paginationDiv;
+            }
+          }
+        }
+      }
+    }
+    //orders page ended
+
+    //pricing-tables-wrap-start
+    #pt-wrap {
+      @include mainWrap;
+      @include overflow-wrap;
+      height: 86vh;
+      background-color: #ffffff;
+      .pt-topbar-wrap {
+        display: flex;
+        justify-content: space-between;
+        .pt-title-wrap {
+          @include titleWrap;
+        }
+        .pt-last-wrap {
+          display: flex;
+          align-items: center;
+          padding-top: 1rem;
+          .pt-add-item-div {
+            @include bluebtn;
+          }
+        }
+      }
+      .pt-btn-list {
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        a {
+          @include bluebtn;
+          color: white !important;
+          font-weight: 500;
+          font-size: 1.4rem;
+        }
+      }
+      .pt-card-wraps {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+
+        .planningWrapper {
+          background: linear-gradient(
+            90deg,
+            rgba(0, 206, 196, 1) 0%,
+            rgba(31, 139, 139, 1) 100%
+          );
+          padding: 1.5rem;
+          height: 39.5rem;
+          border-radius: 1rem;
+          margin: 1rem;
+          .planContainer {
+            margin-top: 5px;
+
+            .planTitle {
+              color: #888888;
+              font-weight: 600;
+              margin-bottom: 0;
+              font-size: 1.6rem;
+              text-align: center;
+              color: white;
+              @include x-767-tablet {
+                font-size: 1.4rem;
+              }
+            }
+            .planPrice {
+              display: flex;
+              justify-content: center;
+              gap: 5px;
+              .planPriceUnit {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                color: white;
+                font-size: 3.5rem;
+                font-weight: 600;
+              }
+              .planPriceMonth {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                color: white;
+                font-size: 1.8rem;
+                font-weight: 500;
+              }
+            }
+            .planInfo {
+              h3 {
+                font-size: 1.6rem;
+                text-align: center;
+                position: relative;
+                padding: 10px 0;
+                color: white;
+                margin: 0;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: 50%;
+                  width: 40%;
+                  height: 1px;
+                  background-color: white;
+                  right: 0;
+                  transform: translateY(-50%);
+                }
+                &::before {
+                  content: "";
+                  position: absolute;
+                  top: 50%;
+                  width: 40%;
+                  height: 1px;
+                  background-color: white;
+                  left: 0;
+                  transform: translateY(-50%);
+                }
+              }
+            }
+            .plan-select-div {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              select {
+                padding: 0.5rem;
+                margin-bottom: 1rem;
+                background-color: transparent;
+                color: white;
+                border: 1px solid white;
+                border-radius: 0.5rem;
+                font-size: 1.6rem;
+                font-weight: 500;
+                &:focus-visible {
+                  outline: none;
+                }
+                option {
+                  background-color: #00cec4;
+                  color: white;
+                }
+              }
+            }
+            .planDetailsList {
+              ul {
+                text-align: center;
+                font-size: 1.2rem;
+                color: white;
+                li {
+                  padding: 0.5rem;
+                }
+              }
+            }
+            .planCutImg {
+              text-align: end;
+              .planBuyBtn {
+                margin-top: 56px;
+                font-size: 1.4rem;
+                border: none;
+                padding: 0.5rem 2rem;
+                border-radius: 5px;
+                color: white;
+                background-color: transparent;
+              }
+            }
+          }
+
+          &.firstCard {
+            background: #e9ffff;
+            position: relative;
+            .planContainer {
+              position: relative;
+              z-index: 999;
+            }
+            .planContainer .planCutImg .planBuyBtn {
+              margin-top: 15px;
+              background-color: #259a99;
+            }
+            .planContainer .planInfo h3 {
+              margin-bottom: 0px;
+            }
+            .firstCardBottomSvg {
+              background: url(/assets/img/firstcard.svg) no-repeat bottom / 100%;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              border-top-left-radius: 1rem;
+              border-top-right-radius: 1rem;
+              @include mid-tab {
+                background: url(/assets/img/firstcard.svg) no-repeat bottom /
+                  127%;
+              }
+            }
+          }
+          &.secondCard {
+            background: url(/assets/img/secondcardtop.svg) no-repeat top / 100%;
+            background-color: #ebf2ff;
+            position: relative;
+            @include mid-tab {
+              background: url(/assets/img/secondcardtop.svg) no-repeat top /
+                130%;
+            }
+            .planContainer {
+              margin-top: 0;
+              .planTitle {
+                padding-bottom: 4rem;
+                color: #82a0ff;
               }
 
               .plan-select-div {
@@ -1617,7 +1560,7 @@ h6 {
                   margin-top: 25px;
                   button {
                     font-size: 1.4rem;
-                    background-color: #2752fc;
+                    background-color: #5c7dff;
                     padding: 0.5rem 4rem;
                     border: none;
                     color: white;
@@ -1625,83 +1568,137 @@ h6 {
                   }
                 }
               }
-              .thirdCardBottomSvg {
-                background: url(/assets/img/thirdcardbottom.svg) no-repeat
-                  bottom / 100%;
-                position: absolute;
-                bottom: 0px;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                border-bottom-left-radius: 1rem;
-                border-bottom-right-radius: 1rem;
+            }
+            .secondCardBottomSvg {
+              background: url(/assets/img/secondcardbottom.svg) no-repeat bottom /
+                100%;
+              height: 50px;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+            }
+          }
+          &.thirdCard {
+            background: url(/assets/img/thirdcardtop.svg) no-repeat top / 100%;
+            background-color: #f8f8ff;
+            position: relative;
+            .planTitle {
+              text-align: start;
+              color: #82a0ff;
+            }
+            .planPrice {
+              justify-content: start;
+              padding-bottom: 3.5rem;
+            }
+
+            .plan-select-div {
+              select {
+                background-color: transparent;
+                color: black;
+                border-color: black;
+                option {
+                  background-color: white;
+                  color: black;
+                }
               }
             }
-            &.fourthCard {
-              background: white;
-              border: 1px solid black;
-              .planContainer {
-                margin-top: 0;
-                .planLogo {
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  align-items: center;
-                  gap: 5px;
-                  h3 {
-                    color: #888888;
-                    margin-bottom: 0rem;
-                    font-size: 1.2rem;
-                    font-weight: 400;
-                    text-align: center;
-                  }
-                }
-                .planPrice {
-                  .planPriceUnit {
-                    color: #2e0aa3;
-                  }
-                  .planPriceMonth {
-                    color: #888888;
-                  }
-                }
-                .planTitle {
-                  color: #5479f7;
+
+            .planDetailsList ul {
+              color: #888888;
+            }
+            .planCutImg {
+              text-align: center;
+              position: relative;
+              z-index: 999;
+              .planBuyBtn {
+                margin-top: 25px;
+                button {
                   font-size: 1.4rem;
-                  padding-bottom: 1rem;
+                  background-color: #2752fc;
+                  padding: 0.5rem 4rem;
+                  border: none;
+                  color: white;
+                  border-radius: 0.5rem;
                 }
-
-                .plan-select-div {
-                  select {
-                    background-color: transparent;
-                    color: black;
-                    border-color: black;
-                    option {
-                      background-color: white;
-                      color: black;
-                    }
-                  }
+              }
+            }
+            .thirdCardBottomSvg {
+              background: url(/assets/img/thirdcardbottom.svg) no-repeat bottom /
+                100%;
+              position: absolute;
+              bottom: 0px;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              border-bottom-left-radius: 1rem;
+              border-bottom-right-radius: 1rem;
+            }
+          }
+          &.fourthCard {
+            background: white;
+            border: 1px solid black;
+            .planContainer {
+              margin-top: 0;
+              .planLogo {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                h3 {
+                  color: #888888;
+                  margin-bottom: 0rem;
+                  font-size: 1.2rem;
+                  font-weight: 400;
+                  text-align: center;
                 }
-
-                .planDetailsList ul {
+              }
+              .planPrice {
+                .planPriceUnit {
+                  color: #2e0aa3;
+                }
+                .planPriceMonth {
                   color: #888888;
                 }
-                .featuresTag {
-                  color: #262626;
-                  font-size: 1.4rem;
-                  padding-left: 2rem;
+              }
+              .planTitle {
+                color: #5479f7;
+                font-size: 1.4rem;
+                padding-bottom: 1rem;
+              }
+
+              .plan-select-div {
+                select {
+                  background-color: transparent;
+                  color: black;
+                  border-color: black;
+                  option {
+                    background-color: white;
+                    color: black;
+                  }
                 }
-                .planCutImg {
-                  text-align: center;
-                  .planBuyBtn {
-                    margin-top: 15px;
-                    button {
-                      font-size: 1.4rem;
-                      background-color: #2e0aa3;
-                      padding: 0.5rem 6rem;
-                      border: none;
-                      color: white;
-                      border-radius: 0.5rem;
-                    }
+              }
+
+              .planDetailsList ul {
+                color: #888888;
+              }
+              .featuresTag {
+                color: #262626;
+                font-size: 1.4rem;
+                padding-left: 2rem;
+              }
+              .planCutImg {
+                text-align: center;
+                .planBuyBtn {
+                  margin-top: 15px;
+                  button {
+                    font-size: 1.4rem;
+                    background-color: #2e0aa3;
+                    padding: 0.5rem 6rem;
+                    border: none;
+                    color: white;
+                    border-radius: 0.5rem;
                   }
                 }
               }
@@ -1709,214 +1706,278 @@ h6 {
           }
         }
       }
-      //pricing-tables-wrap-end
+    }
+    //pricing-tables-wrap-end
 
-      //menu-wrap-start
-      #menu-wrap {
-        @include mainWrap;
-        @include overflow-wrap;
-        height: 86vh;
-        background-color: #ffffff;
-        .menu-topbar-wrap {
+    //menu-wrap-start
+    #menu-wrap {
+      @include mainWrap;
+      @include overflow-wrap;
+      height: 86vh;
+      background-color: #ffffff;
+      .menu-topbar-wrap {
+        display: flex;
+        justify-content: space-between;
+        .menu-title-wrap {
+          @include titleWrap;
+        }
+        .menu-last-wrap {
           display: flex;
-          justify-content: space-between;
-          .menu-title-wrap {
-            @include titleWrap;
+          align-items: center;
+          padding-top: 1rem;
+          .menu-add-item-div {
+            @include bluebtn;
           }
-          .menu-last-wrap {
+        }
+      }
+      .menu-btn-list {
+        padding: 0.5rem 0;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        a {
+          @include bluebtn;
+          color: white !important;
+          font-weight: 500;
+          font-size: 1.4rem;
+          background-color: #2e0aa3;
+        }
+      }
+      .menu-content {
+        background-color: #f9fbff;
+        border-radius: 0.5rem;
+        margin: 1rem;
+        .menu-title-wrap {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          h4 {
+            @include blueHeading;
+            font-size: 1.8rem;
+            font-weight: 600;
+          }
+          a {
             display: flex;
             align-items: center;
-            padding-top: 1rem;
-            .menu-add-item-div {
+            justify-content: center;
+          }
+        }
+        .sub-menu-wrap {
+          display: flex;
+          padding: 2rem 0;
+          .submenu-name-wrap {
+            margin: 0 1rem;
+            h5 {
+              @include blueSmHeading;
+              padding-bottom: 1rem;
+            }
+            input {
+              @include hs-modal-input;
+              width: 100%;
+            }
+          }
+          .submenu-url-wrap {
+            margin: 0 1rem;
+            h5 {
+              @include blueSmHeading;
+              padding-bottom: 1rem;
+            }
+            input {
+              @include hs-modal-input;
+              width: 100%;
+            }
+          }
+          .btn-down {
+            display: flex;
+            align-items: end;
+            .add-submenu-btn {
               @include bluebtn;
             }
           }
         }
-        .menu-btn-list {
-          padding: 0.5rem 0;
-          display: flex;
-          align-items: center;
-          gap: 15px;
-          flex-wrap: wrap;
-          a {
-            @include bluebtn;
-            color: white !important;
-            font-weight: 500;
-            font-size: 1.4rem;
-            background-color: #2e0aa3;
+        .menu-table-wrap {
+          .menu-table {
+            @include data-table;
+            margin: 0;
+            thead {
+              tr {
+                background-color: #edf3ff;
+                th {
+                  &:nth-child(2) {
+                    border-left: none;
+                  }
+                }
+              }
+            }
+            tbody {
+              tr {
+                &:nth-child(odd) {
+                  background-color: #f9fbff;
+                }
+                &:nth-child(even) {
+                  background-color: #ffffff;
+                }
+                td {
+                  .menu-table-actions {
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+                  }
+                }
+              }
+            }
           }
         }
-        .menu-content {
-          background-color: #f9fbff;
-          border-radius: 0.5rem;
-          margin: 1rem;
-          .menu-title-wrap {
+        .menu-save-wrap {
+          margin-top: 1rem;
+          display: flex;
+          justify-content: flex-end;
+          padding: 0.5rem 0;
+          .menu-save-btn {
+            @include bluebtn;
+            font-weight: 600;
+            border: none;
+            color: white;
+          }
+        }
+      }
+    }
+    //menu-wrap-end
+
+    //slider-wrap-start
+    #slider-wrap {
+      @include mainWrap;
+      @include overflow-wrap;
+      height: 86vh;
+      background-color: #ffffff;
+      .slider-topbar-wrap {
+        display: flex;
+        justify-content: space-between;
+        .slider-title-wrap {
+          @include titleWrap;
+        }
+        .slider-last-wrap {
+          display: flex;
+          align-items: center;
+          padding-top: 1rem;
+          .slider-add-item-div {
+            @include bluebtn;
+          }
+        }
+      }
+      .slider-table-wrap {
+        background-color: #f9fbff;
+        border-radius: 0.5rem;
+        margin: 1rem;
+        .sliderTableInfoHead {
+          @include tableInfoHead;
+          .sliderShowEntriesWrap {
+            @include entryWrap;
+          }
+          .sliderFilterWrap {
             display: flex;
             align-items: center;
             gap: 10px;
-            h4 {
-              @include blueHeading;
-              font-size: 1.8rem;
-              font-weight: 600;
+            button {
+              @include filterBtn;
             }
-            a {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            }
-          }
-          .sub-menu-wrap {
-            display: flex;
-            padding: 2rem 0;
-            .submenu-name-wrap {
-              margin: 0 1rem;
-              h5 {
-                @include blueSmHeading;
-                padding-bottom: 1rem;
-              }
-              input {
-                @include hs-modal-input;
-                width: 100%;
-              }
-            }
-            .submenu-url-wrap {
-              margin: 0 1rem;
-              h5 {
-                @include blueSmHeading;
-                padding-bottom: 1rem;
-              }
-              input {
-                @include hs-modal-input;
-                width: 100%;
-              }
-            }
-            .btn-down {
-              display: flex;
-              align-items: end;
-              .add-submenu-btn {
-                @include bluebtn;
-              }
-            }
-          }
-          .menu-table-wrap {
-            .menu-table {
-              @include data-table;
-              margin: 0;
-              thead {
-                tr {
-                  background-color: #edf3ff;
-                  th {
-                    &:nth-child(2) {
-                      border-left: none;
-                    }
-                  }
-                }
-              }
-              tbody {
-                tr {
-                  &:nth-child(odd) {
-                    background-color: #f9fbff;
-                  }
-                  &:nth-child(even) {
-                    background-color: #ffffff;
-                  }
-                  td {
-                    .menu-table-actions {
-                      display: flex;
-                      justify-content: center;
-                      gap: 10px;
-                    }
-                  }
-                }
-              }
-            }
-          }
-          .menu-save-wrap {
-            margin-top: 1rem;
-            display: flex;
-            justify-content: flex-end;
-            padding: 0.5rem 0;
-            .menu-save-btn {
-              @include bluebtn;
-              font-weight: 600;
-              border: none;
-              color: white;
+            .slider-dateWrap {
+              @include dateWrap;
             }
           }
         }
-      }
-      //menu-wrap-end
-
-      //slider-wrap-start
-      #slider-wrap{
-        @include mainWrap;
-        @include overflow-wrap;
-        height: 86vh;
-        background-color: #ffffff;
-        .slider-topbar-wrap {
+        .slider-table-overflow {
+          @include overflow-wrap;
+          height: 44vh;
+          .slider-table {
+            @include data-table;
+            margin: 0;
+            tr {
+              td {
+                &:nth-child(2) {
+                  @include blueSmHeading;
+                }
+                &:nth-child(3) {
+                  width: 40rem !important;
+                }
+                img {
+                  width: 14rem;
+                  height: 5rem;
+                }
+              }
+            }
+          }
+        }
+        .slider-table-pagination {
           display: flex;
           justify-content: space-between;
-          .slider-title-wrap {
-            @include titleWrap;
-          }
-          .slider-last-wrap {
-            display: flex;
-            align-items: center;
-            padding-top: 1rem;
-            .slider-add-item-div {
-              @include bluebtn;
+          padding: 1.4rem;
+          .sliderShowingEntriesWrap {
+            p {
+              @include grayTitle;
+              margin: 0;
             }
           }
-        }
-        .slider-table-wrap {
-          background-color: #f9fbff;
-          border-radius: 0.5rem;
-          margin: 1rem;
-          .sliderTableInfoHead {
-            @include tableInfoHead;
-            .sliderShowEntriesWrap {
-              @include entryWrap;
-            }
-            .sliderFilterWrap {
-              display: flex;
-              align-items: center;
-              gap: 10px;
-              button {
-                @include filterBtn;
-              }
-              .slider-dateWrap {
-                @include dateWrap;
-              }
-            }
-          }
-          .slider-table-overflow {
-            @include overflow-wrap;
-            height: 44vh;
-            .slider-table {
-              @include data-table;
-            }
-          }
-          .slider-table-pagination {
-            display: flex;
-            justify-content: space-between;
-            padding: 1.4rem;
-            .sliderShowingEntriesWrap {
-              p {
-                @include grayTitle;
-                margin: 0;
-              }
-            }
-            .slider-pagination-wrap {
-              .slider-pagination {
-                @include paginationDiv;
-              }
+          .slider-pagination-wrap {
+            .slider-pagination {
+              @include paginationDiv;
             }
           }
         }
       }
-      //slider-wrap-end
     }
+    //slider-wrap-end
+
+    //manage-account-start
+    #manage-account {
+      @include mainWrap;
+      @include overflow-wrap;
+      height: 86vh;
+      background-color: #ffffff;
+      .m-acc-topbar {
+        h3 {
+          color: #172f78;
+          font-weight: 600;
+          font-size: 1.8rem;
+          margin-bottom: 0.5rem;
+          padding: 0.5rem;
+        }
+      }
+      .m-acc-content-wrap {
+        background-color: #f9fbff;
+        border-radius: 0.5rem;
+        margin: 1rem;
+        h3 {
+          color: #172f78;
+          font-weight: 600;
+          font-size: 1.8rem;
+          margin-bottom: 0.5rem;
+          text-align: center;
+          padding: 2rem;
+        }
+        .m-acc-row {
+          display: flex;
+          align-items: center;
+          label {
+            @include blueSmHeading;
+            width: 100%;
+            text-align: center;
+          }
+          select {
+            @include grayBlueSelect;
+            width: 50%;
+            background-color: #edf3ff;
+          }
+          input {
+            @include hs-modal-input;
+          }
+        }
+      }
+    }
+    //manage-account-end
   }
+}
 
 //add-new-hosting-modal-section-start
 #add-new-hosting-modalwrap {
@@ -2826,95 +2887,104 @@ h6 {
 }
 //backdrop-custom-css-end
 
-
 //common-css-for-all-start
 
-  .common-label {
-    color: #172f78 !important;
+.common-label {
+  color: #172f78 !important;
+  font-size: 1.4rem !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+  @include mobile {
+    font-size: 1.2rem !important;
+  }
+}
+.common-p {
+  color: #172f78 !important;
+  font-size: 1.4rem !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+  @include mobile {
+    font-size: 1.2rem !important;
+  }
+}
+.common-input {
+  background-color: #edf3ff !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 1.4rem !important;
+  color: #888888 !important;
+  font-weight: 400 !important;
+  border: none !important;
+  width: 20rem !important;
+  border-radius: 0.5rem !important;
+  &:focus-visible {
+    outline: none !important;
+  }
+  width: 100% !important;
+  @include mobile {
+    font-size: 1.2rem !important;
+  }
+}
+.common-select {
+  color: #172f78 !important;
+  font-weight: 600 !important;
+  font-size: 1.6rem !important;
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 0.4rem !important;
+  padding: 0.2rem !important;
+  background-color: transparent !important;
+  &:focus-visible {
+    outline: none !important;
+  }
+  font-size: 1.4rem !important;
+  font-weight: 400 !important;
+  width: 100% !important;
+  @include mobile {
+    font-size: 1.2rem !important;
+  }
+}
+.common-h {
+  color: #172f78 !important;
+  font-size: 1.6rem !important;
+  font-weight: 500 !important;
+  @include mobile {
     font-size: 1.4rem !important;
-    font-weight: 500 !important;
-    margin: 0 !important;
-    @include mobile {
-      font-size: 1.2rem !important;
-    }
   }
-  .common-p {
-    color: #172f78 !important;
-    font-size: 1.4rem !important;
-    font-weight: 500 !important;
-    margin: 0 !important;
-    @include mobile {
-      font-size: 1.2rem !important;
-    }
-  }
-  .common-input {
-    background-color: #edf3ff !important;
-    padding: 0.5rem 1rem !important;
-    font-size: 1.4rem !important;
-    color: #888888 !important;
-    font-weight: 400 !important;
-    border: none !important;
-    width: 20rem !important;
-    border-radius: 0.5rem !important;
-    &:focus-visible {
-      outline: none !important;
-    }
-    width: 100% !important;
-    @include mobile {
-      font-size: 1.2rem !important;
-    }
-  }
-  .common-select {
-    color: #172f78 !important;
-    font-weight: 600 !important;
-    font-size: 1.6rem !important;
-    border: 1px solid #d9d9d9 !important;
-    border-radius: 0.4rem !important;
-    padding: 0.2rem !important;
-    background-color: transparent !important;
-    &:focus-visible {
-      outline: none !important;
-    }
-    font-size: 1.4rem !important;
-    font-weight: 400 !important;
-    width: 100% !important;
-    @include mobile {
-      font-size: 1.2rem !important;
-    }
-  }
-  .common-h {
-    color: #172f78 !important;
-    font-size: 1.6rem !important;
-    font-weight: 500 !important;
-    @include mobile {
-      font-size: 1.4rem !important;
-    }
-  }
-  .common-button {
-    font-size: 1.6rem !important;
-    background-color: #1912d3 !important;
-    border-radius: 0.5rem !important;
-    padding: 0.8rem 1.2rem !important;
+}
+.common-button-icon-div {
+  font-size: 1.6rem !important;
+  background-color: #1912d3 !important;
+  border-radius: 0.5rem !important;
+  padding: 0.8rem 1.2rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  cursor: pointer !important;
+  span {
     display: flex !important;
     align-items: center !important;
-    justify-content: center !important;
-    gap: 10px !important;
-    cursor: pointer !important;
-    span {
-      display: flex !important;
-      align-items: center !important;
-    }
-    p {
-      margin: 0 !important;
-      color: #ffffff !important;
-    }
-    font-size: 1.4rem !important;
-    @include mobile {
-      font-size: 1.2rem !important;
-    }
   }
-  .common-form{
-    display: flex;
+  p {
+    margin: 0 !important;
+    color: #ffffff !important;
   }
+  font-size: 1.4rem !important;
+  @include mobile {
+    font-size: 1.2rem !important;
+  }
+}
+
+.common-button{
+  font-size: 1.6rem;
+  background-color: #1912d3;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+.common-form {
+  display: flex;
+}
 
 //common-css-for-all-end
