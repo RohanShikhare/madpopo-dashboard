@@ -350,17 +350,17 @@ h6 {
   padding: 0;
 }
 .dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock .user-dropdown li .dropdown-item {
-  color: #5F5F5F;
+  color: #5f5f5f;
   font-size: 1.2rem;
   font-weight: 400;
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 1rem;
-  border-bottom: 1px solid #EDF3FF;
+  border-bottom: 1px solid #edf3ff;
 }
 .dashboardHeader .dashboardDiv .headerNav .navLastBlock .headerUserBlock .user-dropdown li .dropdown-item.logout-btn {
-  background-color: #1912D3;
+  background-color: #1912d3;
   font-weight: 500;
   color: white !important;
   justify-content: center;
@@ -4551,4 +4551,52 @@ h6 {
 
 .common-form {
   display: flex;
+}
+
+.common-table thead tr {
+  background-color: #edf3ff;
+}
+.common-table thead tr th {
+  color: #172f78;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+}
+.common-table thead tr td {
+  color: #172f78;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+}
+.common-table tbody tr td {
+  text-align: center;
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  text-overflow: ellipsis;
+}
+.common-table tbody tr td a {
+  font-size: 1.6rem;
+  background-color: #1912d3;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+.common-table tbody tr td button {
+  font-size: 1.6rem;
+  background-color: #1912d3;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+.common-table tbody tr:nth-child(even) {
+  background-color: #f9fbff;
+}
+.common-table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
