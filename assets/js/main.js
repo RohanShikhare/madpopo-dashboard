@@ -15,6 +15,17 @@ $(document).ready(function () {
   $(".resSearchClosebtn").click(function () {
     $(".responsive-search-wrap").removeClass("open");
   });
+
+//add-service-table-show start
+$('#add-service-table-check').on('change', function() {
+  if ($('#add-service-table-check').is(':checked')) {
+      $('.service-table').addClass('show');
+  } else{
+    $('.service-table').removeClass('show');
+  }
+});
+//add-service-table-show end
+
   $(".datepicker").datepicker({
     dateFormat: "MM yy",
   });
@@ -398,4 +409,12 @@ $(".m-acc-due").datepicker({
     options: at_options,
   });
   //active tickets chart end
+
+
+  
+
+
 });
+
+
+
