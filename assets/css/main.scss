@@ -2266,6 +2266,24 @@ h6 {
             }
           }
         }
+        .modal-tabs{
+          li{
+            .nav-link{
+              font-size: 1.6rem !important;
+              font-weight: 400 !important;
+              color: #888888 !important;
+              cursor: pointer !important;
+              &.active{
+                color: #172f78 !important;
+                background-color: #f9fbff !important;
+              }
+              &:hover{
+                border: none !important;
+                border-color: white !important;
+              }
+            }
+          }
+        }
       }
       .nh-modal-footer {
         padding: 2rem;

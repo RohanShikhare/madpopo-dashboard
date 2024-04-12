@@ -3481,6 +3481,20 @@ h6 {
   display: block;
   width: 100%;
 }
+#add-new-hosting-modalwrap .nh-modal-adjuster .nh-modal-content .nh-modal-body .modal-tabs li .nav-link {
+  font-size: 1.6rem !important;
+  font-weight: 400 !important;
+  color: #888888 !important;
+  cursor: pointer !important;
+}
+#add-new-hosting-modalwrap .nh-modal-adjuster .nh-modal-content .nh-modal-body .modal-tabs li .nav-link.active {
+  color: #172f78 !important;
+  background-color: #f9fbff !important;
+}
+#add-new-hosting-modalwrap .nh-modal-adjuster .nh-modal-content .nh-modal-body .modal-tabs li .nav-link:hover {
+  border: none !important;
+  border-color: white !important;
+}
 #add-new-hosting-modalwrap .nh-modal-adjuster .nh-modal-content .nh-modal-footer {
   padding: 2rem;
   display: flex;
