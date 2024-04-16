@@ -24,43 +24,6 @@ $(document).ready(function () {
   });
   //responsive input end
 
-  //drag-and-drop-file start
-  var uploadScreen = false;
-  $(".drop-btn-wrap").click(function () {
-    if (!uploadScreen) {
-      uploadScreen = true;
-      $("#fileInput").click();
-    }
-  });
-  $("#fileInput").change(function () {
-    handleFiles($(this)[0].files);
-  });
-  var dropArea = document.getElementById("dropArea");
-  dropArea.addEventListener("dragover", function (e) {
-    e.preventDefault();
-    dropArea.classList.add("drag-over");
-  });
-  dropArea.addEventListener("dragleave", function () {
-    dropArea.classList.remove("drag-over");
-  });
-  dropArea.addEventListener("drop", function (e) {
-    e.preventDefault();
-    dropArea.classList.remove("drag-over");
-    handleFiles(e.dataTransfer.files);
-  });
-  function handleFiles(files) {
-    for (var i = 0; i < files.length; i++) {
-      var listItem = $("<li>").text(files[i].name);
-      var deleteButton = $("<button>").text("Delete");
-      deleteButton.click(function () {
-        $(this).parent().remove();
-      });
-      listItem.append(deleteButton);
-      $("#uploadedFiles").append(listItem);
-    }
-    uploadScreen = false;
-  }
-  //drag-and-drop-file end
 
   //add-service-table-show start
   $("#add-service-table-check").on("change", function () {
@@ -449,4 +412,6 @@ $(document).ready(function () {
     options: at_options,
   });
   //active tickets chart end
+
+ 
 });
