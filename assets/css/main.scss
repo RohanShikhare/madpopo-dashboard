@@ -782,6 +782,9 @@ h6 {
       .dashboardRow {
         display: flex;
         gap: 10px;
+        @include d-desktop {
+          flex-wrap: wrap;
+        }
         .dashLeftSide {
           border-radius: 1rem;
           .dashWelcomeWrap {
@@ -805,6 +808,11 @@ h6 {
                 font-weight: 700;
                 color: #ffffff;
                 margin: 0;
+                @include md-mobile {
+                  font-size: 2rem;
+                  text-align: center;
+                }
+
                 span {
                   color: #43e3e0;
                 }
@@ -817,6 +825,16 @@ h6 {
               p {
                 color: #d9d9d9;
                 font-size: 1.4rem;
+
+                @include md-tablet {
+                  position: relative;
+                  z-index: 999;
+                }
+                @include md-mobile {
+                  text-align: center;
+                  transition: all 0.3s linear;
+                  visibility: hidden;
+                }
               }
             }
             .userImgDiv {
@@ -830,11 +848,23 @@ h6 {
               top: -10px;
               left: 41px;
               z-index: 2;
+              @include x-tablet {
+                left: 6px;
+              }
+              @include md-mobile {
+                display: none;
+              }
             }
             .logo1Div {
               position: absolute;
               bottom: 8px;
               left: 8px;
+              @include x-tablet {
+                display: none;
+              }
+              @include md-mobile {
+                display: block;
+              }
             }
             .logo2Div {
               position: absolute;
@@ -879,6 +909,10 @@ h6 {
               display: flex;
               align-items: center;
               justify-content: space-between;
+              @media (max-width: 420px) {
+                flex-wrap: wrap;
+                gap: 5px;
+              }
               h3 {
                 @include blueHeading;
                 font-weight: 600;
@@ -962,21 +996,46 @@ h6 {
           }
           .dashRecentRow {
             display: flex;
+            @include x-tablet {
+              flex-wrap: wrap;
+            }
+            @include mobile {
+              .full-width {
+                width: 100%;
+              }
+            }
             .recentlyPaidDiv {
               background-color: #ffffff;
               border-radius: 1rem;
               margin-right: 10px;
+              @include x-tablet {
+                margin: 1rem;
+              }
               .recentlyPaidTitleWrap {
                 @include dashTitles;
               }
               .recentlyPaidOverflowWrap {
                 @include overflow-wrap;
-                height: 33vh;
+                height: 190px;
                 .recentlyPaidTable {
                   @include data-table;
                   width: 90%;
                   margin: 0 auto;
                   border-radius: 0.5rem;
+                  @include md-tablet {
+                    tr {
+                      th {
+                        padding: 1rem;
+                      }
+                      td {
+                        padding: 1rem;
+                      }
+                    }
+                  }
+                  @include mobile {
+                    margin: 1rem;
+                    width: 350px;
+                  }
                 }
               }
             }
@@ -984,12 +1043,15 @@ h6 {
               background-color: #ffffff;
               border-radius: 1rem;
               margin-right: 10px;
+              @include x-tablet {
+                margin: 1rem;
+              }
               .recentTicketTitleWrap {
                 @include dashTitles;
               }
               .ticketsOverflowDiv {
                 @include overflow-wrap;
-                height: 33vh;
+                height: 190px;
                 .ticketCardsWrap {
                   margin: 0 1rem;
                   padding: 1rem 0;
@@ -997,6 +1059,13 @@ h6 {
                   align-items: center;
                   border-bottom: 1px solid #bfbdff;
                   justify-content: space-around;
+                  @include md-tablet {
+                    flex-wrap: wrap;
+                    gap: 5px;
+                  }
+                  @include x-tablet {
+                    flex-wrap: nowrap;
+                  }
                   .ticketCardImg {
                     img {
                       border-radius: 50%;
@@ -1021,6 +1090,9 @@ h6 {
                     border: none;
                     border-radius: 0.5rem;
                     padding: 0.5rem 1rem;
+                    @include mid-991-tab {
+                      padding: 0.5rem;
+                    }
                   }
                 }
               }
@@ -1028,12 +1100,15 @@ h6 {
             .recentPackagesDiv {
               background-color: #ffffff;
               border-radius: 1rem;
+              @include x-tablet {
+                margin: 1rem;
+              }
               .recentPackagesTitleWrap {
                 @include dashTitles;
               }
               .packagesOverflowDiv {
                 @include overflow-wrap;
-                height: 33vh;
+                height: 190px;
                 .packageCard {
                   display: flex;
                   align-items: center;
@@ -1041,6 +1116,13 @@ h6 {
                   padding: 1rem 0;
                   border-bottom: 1px solid #bfbdff;
                   justify-content: space-between;
+                  @include md-tablet {
+                    flex-wrap: wrap;
+                    gap: 5px;
+                  }
+                  @include x-tablet {
+                    flex-wrap: nowrap;
+                  }
                   p {
                     color: #7d7d7d;
                     font-size: 1rem;
@@ -1083,89 +1165,246 @@ h6 {
         .dashRightSide {
           border-radius: 1rem;
           margin-right: 1rem;
+          @include d-desktop {
+            display: flex;
+          }
+          @include x-tablet {
+            margin: 0;
+          }
+          @include md-mobile {
+            flex-wrap: wrap;
+          }
           .pendingDomainDiv {
             @include rsPendingCardDiv;
+            @include x-tablet {
+              margin: 1rem;
+            }
+            @include md-mobile {
+              width: 45%;
+              gap: 10px;
+            }
+            @include mobile {
+              width: 100%;
+            }
             .pdlogoDiv {
               @include svgDiv;
+              @include md-mobile {
+                svg {
+                  height: 24px;
+                }
+              }
             }
             .pdDetailDiv {
               @include pendingCardTextDiv;
+              @include md-mobile {
+                h5 {
+                  font-size: 1.6rem;
+                }
+                p {
+                  font-size: 1.2rem;
+                }
+              }
+              @include mobile {
+                flex-direction: row;
+                gap: 10px;
+                align-items: center;
+              }
             }
             .pdCircleDiv {
               height: 4.6rem;
               width: 4.6rem;
+              @include md-mobile {
+                height: 3.6rem;
+                width: 3.6rem;
+              }
             }
           }
           .pendingHostingDiv {
             @include rsPendingCardDiv;
+            @include x-tablet {
+              margin: 1rem;
+            }
+            @include md-mobile {
+              width: 45%;
+              gap: 10px;
+            }
+            @include mobile {
+              width: 100%;
+            }
             .phlogoDiv {
               @include svgDiv;
               background-color: #fff9dd;
+              @include md-mobile {
+                svg {
+                  height: 24px;
+                }
+              }
             }
             .phDetailDiv {
               @include pendingCardTextDiv;
+              @include md-mobile {
+                h5 {
+                  font-size: 1.6rem;
+                }
+                p {
+                  font-size: 1.2rem;
+                }
+              }
               p {
                 color: #90790d;
               }
               h5 {
                 color: #90790d;
+              }
+              @include mobile {
+                flex-direction: row;
+                gap: 10px;
+                align-items: center;
               }
             }
             .phCircleDiv {
               height: 4.6rem;
               width: 4.6rem;
+              @include md-mobile {
+                height: 3.6rem;
+                width: 3.6rem;
+              }
             }
           }
           .unpaidInvoicesDiv {
             @include rsPendingCardDiv;
+            @include x-tablet {
+              margin: 1rem;
+            }
+            @include md-mobile {
+              width: 45%;
+              gap: 10px;
+            }
+            @include mobile {
+              width: 100%;
+            }
             .uilogoDiv {
               @include svgDiv;
               background-color: #f4e5fd;
+              @include md-mobile {
+                svg {
+                  height: 24px;
+                }
+              }
             }
             .uiDetailDiv {
               @include pendingCardTextDiv;
+              @include md-mobile {
+                h5 {
+                  font-size: 1.6rem;
+                }
+                p {
+                  font-size: 1.2rem;
+                }
+              }
               p {
                 color: #611592;
               }
               h5 {
                 color: #611592;
+              }
+              @include mobile {
+                flex-direction: row;
+                gap: 10px;
+                align-items: center;
               }
             }
             .uiCircleDiv {
               height: 4.6rem;
               width: 4.6rem;
+              @include md-mobile {
+                height: 3.6rem;
+                width: 3.6rem;
+              }
             }
           }
           .activeTicketsDiv {
             @include rsPendingCardDiv;
+            @include x-tablet {
+              margin: 1rem;
+            }
+            @include md-mobile {
+              width: 45%;
+              gap: 10px;
+            }
+            @include mobile {
+              width: 100%;
+            }
             .atlogoDiv {
               @include svgDiv;
               background-color: #ffe6e2;
+              @include md-mobile {
+                svg {
+                  height: 24px;
+                }
+              }
             }
             .atDetailDiv {
               @include pendingCardTextDiv;
+              @include md-mobile {
+                h5 {
+                  font-size: 1.6rem;
+                }
+                p {
+                  font-size: 1.2rem;
+                }
+              }
               p {
                 color: #b42d16;
               }
               h5 {
                 color: #b42d16;
               }
+              @include mobile {
+                flex-direction: row;
+                gap: 10px;
+                align-items: center;
+              }
             }
             .atCircleDiv {
               height: 4.6rem;
               width: 4.6rem;
+              @include md-mobile {
+                height: 3.6rem;
+                width: 3.6rem;
+              }
             }
           }
           .dashPieChart {
             padding: 0.5rem;
             border-radius: 1rem;
             background-color: #ffffff;
+            @include d-desktop {
+              width: 65%;
+              margin-left: 1rem;
+            }
+            @include md-tablet {
+              width: 60%;
+            }
+            @include x-tablet {
+              width: 47%;
+              margin: 1rem;
+            }
+            @include md-mobile {
+              width: 100%;
+            }
             .pieTitleDiv {
               @include titleWrap;
               padding-bottom: 1rem;
+              @include md-mobile {
+                padding: 0.5rem;
+              }
               h3 {
                 font-size: 1.6rem;
                 margin: 0;
+                @include md-mobile {
+                  font-size: 1.4rem;
+                }
               }
               p {
                 font-size: 1.2rem;
@@ -1214,6 +1453,34 @@ h6 {
                 }
               }
             }
+          }
+          .d-r-wrapper {
+            @include d-desktop {
+              width: 35%;
+            }
+            @include md-tablet {
+              width: 40%;
+            }
+            @include x-tablet {
+              width: 50%;
+            }
+            @include md-mobile {
+              display: flex;
+              flex-wrap: wrap;
+              width: 100%;
+              align-items: center;
+              justify-content: space-between;
+            }
+          }
+        }
+        .dash-full-r {
+          @include d-desktop {
+            width: 100%;
+          }
+        }
+        .dash-full-l {
+          @include d-desktop {
+            width: 100%;
           }
         }
       }

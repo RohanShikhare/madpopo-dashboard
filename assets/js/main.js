@@ -7,6 +7,7 @@ $(document).ready(function () {
   //side-bar-tooltip start
   $(".sideMenuTitle").click(function () {
     $(".sideBarDiv").toggleClass("collapsed-sidebar");
+    $(".dashWelcomeSubtext p").toggleClass("visible");
     if ($(".sideBarDiv").hasClass("collapsed-sidebar")) {
       $('[data-bs-toggle="tooltip"]').tooltip();
     } else {
@@ -23,6 +24,9 @@ $(document).ready(function () {
     $(".responsive-search-wrap").removeClass("open");
   });
   //responsive input end
+
+ 
+ 
 
 
   //add-service-table-show start

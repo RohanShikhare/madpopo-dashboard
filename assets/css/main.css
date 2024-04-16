@@ -871,6 +871,11 @@ h6 {
   display: flex;
   gap: 10px;
 }
+@media (max-width: 1024px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow {
+    flex-wrap: wrap;
+  }
+}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide {
   border-radius: 1rem;
 }
@@ -894,6 +899,12 @@ h6 {
   color: #ffffff;
   margin: 0;
 }
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeTitle h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeTitle h2 span {
   color: #43e3e0;
 }
@@ -905,6 +916,19 @@ h6 {
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeSubtext p {
   color: #d9d9d9;
   font-size: 1.4rem;
+}
+@media (max-width: 834px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeSubtext p {
+    position: relative;
+    z-index: 999;
+  }
+}
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeSubtext p {
+    text-align: center;
+    transition: all 0.3s linear;
+    visibility: hidden;
+  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .userImgDiv {
   background-image: url(/assets/img/user.png);
@@ -918,10 +942,30 @@ h6 {
   left: 41px;
   z-index: 2;
 }
+@media (max-width: 768px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .userImgDiv {
+    left: 6px;
+  }
+}
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .userImgDiv {
+    display: none;
+  }
+}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .logo1Div {
   position: absolute;
   bottom: 8px;
   left: 8px;
+}
+@media (max-width: 768px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .logo1Div {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .logo1Div {
+    display: block;
+  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .logo2Div {
   position: absolute;
@@ -966,6 +1010,12 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 420px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap h3 {
   color: #172f78;
@@ -1051,10 +1101,25 @@ h6 {
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow {
   display: flex;
 }
+@media (max-width: 768px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 480px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .full-width {
+    width: 100%;
+  }
+}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv {
   background-color: #ffffff;
   border-radius: 1rem;
   margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv {
+    margin: 1rem;
+  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidTitleWrap {
   display: flex;
@@ -1083,7 +1148,7 @@ h6 {
   left: 0;
   overflow-y: auto;
   scrollbar-width: none;
-  height: 33vh;
+  height: 190px;
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable {
   margin-top: 2rem;
@@ -1158,10 +1223,29 @@ h6 {
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr:first-child {
   background-color: #edf3ff;
 }
+@media (max-width: 834px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th {
+    padding: 1rem;
+  }
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td {
+    padding: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable {
+    margin: 1rem;
+    width: 350px;
+  }
+}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv {
   background-color: #ffffff;
   border-radius: 1rem;
   margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv {
+    margin: 1rem;
+  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .recentTicketTitleWrap {
   display: flex;
@@ -1190,7 +1274,7 @@ h6 {
   left: 0;
   overflow-y: auto;
   scrollbar-width: none;
-  height: 33vh;
+  height: 190px;
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap {
   margin: 0 1rem;
@@ -1199,6 +1283,17 @@ h6 {
   align-items: center;
   border-bottom: 1px solid #bfbdff;
   justify-content: space-around;
+}
+@media (max-width: 834px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap {
+    flex-wrap: nowrap;
+  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketCardImg img {
   border-radius: 50%;
@@ -1223,9 +1318,19 @@ h6 {
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
 }
+@media (max-width: 991px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap button {
+    padding: 0.5rem;
+  }
+}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv {
   background-color: #ffffff;
   border-radius: 1rem;
+}
+@media (max-width: 768px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv {
+    margin: 1rem;
+  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .recentPackagesTitleWrap {
   display: flex;
@@ -1254,7 +1359,7 @@ h6 {
   left: 0;
   overflow-y: auto;
   scrollbar-width: none;
-  height: 33vh;
+  height: 190px;
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard {
   display: flex;
@@ -1263,6 +1368,17 @@ h6 {
   padding: 1rem 0;
   border-bottom: 1px solid #bfbdff;
   justify-content: space-between;
+}
+@media (max-width: 834px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard {
+    flex-wrap: nowrap;
+  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard p {
   color: #7d7d7d;
@@ -1297,6 +1413,21 @@ h6 {
   border-radius: 1rem;
   margin-right: 1rem;
 }
+@media (max-width: 1024px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide {
+    margin: 0;
+  }
+}
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide {
+    flex-wrap: wrap;
+  }
+}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv {
   margin-bottom: 1rem;
   border-radius: 0.5rem;
@@ -1306,6 +1437,22 @@ h6 {
   justify-content: space-between;
   background-color: #ffffff;
 }
+@media (max-width: 768px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv {
+    margin: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv {
+    width: 45%;
+    gap: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv {
+    width: 100%;
+  }
+}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdlogoDiv {
   display: flex;
   align-items: center;
@@ -1313,6 +1460,11 @@ h6 {
   padding: 0.5rem;
   background-color: #e3f8fa;
   border-radius: 0.5rem;
+}
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdlogoDiv svg {
+    height: 24px;
+  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv {
   display: flex;
@@ -1330,9 +1482,30 @@ h6 {
   font-size: 1.6rem;
   margin: 0;
 }
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv h5 {
+    font-size: 1.6rem;
+  }
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 480px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv {
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdCircleDiv {
   height: 4.6rem;
   width: 4.6rem;
+}
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdCircleDiv {
+    height: 3.6rem;
+    width: 3.6rem;
+  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv {
   margin-bottom: 1rem;
@@ -1343,6 +1516,22 @@ h6 {
   justify-content: space-between;
   background-color: #ffffff;
 }
+@media (max-width: 768px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv {
+    margin: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv {
+    width: 45%;
+    gap: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv {
+    width: 100%;
+  }
+}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phlogoDiv {
   display: flex;
   align-items: center;
@@ -1351,6 +1540,11 @@ h6 {
   background-color: #e3f8fa;
   border-radius: 0.5rem;
   background-color: #fff9dd;
+}
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phlogoDiv svg {
+    height: 24px;
+  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv {
   display: flex;
@@ -1368,15 +1562,36 @@ h6 {
   font-size: 1.6rem;
   margin: 0;
 }
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv h5 {
+    font-size: 1.6rem;
+  }
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv p {
+    font-size: 1.2rem;
+  }
+}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv p {
   color: #90790d;
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv h5 {
   color: #90790d;
 }
+@media (max-width: 480px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv {
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phCircleDiv {
   height: 4.6rem;
   width: 4.6rem;
+}
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phCircleDiv {
+    height: 3.6rem;
+    width: 3.6rem;
+  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv {
   margin-bottom: 1rem;
@@ -1387,6 +1602,22 @@ h6 {
   justify-content: space-between;
   background-color: #ffffff;
 }
+@media (max-width: 768px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv {
+    margin: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv {
+    width: 45%;
+    gap: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv {
+    width: 100%;
+  }
+}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uilogoDiv {
   display: flex;
   align-items: center;
@@ -1395,6 +1626,11 @@ h6 {
   background-color: #e3f8fa;
   border-radius: 0.5rem;
   background-color: #f4e5fd;
+}
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uilogoDiv svg {
+    height: 24px;
+  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv {
   display: flex;
@@ -1412,15 +1648,36 @@ h6 {
   font-size: 1.6rem;
   margin: 0;
 }
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv h5 {
+    font-size: 1.6rem;
+  }
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv p {
+    font-size: 1.2rem;
+  }
+}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv p {
   color: #611592;
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv h5 {
   color: #611592;
 }
+@media (max-width: 480px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv {
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiCircleDiv {
   height: 4.6rem;
   width: 4.6rem;
+}
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiCircleDiv {
+    height: 3.6rem;
+    width: 3.6rem;
+  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv {
   margin-bottom: 1rem;
@@ -1431,6 +1688,22 @@ h6 {
   justify-content: space-between;
   background-color: #ffffff;
 }
+@media (max-width: 768px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv {
+    margin: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv {
+    width: 45%;
+    gap: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv {
+    width: 100%;
+  }
+}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atlogoDiv {
   display: flex;
   align-items: center;
@@ -1439,6 +1712,11 @@ h6 {
   background-color: #e3f8fa;
   border-radius: 0.5rem;
   background-color: #ffe6e2;
+}
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atlogoDiv svg {
+    height: 24px;
+  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv {
   display: flex;
@@ -1456,20 +1734,63 @@ h6 {
   font-size: 1.6rem;
   margin: 0;
 }
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv h5 {
+    font-size: 1.6rem;
+  }
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv p {
+    font-size: 1.2rem;
+  }
+}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv p {
   color: #b42d16;
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv h5 {
   color: #b42d16;
 }
+@media (max-width: 480px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv {
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atCircleDiv {
   height: 4.6rem;
   width: 4.6rem;
+}
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atCircleDiv {
+    height: 3.6rem;
+    width: 3.6rem;
+  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart {
   padding: 0.5rem;
   border-radius: 1rem;
   background-color: #ffffff;
+}
+@media (max-width: 1024px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart {
+    width: 65%;
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 834px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart {
+    width: 47%;
+    margin: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart {
+    width: 100%;
+  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv {
   padding: 0.5rem;
@@ -1487,9 +1808,19 @@ h6 {
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv {
+    padding: 0.5rem;
+  }
+}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv h3 {
   font-size: 1.6rem;
   margin: 0;
+}
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv h3 {
+    font-size: 1.4rem;
+  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv p {
   font-size: 1.2rem;
@@ -1536,6 +1867,40 @@ h6 {
   font-weight: 500;
   font-size: 1rem;
   margin: 0;
+}
+@media (max-width: 1024px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .d-r-wrapper {
+    width: 35%;
+  }
+}
+@media (max-width: 834px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .d-r-wrapper {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .d-r-wrapper {
+    width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .d-r-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1024px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dash-full-r {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dash-full-l {
+    width: 100%;
+  }
 }
 .BodyWrapper .BodyDiv #hosting-services-wrap {
   background-color: #ffffff;
