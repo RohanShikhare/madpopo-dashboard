@@ -2875,6 +2875,291 @@ h6 {
   margin: 0;
   color: #ffffff;
 }
+.BodyWrapper .BodyDiv #manage-client-section {
+  background-color: #ffffff;
+  height: 98%;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  height: 46vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+  height: 86vh;
+  background-color: #ffffff;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row {
+  display: flex;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .clientWrapper {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .clientWrapper h2 {
+  color: #172f78;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .clientWrapper .client-table {
+  margin: 1rem 0;
+  width: 100%;
+  border-radius: 1rem;
+  background-color: #f9fbff;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .clientWrapper .client-table thead tr th {
+  color: #172f78;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background-color: #edf3ff;
+  text-align: center;
+  padding: 1rem;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .clientWrapper .client-table tbody {
+  border-bottom: 1px solid #dcefff;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .clientWrapper .client-table tbody tr td {
+  padding: 1rem;
+  text-align: start;
+  font-size: 1.4rem;
+  color: #616263;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .clientWrapper .client-table tbody tr td:last-child {
+  text-align: end;
+  font-weight: 500;
+  color: #172f78;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .clientWrapper .client-table tfoot tr td {
+  color: #172f78;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: start;
+  padding: 1rem;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .clientWrapper .client-table tfoot tr td:last-child {
+  text-align: end;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper h2 {
+  color: #172f78;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock {
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  background-color: #f9fbff;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock h2 {
+  color: #172f78;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 1rem;
+  background-color: #edf3ff;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .infoDetails {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #dcefff;
+  padding: 1rem 0;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .infoDetails .infoBlocks {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.5rem;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .infoDetails .infoBlocks p {
+  color: #616263;
+  font-size: 1.4rem;
+  margin: 0;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .infoDetails .infoBlocks span {
+  display: flex;
+  align-items: center;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .addressDetails {
+  display: flex;
+  gap: 5px;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid #dcefff;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .addressDetails span {
+  padding: 0.5rem 0;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .addressDetails p {
+  color: #616263;
+  font-size: 1.4rem;
+  margin: 0;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .loremDetails {
+  display: flex;
+  gap: 5px;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid #dcefff;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .loremDetails span {
+  padding: 0.5rem 0;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .loremDetails p {
+  color: #616263;
+  font-size: 1.4rem;
+  margin: 0;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .editButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #1912d3;
+  padding: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .editButton span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .editButton p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock {
+  padding: 1rem;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock h2 {
+  color: #172f78;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 1rem;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hdSection .tabBtnHolder {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  background-color: #edf3ff;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hdSection .tabBtnHolder .tab-btn {
+  border: none;
+  background-color: transparent;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #616263;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hdSection .tabBtnHolder .tab-btn svg {
+  fill: #616263;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hdSection .tabBtnHolder .tab-btn.active {
+  color: #2e0aa3;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hdSection .tabBtnHolder .tab-btn.active svg path {
+  fill: #2e0aa3;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hdSection .tab-content {
+  height: 46vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+  height: 95vh;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hdSection .tab-content #files-tab .drop-btn-wrap {
+  font-size: 1.6rem;
+  background-color: #1912d3;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2rem auto;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hdSection .tab-content #files-tab .drop-btn-wrap span {
+  display: flex;
+  align-items: center;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hdSection .tab-content #files-tab .drop-btn-wrap p {
+  margin: 0;
+  color: #ffffff;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hd-btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 1rem 2rem;
+  gap: 10px;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hd-btn-wrap .hd-close-btn {
+  font-size: 1.6rem;
+  background-color: #1912d3;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  background-color: #edf3ff;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hd-btn-wrap .hd-close-btn span {
+  display: flex;
+  align-items: center;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hd-btn-wrap .hd-close-btn p {
+  margin: 0;
+  color: #ffffff;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hd-btn-wrap .hd-close-btn p {
+  color: #888888;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hd-btn-wrap .hd-save-btn {
+  font-size: 1.6rem;
+  background-color: #1912d3;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hd-btn-wrap .hd-save-btn span {
+  display: flex;
+  align-items: center;
+}
+.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hd-btn-wrap .hd-save-btn p {
+  margin: 0;
+  color: #ffffff;
+}
 
 #add-new-hosting-modalwrap .nh-modal-adjuster {
   margin-top: 75px;

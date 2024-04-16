@@ -1,6 +1,10 @@
 $(document).ready(function () {
+  //sidebar-active-tab start
   $("li.open").prev("li").addClass("before-open");
   $("li.open").next("li").addClass("after-open");
+  //side-bar-active-tab end
+
+  //side-bar-tooltip start
   $(".sideMenuTitle").click(function () {
     $(".sideBarDiv").toggleClass("collapsed-sidebar");
     if ($(".sideBarDiv").hasClass("collapsed-sidebar")) {
@@ -9,23 +13,66 @@ $(document).ready(function () {
       $('[data-bs-toggle="tooltip"]').tooltip("dispose");
     }
   });
+  //side-bar-tooltip end
+
+  //responsive input start
   $(".headerInputSVG").click(function () {
     $(".responsive-search-wrap").addClass("open");
   });
   $(".resSearchClosebtn").click(function () {
     $(".responsive-search-wrap").removeClass("open");
   });
+  //responsive input end
 
-//add-service-table-show start
-$('#add-service-table-check').on('change', function() {
-  if ($('#add-service-table-check').is(':checked')) {
-      $('.service-table').addClass('show');
-  } else{
-    $('.service-table').removeClass('show');
+  //drag-and-drop-file start
+  var uploadScreen = false;
+  $(".drop-btn-wrap").click(function () {
+    if (!uploadScreen) {
+      uploadScreen = true;
+      $("#fileInput").click();
+    }
+  });
+  $("#fileInput").change(function () {
+    handleFiles($(this)[0].files);
+  });
+  var dropArea = document.getElementById("dropArea");
+  dropArea.addEventListener("dragover", function (e) {
+    e.preventDefault();
+    dropArea.classList.add("drag-over");
+  });
+  dropArea.addEventListener("dragleave", function () {
+    dropArea.classList.remove("drag-over");
+  });
+  dropArea.addEventListener("drop", function (e) {
+    e.preventDefault();
+    dropArea.classList.remove("drag-over");
+    handleFiles(e.dataTransfer.files);
+  });
+  function handleFiles(files) {
+    for (var i = 0; i < files.length; i++) {
+      var listItem = $("<li>").text(files[i].name);
+      var deleteButton = $("<button>").text("Delete");
+      deleteButton.click(function () {
+        $(this).parent().remove();
+      });
+      listItem.append(deleteButton);
+      $("#uploadedFiles").append(listItem);
+    }
+    uploadScreen = false;
   }
-});
-//add-service-table-show end
+  //drag-and-drop-file end
 
+  //add-service-table-show start
+  $("#add-service-table-check").on("change", function () {
+    if ($("#add-service-table-check").is(":checked")) {
+      $(".service-table").addClass("show");
+    } else {
+      $(".service-table").removeClass("show");
+    }
+  });
+  //add-service-table-show end
+
+  //datepicker js start
   $(".datepicker").datepicker({
     dateFormat: "MM yy",
   });
@@ -34,16 +81,18 @@ $('#add-service-table-check').on('change', function() {
   });
   $(".m-acc-created").datepicker({
     dateFormat: "dd MM yy",
-});
-$(".m-acc-due").datepicker({
-  dateFormat: "dd MM yy",
-});
-
+  });
+  $(".m-acc-due").datepicker({
+    dateFormat: "dd MM yy",
+  });
   $(".graphDatePicker").datepicker({
     dateFormat: "yy", // Show only the year
     changeMonth: false, // Disable month selection
     changeYear: true, // Enable year selection
   });
+  //datepicker js end
+
+  //nested modal js start
   $("#nh-cat-input-add-wrap").on("click", function () {
     $("#add-btn-modal").modal("show");
   });
@@ -53,6 +102,9 @@ $(".m-acc-due").datepicker({
   $("#bottom-close-btn").on("click", function () {
     $("#add-btn-modal").modal("hide");
   });
+  //nested modal js end
+
+  //responsive menu start
   $(".hamburger-icon").click(function () {
     $(".responsiveHeaderMenu").toggleClass("open");
   });
@@ -62,10 +114,14 @@ $(".m-acc-due").datepicker({
   $(".dropdown-activater-2").click(function () {
     $(".dropdown-activater-2").toggleClass("open");
   });
+  //responsive menu end
+
   //menu-table-drag-sort-start
-  $(".menu-table tbody").sortable({
-    handle: '.menu-table-icon'
-  }).disableSelection();
+  $(".menu-table tbody")
+    .sortable({
+      handle: ".menu-table-icon",
+    })
+    .disableSelection();
   //menu-table-drag-sort-end
 
   //invoice payment doughnut start
@@ -84,8 +140,6 @@ $(".m-acc-due").datepicker({
       },
     ],
   };
-
-  //doughnutLabelsLine Plugin
   const doughnutLabelsLine = {
     id: "doughnutLabelsLine",
     afterDraw(chart, args, options) {
@@ -152,7 +206,6 @@ $(".m-acc-due").datepicker({
     },
     plugins: [doughnutLabelsLine],
   };
-
   const myChart = new Chart($("#dashPieChart"), config);
   //invoice payment doughnut end
 
@@ -250,7 +303,6 @@ $(".m-acc-due").datepicker({
       maintainAspectRatio: false,
     },
   });
-
   //wave chart js end
 
   //pending domain chart start
@@ -268,7 +320,6 @@ $(".m-acc-due").datepicker({
       },
     ],
   };
-
   var pd_options = {
     responsive: true,
     maintainAspectRatio: false,
@@ -282,9 +333,7 @@ $(".m-acc-due").datepicker({
       },
     },
   };
-
   var pd_ctx = document.getElementById("pd-chart").getContext("2d");
-
   var pd_myDoughnutChart = new Chart(pd_ctx, {
     type: "doughnut",
     data: pd_data,
@@ -307,7 +356,6 @@ $(".m-acc-due").datepicker({
       },
     ],
   };
-
   var ph_options = {
     responsive: true,
     maintainAspectRatio: false,
@@ -321,9 +369,7 @@ $(".m-acc-due").datepicker({
       },
     },
   };
-
   var ph_ctx = document.getElementById("ph-chart").getContext("2d");
-
   var ph_myDoughnutChart = new Chart(ph_ctx, {
     type: "doughnut",
     data: ph_data,
@@ -347,7 +393,6 @@ $(".m-acc-due").datepicker({
       },
     ],
   };
-
   var ui_options = {
     responsive: true,
     maintainAspectRatio: false,
@@ -361,9 +406,7 @@ $(".m-acc-due").datepicker({
       },
     },
   };
-
   var ui_ctx = document.getElementById("ui-chart").getContext("2d");
-
   var ui_myDoughnutChart = new Chart(ui_ctx, {
     type: "doughnut",
     data: ui_data,
@@ -386,7 +429,6 @@ $(".m-acc-due").datepicker({
       },
     ],
   };
-
   var at_options = {
     responsive: true,
     maintainAspectRatio: false,
@@ -400,21 +442,11 @@ $(".m-acc-due").datepicker({
       },
     },
   };
-
   var at_ctx = document.getElementById("at-chart").getContext("2d");
-
   var at_myDoughnutChart = new Chart(at_ctx, {
     type: "doughnut",
     data: at_data,
     options: at_options,
   });
   //active tickets chart end
-
-
-  
-
-
 });
-
-
-

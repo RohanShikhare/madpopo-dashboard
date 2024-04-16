@@ -1404,13 +1404,13 @@ h6 {
         justify-content: space-between;
         flex-wrap: wrap;
         padding: 2rem 0;
-        @include mid-991-tab{
+        @include mid-991-tab {
           justify-content: flex-start;
         }
-        img{
+        img {
           margin: 1rem;
           width: 200px;
-          @include mid-991-tab{
+          @include mid-991-tab {
             width: 150px;
             height: 250px;
           }
@@ -1708,6 +1708,235 @@ h6 {
       }
     }
     //manage-account-end
+
+    #manage-client-section {
+      @include mainWrap;
+      @include overflow-wrap;
+      height: 86vh;
+      background-color: #ffffff;
+      .mc-row {
+        display: flex;
+        .mcLeftBlock {
+          .clientWrapper {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            h2 {
+              @include blueHeading;
+              font-size: 1.8rem;
+              font-weight: 600;
+              margin: 0;
+            }
+            .client-table {
+              margin: 1rem 0;
+              width: 100%;
+              border-radius: 1rem;
+              background-color: #f9fbff;
+              thead {
+                tr {
+                  th {
+                    @include blueHeading;
+                    background-color: #edf3ff;
+                    text-align: center;
+                    padding: 1rem;
+                  }
+                }
+              }
+              tbody {
+                tr {
+                  td {
+                    padding: 1rem;
+                    text-align: start;
+                    font-size: 1.4rem;
+                    color: #616263;
+                    &:last-child {
+                      text-align: end;
+                      font-weight: 500;
+                      color: #172f78;
+                    }
+                  }
+                }
+                border-bottom: 1px solid #dcefff;
+              }
+              tfoot {
+                tr {
+                  td {
+                    @include blueHeading;
+                    text-align: start;
+                    padding: 1rem;
+                    &:last-child {
+                      text-align: end;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .detailsWrapper {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            h2 {
+              @include blueHeading;
+              font-size: 1.8rem;
+              font-weight: 600;
+            }
+            .detailsBlock {
+              margin: 1rem 0;
+              border-radius: 0.5rem;
+              background-color: #f9fbff;
+              h2 {
+                @include blueHeading;
+                text-align: center;
+                padding: 1rem;
+                background-color: #edf3ff;
+                border-top-left-radius: 0.5rem;
+                border-top-right-radius: 0.5rem;
+              }
+              .infoDetails {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                border-bottom: 1px solid #dcefff;
+                padding: 1rem 0;
+                .infoBlocks {
+                  display: flex;
+                  align-items: center;
+                  gap: 5px;
+                  padding: 0.5rem;
+                  p {
+                    color: #616263;
+                    font-size: 1.4rem;
+                    margin: 0;
+                  }
+                  span {
+                    display: flex;
+                    align-items: center;
+                  }
+                }
+              }
+              .addressDetails {
+                display: flex;
+                gap: 5px;
+                padding: 1rem 0.5rem;
+                border-bottom: 1px solid #dcefff;
+                span {
+                  padding: 0.5rem 0;
+                }
+                p {
+                  color: #616263;
+                  font-size: 1.4rem;
+                  margin: 0;
+                }
+              }
+              .loremDetails {
+                display: flex;
+                gap: 5px;
+                padding: 1rem 0.5rem;
+                border-bottom: 1px solid #dcefff;
+                span {
+                  padding: 0.5rem 0;
+                }
+                p {
+                  color: #616263;
+                  font-size: 1.4rem;
+                  margin: 0;
+                }
+              }
+              .editButton {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                background-color: #1912d3;
+                padding: 1rem;
+                border-bottom-left-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;
+                span {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+                p {
+                  font-size: 1.6rem;
+                  font-weight: 500;
+                  color: #ffffff;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        .mcRightBlock {
+          padding: 1rem;
+          h2 {
+            @include blueHeading;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 0;
+            padding: 1rem;
+          }
+          .hdSection {
+            .tabBtnHolder {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              flex-wrap: wrap;
+              background-color: #edf3ff;
+              .tab-btn {
+                border: none;
+                background-color: transparent;
+                padding: 1rem;
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: #616263;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                svg {
+                  fill: #616263;
+                }
+                &.active {
+                  color: #2e0aa3;
+                  svg {
+                    path {
+                      fill: #2e0aa3;
+                    }
+                  }
+                }
+              }
+            }
+            .tab-content {
+              @include overflow-wrap;
+              height: 95vh;
+              #files-tab {
+                .drop-btn-wrap {
+                  @include bluebtn;
+                  width: fit-content;
+                  margin: 2rem auto;
+                }
+              }
+            }
+          }
+          .hd-btn-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            padding: 1rem 2rem;
+            gap: 10px;
+            .hd-close-btn {
+              @include bluebtn;
+              background-color: #edf3ff;
+              p {
+                color: #888888;
+              }
+            }
+            .hd-save-btn {
+              @include bluebtn;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -2813,6 +3042,5 @@ h6 {
     }
   }
 }
-
 
 //common-css-for-all-end
