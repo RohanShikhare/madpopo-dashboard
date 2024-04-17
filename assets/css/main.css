@@ -871,11 +871,6 @@ h6 {
   display: flex;
   gap: 10px;
 }
-@media (max-width: 1024px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow {
-    flex-wrap: wrap;
-  }
-}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide {
   border-radius: 1rem;
 }
@@ -899,12 +894,6 @@ h6 {
   color: #ffffff;
   margin: 0;
 }
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeTitle h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
-}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeTitle h2 span {
   color: #43e3e0;
 }
@@ -916,19 +905,6 @@ h6 {
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeSubtext p {
   color: #d9d9d9;
   font-size: 1.4rem;
-}
-@media (max-width: 834px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeSubtext p {
-    position: relative;
-    z-index: 999;
-  }
-}
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .dashWelcomeSubtext p {
-    text-align: center;
-    transition: all 0.3s linear;
-    visibility: hidden;
-  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .userImgDiv {
   background-image: url(/assets/img/user.png);
@@ -942,30 +918,10 @@ h6 {
   left: 41px;
   z-index: 2;
 }
-@media (max-width: 768px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .userImgDiv {
-    left: 6px;
-  }
-}
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .userImgDiv {
-    display: none;
-  }
-}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .logo1Div {
   position: absolute;
   bottom: 8px;
   left: 8px;
-}
-@media (max-width: 768px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .logo1Div {
-    display: none;
-  }
-}
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .logo1Div {
-    display: block;
-  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashWelcomeWrap .logo2Div {
   position: absolute;
@@ -1010,12 +966,6 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-@media (max-width: 420px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap {
-    flex-wrap: wrap;
-    gap: 5px;
-  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashGraphWrap .dashGraphHeaderWrap h3 {
   color: #172f78;
@@ -1101,25 +1051,10 @@ h6 {
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow {
   display: flex;
 }
-@media (max-width: 768px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow {
-    flex-wrap: wrap;
-  }
-}
-@media (max-width: 480px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .full-width {
-    width: 100%;
-  }
-}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv {
   background-color: #ffffff;
   border-radius: 1rem;
   margin-right: 10px;
-}
-@media (max-width: 768px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv {
-    margin: 1rem;
-  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidTitleWrap {
   display: flex;
@@ -1148,7 +1083,7 @@ h6 {
   left: 0;
   overflow-y: auto;
   scrollbar-width: none;
-  height: 190px;
+  height: 33vh;
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable {
   margin-top: 2rem;
@@ -1223,29 +1158,10 @@ h6 {
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr:first-child {
   background-color: #edf3ff;
 }
-@media (max-width: 834px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr th {
-    padding: 1rem;
-  }
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable tr td {
-    padding: 1rem;
-  }
-}
-@media (max-width: 480px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentlyPaidDiv .recentlyPaidOverflowWrap .recentlyPaidTable {
-    margin: 1rem;
-    width: 350px;
-  }
-}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv {
   background-color: #ffffff;
   border-radius: 1rem;
   margin-right: 10px;
-}
-@media (max-width: 768px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv {
-    margin: 1rem;
-  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .recentTicketTitleWrap {
   display: flex;
@@ -1274,7 +1190,7 @@ h6 {
   left: 0;
   overflow-y: auto;
   scrollbar-width: none;
-  height: 190px;
+  height: 33vh;
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap {
   margin: 0 1rem;
@@ -1283,17 +1199,6 @@ h6 {
   align-items: center;
   border-bottom: 1px solid #bfbdff;
   justify-content: space-around;
-}
-@media (max-width: 834px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap {
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-}
-@media (max-width: 768px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap {
-    flex-wrap: nowrap;
-  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap .ticketCardImg img {
   border-radius: 50%;
@@ -1318,19 +1223,9 @@ h6 {
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
 }
-@media (max-width: 991px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentTicketsDiv .ticketsOverflowDiv .ticketCardsWrap button {
-    padding: 0.5rem;
-  }
-}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv {
   background-color: #ffffff;
   border-radius: 1rem;
-}
-@media (max-width: 768px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv {
-    margin: 1rem;
-  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .recentPackagesTitleWrap {
   display: flex;
@@ -1359,7 +1254,7 @@ h6 {
   left: 0;
   overflow-y: auto;
   scrollbar-width: none;
-  height: 190px;
+  height: 33vh;
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard {
   display: flex;
@@ -1368,17 +1263,6 @@ h6 {
   padding: 1rem 0;
   border-bottom: 1px solid #bfbdff;
   justify-content: space-between;
-}
-@media (max-width: 834px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard {
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-}
-@media (max-width: 768px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard {
-    flex-wrap: nowrap;
-  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashLeftSide .dashRecentRow .recentPackagesDiv .packagesOverflowDiv .packageCard p {
   color: #7d7d7d;
@@ -1413,21 +1297,6 @@ h6 {
   border-radius: 1rem;
   margin-right: 1rem;
 }
-@media (max-width: 1024px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide {
-    display: flex;
-  }
-}
-@media (max-width: 768px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide {
-    margin: 0;
-  }
-}
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide {
-    flex-wrap: wrap;
-  }
-}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv {
   margin-bottom: 1rem;
   border-radius: 0.5rem;
@@ -1437,22 +1306,6 @@ h6 {
   justify-content: space-between;
   background-color: #ffffff;
 }
-@media (max-width: 768px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv {
-    margin: 1rem;
-  }
-}
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv {
-    width: 45%;
-    gap: 10px;
-  }
-}
-@media (max-width: 480px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv {
-    width: 100%;
-  }
-}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdlogoDiv {
   display: flex;
   align-items: center;
@@ -1460,11 +1313,6 @@ h6 {
   padding: 0.5rem;
   background-color: #e3f8fa;
   border-radius: 0.5rem;
-}
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdlogoDiv svg {
-    height: 24px;
-  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv {
   display: flex;
@@ -1482,30 +1330,9 @@ h6 {
   font-size: 1.6rem;
   margin: 0;
 }
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv h5 {
-    font-size: 1.6rem;
-  }
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv p {
-    font-size: 1.2rem;
-  }
-}
-@media (max-width: 480px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdDetailDiv {
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-  }
-}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdCircleDiv {
   height: 4.6rem;
   width: 4.6rem;
-}
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingDomainDiv .pdCircleDiv {
-    height: 3.6rem;
-    width: 3.6rem;
-  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv {
   margin-bottom: 1rem;
@@ -1516,22 +1343,6 @@ h6 {
   justify-content: space-between;
   background-color: #ffffff;
 }
-@media (max-width: 768px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv {
-    margin: 1rem;
-  }
-}
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv {
-    width: 45%;
-    gap: 10px;
-  }
-}
-@media (max-width: 480px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv {
-    width: 100%;
-  }
-}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phlogoDiv {
   display: flex;
   align-items: center;
@@ -1540,11 +1351,6 @@ h6 {
   background-color: #e3f8fa;
   border-radius: 0.5rem;
   background-color: #fff9dd;
-}
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phlogoDiv svg {
-    height: 24px;
-  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv {
   display: flex;
@@ -1562,36 +1368,15 @@ h6 {
   font-size: 1.6rem;
   margin: 0;
 }
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv h5 {
-    font-size: 1.6rem;
-  }
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv p {
-    font-size: 1.2rem;
-  }
-}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv p {
   color: #90790d;
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv h5 {
   color: #90790d;
 }
-@media (max-width: 480px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phDetailDiv {
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-  }
-}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phCircleDiv {
   height: 4.6rem;
   width: 4.6rem;
-}
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .pendingHostingDiv .phCircleDiv {
-    height: 3.6rem;
-    width: 3.6rem;
-  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv {
   margin-bottom: 1rem;
@@ -1602,22 +1387,6 @@ h6 {
   justify-content: space-between;
   background-color: #ffffff;
 }
-@media (max-width: 768px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv {
-    margin: 1rem;
-  }
-}
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv {
-    width: 45%;
-    gap: 10px;
-  }
-}
-@media (max-width: 480px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv {
-    width: 100%;
-  }
-}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uilogoDiv {
   display: flex;
   align-items: center;
@@ -1626,11 +1395,6 @@ h6 {
   background-color: #e3f8fa;
   border-radius: 0.5rem;
   background-color: #f4e5fd;
-}
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uilogoDiv svg {
-    height: 24px;
-  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv {
   display: flex;
@@ -1648,36 +1412,15 @@ h6 {
   font-size: 1.6rem;
   margin: 0;
 }
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv h5 {
-    font-size: 1.6rem;
-  }
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv p {
-    font-size: 1.2rem;
-  }
-}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv p {
   color: #611592;
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv h5 {
   color: #611592;
 }
-@media (max-width: 480px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiDetailDiv {
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-  }
-}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiCircleDiv {
   height: 4.6rem;
   width: 4.6rem;
-}
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .unpaidInvoicesDiv .uiCircleDiv {
-    height: 3.6rem;
-    width: 3.6rem;
-  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv {
   margin-bottom: 1rem;
@@ -1688,22 +1431,6 @@ h6 {
   justify-content: space-between;
   background-color: #ffffff;
 }
-@media (max-width: 768px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv {
-    margin: 1rem;
-  }
-}
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv {
-    width: 45%;
-    gap: 10px;
-  }
-}
-@media (max-width: 480px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv {
-    width: 100%;
-  }
-}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atlogoDiv {
   display: flex;
   align-items: center;
@@ -1712,11 +1439,6 @@ h6 {
   background-color: #e3f8fa;
   border-radius: 0.5rem;
   background-color: #ffe6e2;
-}
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atlogoDiv svg {
-    height: 24px;
-  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv {
   display: flex;
@@ -1734,63 +1456,20 @@ h6 {
   font-size: 1.6rem;
   margin: 0;
 }
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv h5 {
-    font-size: 1.6rem;
-  }
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv p {
-    font-size: 1.2rem;
-  }
-}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv p {
   color: #b42d16;
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv h5 {
   color: #b42d16;
 }
-@media (max-width: 480px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atDetailDiv {
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-  }
-}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atCircleDiv {
   height: 4.6rem;
   width: 4.6rem;
-}
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .activeTicketsDiv .atCircleDiv {
-    height: 3.6rem;
-    width: 3.6rem;
-  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart {
   padding: 0.5rem;
   border-radius: 1rem;
   background-color: #ffffff;
-}
-@media (max-width: 1024px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart {
-    width: 65%;
-    margin-left: 1rem;
-  }
-}
-@media (max-width: 834px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart {
-    width: 60%;
-  }
-}
-@media (max-width: 768px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart {
-    width: 47%;
-    margin: 1rem;
-  }
-}
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart {
-    width: 100%;
-  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv {
   padding: 0.5rem;
@@ -1808,19 +1487,9 @@ h6 {
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv {
-    padding: 0.5rem;
-  }
-}
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv h3 {
   font-size: 1.6rem;
   margin: 0;
-}
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv h3 {
-    font-size: 1.4rem;
-  }
 }
 .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .dashPieChart .pieTitleDiv p {
   font-size: 1.2rem;
@@ -1867,40 +1536,6 @@ h6 {
   font-weight: 500;
   font-size: 1rem;
   margin: 0;
-}
-@media (max-width: 1024px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .d-r-wrapper {
-    width: 35%;
-  }
-}
-@media (max-width: 834px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .d-r-wrapper {
-    width: 40%;
-  }
-}
-@media (max-width: 768px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .d-r-wrapper {
-    width: 50%;
-  }
-}
-@media (max-width: 576px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dashRightSide .d-r-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-@media (max-width: 1024px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dash-full-r {
-    width: 100%;
-  }
-}
-@media (max-width: 1024px) {
-  .BodyWrapper .BodyDiv #dashboardWrap .dashboardRow .dash-full-l {
-    width: 100%;
-  }
 }
 .BodyWrapper .BodyDiv #hosting-services-wrap {
   background-color: #ffffff;
@@ -2172,6 +1807,237 @@ h6 {
 .BodyWrapper .BodyDiv #hosting-services-wrap .hs-table-wrap .hs-table-pagination .hs-pagination-wrap .hs-pagination li.active {
   color: #ffffff;
   background-color: #1912d3;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage #settings {
+  padding: 3rem 0;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box {
+  padding: 1.5rem 1rem;
+  background-color: #edf3ff;
+  border-radius: 1.2rem;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body form {
+  width: 65%;
+  margin: 0 auto;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .input-btn-div {
+  padding: 0;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .input-btn-div input {
+  margin: 0;
+  height: 3.3rem;
+  width: 6.2rem;
+  box-shadow: 1px 1px 5px rgba(228, 228, 228, 0.3);
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .input-btn-div {
+  margin-bottom: 3rem;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .myError {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .common-label {
+  font-size: 1.6rem !important;
+  margin-bottom: 1rem !important;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .common-input {
+  height: 4rem;
+  background-color: #fff !important;
+  width: 100%;
+  margin-bottom: 1rem !important;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .common-select {
+  height: 4rem;
+  background-color: #fff !important;
+  width: 100%;
+  margin-bottom: 1rem !important;
+  padding: 0 1rem !important;
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  border: 0 !important;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .common-radio {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .smallBoxWrap {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .myDaysMsg {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  display: block;
+  font-weight: 600;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .dynamicLogoWrap {
+  margin: 2rem 0;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .rangeSliderBoxWraps {
+  display: flex;
+  align-items: center;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .rangeSliderBoxWraps #invoice-logo-slider {
+  width: 100%;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body #logo-slider {
+  width: 100%;
+  height: 1.5rem;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .invoice_images {
+  width: 50%;
+  overflow: hidden;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .invoice_images img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 100%;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body #invoice-logo-dimensionss {
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: flex;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .common-alert {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .common-alert button {
+  border: 0;
+  background: transparent;
+  margin-right: 0.5rem;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .hs-table {
+  margin-top: 2rem;
+  width: 100%;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .hs-table tr th {
+  color: #172f78;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .hs-table tr th:first-child div {
+  padding-right: 1rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .hs-table tr th:first-child div input {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .hs-table tr th:nth-child(even) {
+  border-right: 1px solid #dcefff;
+  border-left: 1px solid #dcefff;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .hs-table tr td {
+  text-align: center;
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  text-overflow: ellipsis;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .hs-table tr td .tableIcon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 0 2rem;
+  justify-content: center;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .hs-table tr td .tableIcon a {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .hs-table tr td:first-child div {
+  padding: 1rem 2rem;
+  padding-right: 1rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .hs-table tr td:first-child div input {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .hs-table tr td:nth-child(even) {
+  border-right: 1px solid #dcefff;
+  border-left: 1px solid #dcefff;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .hs-table tr:nth-child(even) {
+  background-color: #f9fbff;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .hs-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .hs-table tr:first-child {
+  background-color: #edf3ff;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .inneRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .inneRow .common-input {
+  width: 80% !important;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .smallText a {
+  font-size: 1.4rem;
+  color: #02c302 !important;
+  font-weight: 500;
+  padding-left: 0.5rem;
+  text-decoration: underline !important;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .common-radioLabel {
+  color: #172f78;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .box-body .radioWrap .radioCol4 {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .list-group {
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .list-group .list-group-item {
+  border: 0;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .list-group .list-group-item.common-button {
+  background-color: #fff;
+  color: #212529 !important;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .list-group .list-group-item.common-button.active {
+  background-color: #004ab8;
+  color: #fff !important;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .list-group .list-group-item a {
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+}
+.BodyWrapper .BodyDiv #hosting-services-wrap .settingsPage .box .list-group .list-group-item:hover {
+  background-color: #004ab8;
+  color: #fff !important;
 }
 .BodyWrapper .BodyDiv #orders-wrap {
   background-color: #ffffff;
@@ -2542,25 +2408,321 @@ h6 {
 }
 .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   padding: 2rem 0;
 }
-@media (max-width: 991px) {
-  .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps {
-    justify-content: flex-start;
-  }
-}
-.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps img {
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper {
+  background: linear-gradient(90deg, rgb(0, 206, 196) 0%, rgb(31, 139, 139) 100%);
+  padding: 1.5rem;
+  height: 39.5rem;
+  border-radius: 1rem;
   margin: 1rem;
-  width: 200px;
 }
-@media (max-width: 991px) {
-  .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps img {
-    width: 150px;
-    height: 250px;
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer {
+  margin-top: 5px;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planTitle {
+  color: #888888;
+  font-weight: 600;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  text-align: center;
+  color: white;
+}
+@media (max-width: 767px) {
+  .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planTitle {
+    font-size: 1.4rem;
   }
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planPrice {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planPrice .planPriceUnit {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planPrice .planPriceMonth {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planInfo h3 {
+  font-size: 1.6rem;
+  text-align: center;
+  position: relative;
+  padding: 10px 0;
+  color: white;
+  margin: 0;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planInfo h3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: white;
+  right: 0;
+  transform: translateY(-50%);
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planInfo h3::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: white;
+  left: 0;
+  transform: translateY(-50%);
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .plan-select-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .plan-select-div select {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .plan-select-div select:focus-visible {
+  outline: none;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .plan-select-div select option {
+  background-color: #00cec4;
+  color: white;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planDetailsList ul {
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planDetailsList ul li {
+  padding: 0.5rem;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planCutImg {
+  text-align: end;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper .planContainer .planCutImg .planBuyBtn {
+  margin-top: 56px;
+  font-size: 1.4rem;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard {
+  background: #e9ffff;
+  position: relative;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .planContainer {
+  position: relative;
+  z-index: 999;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .planContainer .planCutImg .planBuyBtn {
+  margin-top: 15px;
+  background-color: #259a99;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .planContainer .planInfo h3 {
+  margin-bottom: 0px;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .firstCardBottomSvg {
+  background: url(/assets/img/firstcard.svg) no-repeat bottom/100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+@media (max-width: 992px) {
+  .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.firstCard .firstCardBottomSvg {
+    background: url(/assets/img/firstcard.svg) no-repeat bottom/127%;
+  }
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard {
+  background: url(/assets/img/secondcardtop.svg) no-repeat top/100%;
+  background-color: #ebf2ff;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard {
+    background: url(/assets/img/secondcardtop.svg) no-repeat top/130%;
+  }
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer {
+  margin-top: 0;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planTitle {
+  padding-bottom: 4rem;
+  color: #82a0ff;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .plan-select-div select {
+  background-color: transparent;
+  color: black;
+  border-color: black;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .plan-select-div select option {
+  background-color: white;
+  color: black;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planDetailsList ul {
+  color: #888888;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planCutImg {
+  text-align: center;
+  position: relative;
+  z-index: 999;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planCutImg .planBuyBtn {
+  margin-top: 25px;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .planContainer .planCutImg .planBuyBtn button {
+  font-size: 1.4rem;
+  background-color: #5c7dff;
+  padding: 0.5rem 4rem;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.secondCard .secondCardBottomSvg {
+  background: url(/assets/img/secondcardbottom.svg) no-repeat bottom/100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard {
+  background: url(/assets/img/thirdcardtop.svg) no-repeat top/100%;
+  background-color: #f8f8ff;
+  position: relative;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planTitle {
+  text-align: start;
+  color: #82a0ff;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planPrice {
+  justify-content: start;
+  padding-bottom: 3.5rem;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .plan-select-div select {
+  background-color: transparent;
+  color: black;
+  border-color: black;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .plan-select-div select option {
+  background-color: white;
+  color: black;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planDetailsList ul {
+  color: #888888;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planCutImg {
+  text-align: center;
+  position: relative;
+  z-index: 999;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planCutImg .planBuyBtn {
+  margin-top: 25px;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .planCutImg .planBuyBtn button {
+  font-size: 1.4rem;
+  background-color: #2752fc;
+  padding: 0.5rem 4rem;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.thirdCard .thirdCardBottomSvg {
+  background: url(/assets/img/thirdcardbottom.svg) no-repeat bottom/100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard {
+  background: white;
+  border: 1px solid black;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer {
+  margin-top: 0;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planLogo h3 {
+  color: #888888;
+  margin-bottom: 0rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planPrice .planPriceUnit {
+  color: #2e0aa3;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planPrice .planPriceMonth {
+  color: #888888;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planTitle {
+  color: #5479f7;
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .plan-select-div select {
+  background-color: transparent;
+  color: black;
+  border-color: black;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .plan-select-div select option {
+  background-color: white;
+  color: black;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planDetailsList ul {
+  color: #888888;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .featuresTag {
+  color: #262626;
+  font-size: 1.4rem;
+  padding-left: 2rem;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planCutImg {
+  text-align: center;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planCutImg .planBuyBtn {
+  margin-top: 15px;
+}
+.BodyWrapper .BodyDiv #pt-wrap .pt-card-wraps .planningWrapper.fourthCard .planContainer .planCutImg .planBuyBtn button {
+  font-size: 1.4rem;
+  background-color: #2e0aa3;
+  padding: 0.5rem 6rem;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
 }
 .BodyWrapper .BodyDiv #menu-wrap {
   background-color: #ffffff;
@@ -3240,291 +3402,6 @@ h6 {
   margin: 0;
   color: #ffffff;
 }
-.BodyWrapper .BodyDiv #manage-client-section {
-  background-color: #ffffff;
-  height: 98%;
-  border-radius: 1rem;
-  margin-right: 1rem;
-  padding: 1rem;
-  height: 46vh;
-  position: sticky;
-  top: 0;
-  left: 0;
-  overflow-y: auto;
-  scrollbar-width: none;
-  height: 86vh;
-  background-color: #ffffff;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row {
-  display: flex;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .clientWrapper {
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .clientWrapper h2 {
-  color: #172f78;
-  font-size: 1.6rem;
-  font-weight: 500;
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin: 0;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .clientWrapper .client-table {
-  margin: 1rem 0;
-  width: 100%;
-  border-radius: 1rem;
-  background-color: #f9fbff;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .clientWrapper .client-table thead tr th {
-  color: #172f78;
-  font-size: 1.6rem;
-  font-weight: 500;
-  background-color: #edf3ff;
-  text-align: center;
-  padding: 1rem;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .clientWrapper .client-table tbody {
-  border-bottom: 1px solid #dcefff;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .clientWrapper .client-table tbody tr td {
-  padding: 1rem;
-  text-align: start;
-  font-size: 1.4rem;
-  color: #616263;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .clientWrapper .client-table tbody tr td:last-child {
-  text-align: end;
-  font-weight: 500;
-  color: #172f78;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .clientWrapper .client-table tfoot tr td {
-  color: #172f78;
-  font-size: 1.6rem;
-  font-weight: 500;
-  text-align: start;
-  padding: 1rem;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .clientWrapper .client-table tfoot tr td:last-child {
-  text-align: end;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper {
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper h2 {
-  color: #172f78;
-  font-size: 1.6rem;
-  font-weight: 500;
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock {
-  margin: 1rem 0;
-  border-radius: 0.5rem;
-  background-color: #f9fbff;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock h2 {
-  color: #172f78;
-  font-size: 1.6rem;
-  font-weight: 500;
-  text-align: center;
-  padding: 1rem;
-  background-color: #edf3ff;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .infoDetails {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  border-bottom: 1px solid #dcefff;
-  padding: 1rem 0;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .infoDetails .infoBlocks {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 0.5rem;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .infoDetails .infoBlocks p {
-  color: #616263;
-  font-size: 1.4rem;
-  margin: 0;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .infoDetails .infoBlocks span {
-  display: flex;
-  align-items: center;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .addressDetails {
-  display: flex;
-  gap: 5px;
-  padding: 1rem 0.5rem;
-  border-bottom: 1px solid #dcefff;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .addressDetails span {
-  padding: 0.5rem 0;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .addressDetails p {
-  color: #616263;
-  font-size: 1.4rem;
-  margin: 0;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .loremDetails {
-  display: flex;
-  gap: 5px;
-  padding: 1rem 0.5rem;
-  border-bottom: 1px solid #dcefff;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .loremDetails span {
-  padding: 0.5rem 0;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .loremDetails p {
-  color: #616263;
-  font-size: 1.4rem;
-  margin: 0;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .editButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background-color: #1912d3;
-  padding: 1rem;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .editButton span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcLeftBlock .detailsWrapper .detailsBlock .editButton p {
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #ffffff;
-  margin: 0;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock {
-  padding: 1rem;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock h2 {
-  color: #172f78;
-  font-size: 1.6rem;
-  font-weight: 500;
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin: 0;
-  padding: 1rem;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hdSection .tabBtnHolder {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  background-color: #edf3ff;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hdSection .tabBtnHolder .tab-btn {
-  border: none;
-  background-color: transparent;
-  padding: 1rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #616263;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hdSection .tabBtnHolder .tab-btn svg {
-  fill: #616263;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hdSection .tabBtnHolder .tab-btn.active {
-  color: #2e0aa3;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hdSection .tabBtnHolder .tab-btn.active svg path {
-  fill: #2e0aa3;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hdSection .tab-content {
-  height: 46vh;
-  position: sticky;
-  top: 0;
-  left: 0;
-  overflow-y: auto;
-  scrollbar-width: none;
-  height: 95vh;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hdSection .tab-content #files-tab .drop-btn-wrap {
-  font-size: 1.6rem;
-  background-color: #1912d3;
-  border-radius: 0.5rem;
-  padding: 0.8rem 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  cursor: pointer;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 2rem auto;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hdSection .tab-content #files-tab .drop-btn-wrap span {
-  display: flex;
-  align-items: center;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hdSection .tab-content #files-tab .drop-btn-wrap p {
-  margin: 0;
-  color: #ffffff;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hd-btn-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  padding: 1rem 2rem;
-  gap: 10px;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hd-btn-wrap .hd-close-btn {
-  font-size: 1.6rem;
-  background-color: #1912d3;
-  border-radius: 0.5rem;
-  padding: 0.8rem 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  cursor: pointer;
-  background-color: #edf3ff;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hd-btn-wrap .hd-close-btn span {
-  display: flex;
-  align-items: center;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hd-btn-wrap .hd-close-btn p {
-  margin: 0;
-  color: #ffffff;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hd-btn-wrap .hd-close-btn p {
-  color: #888888;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hd-btn-wrap .hd-save-btn {
-  font-size: 1.6rem;
-  background-color: #1912d3;
-  border-radius: 0.5rem;
-  padding: 0.8rem 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  cursor: pointer;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hd-btn-wrap .hd-save-btn span {
-  display: flex;
-  align-items: center;
-}
-.BodyWrapper .BodyDiv #manage-client-section .mc-row .mcRightBlock .hd-btn-wrap .hd-save-btn p {
-  margin: 0;
-  color: #ffffff;
-}
 
 #add-new-hosting-modalwrap .nh-modal-adjuster {
   margin-top: 75px;
@@ -3886,6 +3763,9 @@ h6 {
 }
 #add-new-hosting-modalwrap .nh-modal-adjuster .nh-modal-content .nh-modal-footer .nh-footer-btn-wrap .nh-modal-closebtn p {
   color: #888888;
+}
+#add-new-hosting-modalwrap .nh-modal-adjuster .nh-modal-content .nh-modal-footer .nh-footer-btn-wrap button {
+  border: 0;
 }
 #add-new-hosting-modalwrap .nh-modal-adjuster .nh-modal-content .nh-modal-footer .nh-footer-btn-wrap .nh-modal-addbtn {
   font-size: 1.6rem;
@@ -4767,6 +4647,9 @@ h6 {
 .clm-layout .modal-dialog .nh-modal-content form .nh-modal-footer .nh-footer-btn-wrap .nh-modal-closebtn p {
   color: #888888;
 }
+.clm-layout .modal-dialog .nh-modal-content form .nh-modal-footer .nh-footer-btn-wrap button {
+  border: 0;
+}
 .clm-layout .modal-dialog .nh-modal-content form .nh-modal-footer .nh-footer-btn-wrap .nh-modal-addbtn {
   font-size: 1.6rem;
   background-color: #1912d3;
@@ -4843,6 +4726,9 @@ h6 {
   border-radius: 0.4rem !important;
   padding: 0.2rem !important;
   background-color: transparent !important;
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
   font-size: 1.4rem !important;
   font-weight: 400 !important;
   width: 100% !important;
@@ -4894,13 +4780,27 @@ h6 {
 }
 
 .common-button {
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
   background-color: #1912d3;
-  border-radius: 0.5rem;
-  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem !important;
+  padding: 0.8rem 1.2rem !important;
+  text-align: center !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  border: 0 !important;
+}
+
+.common-box {
+  margin-bottom: 2rem;
+}
+
+.common-boxTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
   text-align: center;
-  color: white;
-  cursor: pointer;
+  color: #172f78;
+  border-bottom: 0.2rem solid #ccc;
+  padding-bottom: 2rem;
 }
 
 .common-form {
@@ -4953,4 +4853,24 @@ h6 {
 }
 .common-table tbody tr:nth-child(odd) {
   background-color: #ffffff;
+}
+
+.myBtnGroup {
+  display: flex;
+  gap: 1rem;
+}
+
+.panelBtnWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+.panelBtnWrap .common-button {
+  border: 0.1rem solid #313131 !important;
+  color: #313131 !important;
+}
+.panelBtnWrap .common-button:hover {
+  background-color: #004ab8;
+  color: #fff !important;
 }/*# sourceMappingURL=main.css.map */

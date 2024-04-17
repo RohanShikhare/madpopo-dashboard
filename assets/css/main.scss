@@ -782,9 +782,6 @@ h6 {
       .dashboardRow {
         display: flex;
         gap: 10px;
-        @include d-desktop {
-          flex-wrap: wrap;
-        }
         .dashLeftSide {
           border-radius: 1rem;
           .dashWelcomeWrap {
@@ -808,11 +805,6 @@ h6 {
                 font-weight: 700;
                 color: #ffffff;
                 margin: 0;
-                @include md-mobile {
-                  font-size: 2rem;
-                  text-align: center;
-                }
-
                 span {
                   color: #43e3e0;
                 }
@@ -825,16 +817,6 @@ h6 {
               p {
                 color: #d9d9d9;
                 font-size: 1.4rem;
-
-                @include md-tablet {
-                  position: relative;
-                  z-index: 999;
-                }
-                @include md-mobile {
-                  text-align: center;
-                  transition: all 0.3s linear;
-                  visibility: hidden;
-                }
               }
             }
             .userImgDiv {
@@ -848,23 +830,11 @@ h6 {
               top: -10px;
               left: 41px;
               z-index: 2;
-              @include x-tablet {
-                left: 6px;
-              }
-              @include md-mobile {
-                display: none;
-              }
             }
             .logo1Div {
               position: absolute;
               bottom: 8px;
               left: 8px;
-              @include x-tablet {
-                display: none;
-              }
-              @include md-mobile {
-                display: block;
-              }
             }
             .logo2Div {
               position: absolute;
@@ -909,10 +879,6 @@ h6 {
               display: flex;
               align-items: center;
               justify-content: space-between;
-              @media (max-width: 420px) {
-                flex-wrap: wrap;
-                gap: 5px;
-              }
               h3 {
                 @include blueHeading;
                 font-weight: 600;
@@ -996,46 +962,21 @@ h6 {
           }
           .dashRecentRow {
             display: flex;
-            @include x-tablet {
-              flex-wrap: wrap;
-            }
-            @include mobile {
-              .full-width {
-                width: 100%;
-              }
-            }
             .recentlyPaidDiv {
               background-color: #ffffff;
               border-radius: 1rem;
               margin-right: 10px;
-              @include x-tablet {
-                margin: 1rem;
-              }
               .recentlyPaidTitleWrap {
                 @include dashTitles;
               }
               .recentlyPaidOverflowWrap {
                 @include overflow-wrap;
-                height: 190px;
+                height: 33vh;
                 .recentlyPaidTable {
                   @include data-table;
                   width: 90%;
                   margin: 0 auto;
                   border-radius: 0.5rem;
-                  @include md-tablet {
-                    tr {
-                      th {
-                        padding: 1rem;
-                      }
-                      td {
-                        padding: 1rem;
-                      }
-                    }
-                  }
-                  @include mobile {
-                    margin: 1rem;
-                    width: 350px;
-                  }
                 }
               }
             }
@@ -1043,15 +984,12 @@ h6 {
               background-color: #ffffff;
               border-radius: 1rem;
               margin-right: 10px;
-              @include x-tablet {
-                margin: 1rem;
-              }
               .recentTicketTitleWrap {
                 @include dashTitles;
               }
               .ticketsOverflowDiv {
                 @include overflow-wrap;
-                height: 190px;
+                height: 33vh;
                 .ticketCardsWrap {
                   margin: 0 1rem;
                   padding: 1rem 0;
@@ -1059,13 +997,6 @@ h6 {
                   align-items: center;
                   border-bottom: 1px solid #bfbdff;
                   justify-content: space-around;
-                  @include md-tablet {
-                    flex-wrap: wrap;
-                    gap: 5px;
-                  }
-                  @include x-tablet {
-                    flex-wrap: nowrap;
-                  }
                   .ticketCardImg {
                     img {
                       border-radius: 50%;
@@ -1090,9 +1021,6 @@ h6 {
                     border: none;
                     border-radius: 0.5rem;
                     padding: 0.5rem 1rem;
-                    @include mid-991-tab {
-                      padding: 0.5rem;
-                    }
                   }
                 }
               }
@@ -1100,15 +1028,12 @@ h6 {
             .recentPackagesDiv {
               background-color: #ffffff;
               border-radius: 1rem;
-              @include x-tablet {
-                margin: 1rem;
-              }
               .recentPackagesTitleWrap {
                 @include dashTitles;
               }
               .packagesOverflowDiv {
                 @include overflow-wrap;
-                height: 190px;
+                height: 33vh;
                 .packageCard {
                   display: flex;
                   align-items: center;
@@ -1116,13 +1041,6 @@ h6 {
                   padding: 1rem 0;
                   border-bottom: 1px solid #bfbdff;
                   justify-content: space-between;
-                  @include md-tablet {
-                    flex-wrap: wrap;
-                    gap: 5px;
-                  }
-                  @include x-tablet {
-                    flex-wrap: nowrap;
-                  }
                   p {
                     color: #7d7d7d;
                     font-size: 1rem;
@@ -1165,246 +1083,89 @@ h6 {
         .dashRightSide {
           border-radius: 1rem;
           margin-right: 1rem;
-          @include d-desktop {
-            display: flex;
-          }
-          @include x-tablet {
-            margin: 0;
-          }
-          @include md-mobile {
-            flex-wrap: wrap;
-          }
           .pendingDomainDiv {
             @include rsPendingCardDiv;
-            @include x-tablet {
-              margin: 1rem;
-            }
-            @include md-mobile {
-              width: 45%;
-              gap: 10px;
-            }
-            @include mobile {
-              width: 100%;
-            }
             .pdlogoDiv {
               @include svgDiv;
-              @include md-mobile {
-                svg {
-                  height: 24px;
-                }
-              }
             }
             .pdDetailDiv {
               @include pendingCardTextDiv;
-              @include md-mobile {
-                h5 {
-                  font-size: 1.6rem;
-                }
-                p {
-                  font-size: 1.2rem;
-                }
-              }
-              @include mobile {
-                flex-direction: row;
-                gap: 10px;
-                align-items: center;
-              }
             }
             .pdCircleDiv {
               height: 4.6rem;
               width: 4.6rem;
-              @include md-mobile {
-                height: 3.6rem;
-                width: 3.6rem;
-              }
             }
           }
           .pendingHostingDiv {
             @include rsPendingCardDiv;
-            @include x-tablet {
-              margin: 1rem;
-            }
-            @include md-mobile {
-              width: 45%;
-              gap: 10px;
-            }
-            @include mobile {
-              width: 100%;
-            }
             .phlogoDiv {
               @include svgDiv;
               background-color: #fff9dd;
-              @include md-mobile {
-                svg {
-                  height: 24px;
-                }
-              }
             }
             .phDetailDiv {
               @include pendingCardTextDiv;
-              @include md-mobile {
-                h5 {
-                  font-size: 1.6rem;
-                }
-                p {
-                  font-size: 1.2rem;
-                }
-              }
               p {
                 color: #90790d;
               }
               h5 {
                 color: #90790d;
-              }
-              @include mobile {
-                flex-direction: row;
-                gap: 10px;
-                align-items: center;
               }
             }
             .phCircleDiv {
               height: 4.6rem;
               width: 4.6rem;
-              @include md-mobile {
-                height: 3.6rem;
-                width: 3.6rem;
-              }
             }
           }
           .unpaidInvoicesDiv {
             @include rsPendingCardDiv;
-            @include x-tablet {
-              margin: 1rem;
-            }
-            @include md-mobile {
-              width: 45%;
-              gap: 10px;
-            }
-            @include mobile {
-              width: 100%;
-            }
             .uilogoDiv {
               @include svgDiv;
               background-color: #f4e5fd;
-              @include md-mobile {
-                svg {
-                  height: 24px;
-                }
-              }
             }
             .uiDetailDiv {
               @include pendingCardTextDiv;
-              @include md-mobile {
-                h5 {
-                  font-size: 1.6rem;
-                }
-                p {
-                  font-size: 1.2rem;
-                }
-              }
               p {
                 color: #611592;
               }
               h5 {
                 color: #611592;
-              }
-              @include mobile {
-                flex-direction: row;
-                gap: 10px;
-                align-items: center;
               }
             }
             .uiCircleDiv {
               height: 4.6rem;
               width: 4.6rem;
-              @include md-mobile {
-                height: 3.6rem;
-                width: 3.6rem;
-              }
             }
           }
           .activeTicketsDiv {
             @include rsPendingCardDiv;
-            @include x-tablet {
-              margin: 1rem;
-            }
-            @include md-mobile {
-              width: 45%;
-              gap: 10px;
-            }
-            @include mobile {
-              width: 100%;
-            }
             .atlogoDiv {
               @include svgDiv;
               background-color: #ffe6e2;
-              @include md-mobile {
-                svg {
-                  height: 24px;
-                }
-              }
             }
             .atDetailDiv {
               @include pendingCardTextDiv;
-              @include md-mobile {
-                h5 {
-                  font-size: 1.6rem;
-                }
-                p {
-                  font-size: 1.2rem;
-                }
-              }
               p {
                 color: #b42d16;
               }
               h5 {
                 color: #b42d16;
               }
-              @include mobile {
-                flex-direction: row;
-                gap: 10px;
-                align-items: center;
-              }
             }
             .atCircleDiv {
               height: 4.6rem;
               width: 4.6rem;
-              @include md-mobile {
-                height: 3.6rem;
-                width: 3.6rem;
-              }
             }
           }
           .dashPieChart {
             padding: 0.5rem;
             border-radius: 1rem;
             background-color: #ffffff;
-            @include d-desktop {
-              width: 65%;
-              margin-left: 1rem;
-            }
-            @include md-tablet {
-              width: 60%;
-            }
-            @include x-tablet {
-              width: 47%;
-              margin: 1rem;
-            }
-            @include md-mobile {
-              width: 100%;
-            }
             .pieTitleDiv {
               @include titleWrap;
               padding-bottom: 1rem;
-              @include md-mobile {
-                padding: 0.5rem;
-              }
               h3 {
                 font-size: 1.6rem;
                 margin: 0;
-                @include md-mobile {
-                  font-size: 1.4rem;
-                }
               }
               p {
                 font-size: 1.2rem;
@@ -1453,34 +1214,6 @@ h6 {
                 }
               }
             }
-          }
-          .d-r-wrapper {
-            @include d-desktop {
-              width: 35%;
-            }
-            @include md-tablet {
-              width: 40%;
-            }
-            @include x-tablet {
-              width: 50%;
-            }
-            @include md-mobile {
-              display: flex;
-              flex-wrap: wrap;
-              width: 100%;
-              align-items: center;
-              justify-content: space-between;
-            }
-          }
-        }
-        .dash-full-r {
-          @include d-desktop {
-            width: 100%;
-          }
-        }
-        .dash-full-l {
-          @include d-desktop {
-            width: 100%;
           }
         }
       }
@@ -1544,6 +1277,172 @@ h6 {
           .hs-pagination-wrap {
             .hs-pagination {
               @include paginationDiv;
+            }
+          }
+        }
+      }
+      .settingsPage {
+        #settings {
+          padding: 3rem 0;
+        }
+        .box {
+          padding: 1.5rem 1rem;
+          background-color: #edf3ff;
+          border-radius: 1.2rem;
+          .box-body {
+            form {
+              width: 65%;
+              margin: 0 auto;
+            }
+            @include swtichInputBox;
+            .input-btn-div {
+              margin-bottom: 3rem;
+            }
+            .myError {
+              font-size: 1.4rem;
+              margin-bottom: 1rem;
+              display: block;
+            }
+            .common-label {
+              font-size: 1.6rem !important;
+              margin-bottom: 1rem !important;
+            }
+            .common-input {
+              height: 4rem;
+              background-color: #fff !important;
+              width: 100%;
+              margin-bottom: 1rem !important;
+            }
+            .common-select {
+              height: 4rem;
+              background-color: #fff !important;
+              width: 100%;
+              margin-bottom: 1rem !important;
+              padding: 0 1rem !important;
+              appearance: auto;
+              border: 0 !important;
+            }
+            .common-radio {
+              // height: 3.3rem;
+              // width: 3.3rem;
+              height: 2rem;
+              width: 2rem;
+              cursor: pointer;
+            }
+            .smallBoxWrap {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+            }
+            .myDaysMsg {
+              font-size: 1.4rem;
+              margin-bottom: 1rem;
+              display: block;
+              font-weight: 600;
+            }
+            .dynamicLogoWrap {
+              margin: 2rem 0;
+            }
+            .rangeSliderBoxWraps{
+              display: flex;
+              align-items: center;
+              #invoice-logo-slider{
+                width: 100%;
+              }
+            }
+            #logo-slider {
+              width: 100%; 
+              height: 1.5rem;
+            }
+            .invoice_images {
+              // height: 12rem;
+              width: 50%;
+              overflow: hidden;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                max-width: 100%;
+              }
+            }
+            #invoice-logo-dimensionss{
+              font-size: 1.4rem;
+              font-weight: 500;
+              display: flex;
+            }
+            .common-alert {
+              font-size: 1.4rem;
+              display: flex;
+              align-items: center;
+              button {
+                border: 0;
+                background: transparent;
+                margin-right: 0.5rem;
+              }
+            }
+            
+            .hs-table {
+              @include data-table;
+            }
+            .inneRow {
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
+              gap: 2rem;
+              margin-bottom: 1rem;
+              .common-input {
+                width: 80% !important;
+              }
+            }
+            .smallText {
+              a {
+                font-size: 1.4rem;
+                color: #02c302 !important;
+                font-weight: 500;
+                padding-left: 0.5rem;
+                text-decoration: underline !important;
+              }
+            }
+            .common-radioLabel {
+              color: #172f78;
+              font-size: 1.4rem;
+              font-weight: 500;
+            }
+            .radioWrap {
+              .radioCol4 {
+                display: flex;
+                gap: 0.5rem;
+                align-items: center;
+              }
+            }
+            
+          }
+          .list-group {
+            gap: 1rem;
+            margin-top: 2rem;
+            .list-group-item {
+              border: 0;
+              height: 4rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              &.common-button {
+                background-color: #fff;
+                color: #212529 !important;
+                &.active {
+                  background-color: #004ab8;
+                  color: #fff !important;
+                }
+              }
+              a {
+                width: 100%;
+                height: 100%;
+                font-weight: 400;
+              }
+              &:hover {
+                background-color: #004ab8;
+                color: #fff !important;
+              }
             }
           }
         }
@@ -1667,19 +1566,342 @@ h6 {
       }
       .pt-card-wraps {
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
         flex-wrap: wrap;
         padding: 2rem 0;
-        @include mid-991-tab {
-          justify-content: flex-start;
-        }
-        img {
+
+        .planningWrapper {
+          background: linear-gradient(
+            90deg,
+            rgba(0, 206, 196, 1) 0%,
+            rgba(31, 139, 139, 1) 100%
+          );
+          padding: 1.5rem;
+          height: 39.5rem;
+          border-radius: 1rem;
           margin: 1rem;
-          width: 200px;
-          @include mid-991-tab {
-            width: 150px;
-            height: 250px;
+          .planContainer {
+            margin-top: 5px;
+
+            .planTitle {
+              color: #888888;
+              font-weight: 600;
+              margin-bottom: 0;
+              font-size: 1.6rem;
+              text-align: center;
+              color: white;
+              @include x-767-tablet {
+                font-size: 1.4rem;
+              }
+            }
+            .planPrice {
+              display: flex;
+              justify-content: center;
+              gap: 5px;
+              .planPriceUnit {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                color: white;
+                font-size: 3.5rem;
+                font-weight: 600;
+              }
+              .planPriceMonth {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                color: white;
+                font-size: 1.8rem;
+                font-weight: 500;
+              }
+            }
+            .planInfo {
+              h3 {
+                font-size: 1.6rem;
+                text-align: center;
+                position: relative;
+                padding: 10px 0;
+                color: white;
+                margin: 0;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: 50%;
+                  width: 40%;
+                  height: 1px;
+                  background-color: white;
+                  right: 0;
+                  transform: translateY(-50%);
+                }
+                &::before {
+                  content: "";
+                  position: absolute;
+                  top: 50%;
+                  width: 40%;
+                  height: 1px;
+                  background-color: white;
+                  left: 0;
+                  transform: translateY(-50%);
+                }
+              }
+            }
+            .plan-select-div {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              select {
+                padding: 0.5rem;
+                margin-bottom: 1rem;
+                background-color: transparent;
+                color: white;
+                border: 1px solid white;
+                border-radius: 0.5rem;
+                font-size: 1.6rem;
+                font-weight: 500;
+                &:focus-visible {
+                  outline: none;
+                }
+                option {
+                  background-color: #00cec4;
+                  color: white;
+                }
+              }
+            }
+            .planDetailsList {
+              ul {
+                text-align: center;
+                font-size: 1.2rem;
+                color: white;
+                li {
+                  padding: 0.5rem;
+                }
+              }
+            }
+            .planCutImg {
+              text-align: end;
+              .planBuyBtn {
+                margin-top: 56px;
+                font-size: 1.4rem;
+                border: none;
+                padding: 0.5rem 2rem;
+                border-radius: 5px;
+                color: white;
+                background-color: transparent;
+              }
+            }
+          }
+
+          &.firstCard {
+            background: #e9ffff;
+            position: relative;
+            .planContainer {
+              position: relative;
+              z-index: 999;
+            }
+            .planContainer .planCutImg .planBuyBtn {
+              margin-top: 15px;
+              background-color: #259a99;
+            }
+            .planContainer .planInfo h3 {
+              margin-bottom: 0px;
+            }
+            .firstCardBottomSvg {
+              background: url(/assets/img/firstcard.svg) no-repeat bottom / 100%;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              border-top-left-radius: 1rem;
+              border-top-right-radius: 1rem;
+              @include mid-tab {
+                background: url(/assets/img/firstcard.svg) no-repeat bottom /
+                  127%;
+              }
+            }
+          }
+          &.secondCard {
+            background: url(/assets/img/secondcardtop.svg) no-repeat top / 100%;
+            background-color: #ebf2ff;
+            position: relative;
+            @include mid-tab {
+              background: url(/assets/img/secondcardtop.svg) no-repeat top /
+                130%;
+            }
+            .planContainer {
+              margin-top: 0;
+              .planTitle {
+                padding-bottom: 4rem;
+                color: #82a0ff;
+              }
+
+              .plan-select-div {
+                select {
+                  background-color: transparent;
+                  color: black;
+                  border-color: black;
+                  option {
+                    background-color: white;
+                    color: black;
+                  }
+                }
+              }
+
+              .planDetailsList ul {
+                color: #888888;
+              }
+              .planCutImg {
+                text-align: center;
+                position: relative;
+                z-index: 999;
+                .planBuyBtn {
+                  margin-top: 25px;
+                  button {
+                    font-size: 1.4rem;
+                    background-color: #5c7dff;
+                    padding: 0.5rem 4rem;
+                    border: none;
+                    color: white;
+                    border-radius: 0.5rem;
+                  }
+                }
+              }
+            }
+            .secondCardBottomSvg {
+              background: url(/assets/img/secondcardbottom.svg) no-repeat bottom /
+                100%;
+              height: 50px;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+            }
+          }
+          &.thirdCard {
+            background: url(/assets/img/thirdcardtop.svg) no-repeat top / 100%;
+            background-color: #f8f8ff;
+            position: relative;
+            .planTitle {
+              text-align: start;
+              color: #82a0ff;
+            }
+            .planPrice {
+              justify-content: start;
+              padding-bottom: 3.5rem;
+            }
+
+            .plan-select-div {
+              select {
+                background-color: transparent;
+                color: black;
+                border-color: black;
+                option {
+                  background-color: white;
+                  color: black;
+                }
+              }
+            }
+
+            .planDetailsList ul {
+              color: #888888;
+            }
+            .planCutImg {
+              text-align: center;
+              position: relative;
+              z-index: 999;
+              .planBuyBtn {
+                margin-top: 25px;
+                button {
+                  font-size: 1.4rem;
+                  background-color: #2752fc;
+                  padding: 0.5rem 4rem;
+                  border: none;
+                  color: white;
+                  border-radius: 0.5rem;
+                }
+              }
+            }
+            .thirdCardBottomSvg {
+              background: url(/assets/img/thirdcardbottom.svg) no-repeat bottom /
+                100%;
+              position: absolute;
+              bottom: 0px;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              border-bottom-left-radius: 1rem;
+              border-bottom-right-radius: 1rem;
+            }
+          }
+          &.fourthCard {
+            background: white;
+            border: 1px solid black;
+            .planContainer {
+              margin-top: 0;
+              .planLogo {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                h3 {
+                  color: #888888;
+                  margin-bottom: 0rem;
+                  font-size: 1.2rem;
+                  font-weight: 400;
+                  text-align: center;
+                }
+              }
+              .planPrice {
+                .planPriceUnit {
+                  color: #2e0aa3;
+                }
+                .planPriceMonth {
+                  color: #888888;
+                }
+              }
+              .planTitle {
+                color: #5479f7;
+                font-size: 1.4rem;
+                padding-bottom: 1rem;
+              }
+
+              .plan-select-div {
+                select {
+                  background-color: transparent;
+                  color: black;
+                  border-color: black;
+                  option {
+                    background-color: white;
+                    color: black;
+                  }
+                }
+              }
+
+              .planDetailsList ul {
+                color: #888888;
+              }
+              .featuresTag {
+                color: #262626;
+                font-size: 1.4rem;
+                padding-left: 2rem;
+              }
+              .planCutImg {
+                text-align: center;
+                .planBuyBtn {
+                  margin-top: 15px;
+                  button {
+                    font-size: 1.4rem;
+                    background-color: #2e0aa3;
+                    padding: 0.5rem 6rem;
+                    border: none;
+                    color: white;
+                    border-radius: 0.5rem;
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -1975,235 +2197,6 @@ h6 {
       }
     }
     //manage-account-end
-
-    #manage-client-section {
-      @include mainWrap;
-      @include overflow-wrap;
-      height: 86vh;
-      background-color: #ffffff;
-      .mc-row {
-        display: flex;
-        .mcLeftBlock {
-          .clientWrapper {
-            padding: 1rem;
-            border-radius: 0.5rem;
-            h2 {
-              @include blueHeading;
-              font-size: 1.8rem;
-              font-weight: 600;
-              margin: 0;
-            }
-            .client-table {
-              margin: 1rem 0;
-              width: 100%;
-              border-radius: 1rem;
-              background-color: #f9fbff;
-              thead {
-                tr {
-                  th {
-                    @include blueHeading;
-                    background-color: #edf3ff;
-                    text-align: center;
-                    padding: 1rem;
-                  }
-                }
-              }
-              tbody {
-                tr {
-                  td {
-                    padding: 1rem;
-                    text-align: start;
-                    font-size: 1.4rem;
-                    color: #616263;
-                    &:last-child {
-                      text-align: end;
-                      font-weight: 500;
-                      color: #172f78;
-                    }
-                  }
-                }
-                border-bottom: 1px solid #dcefff;
-              }
-              tfoot {
-                tr {
-                  td {
-                    @include blueHeading;
-                    text-align: start;
-                    padding: 1rem;
-                    &:last-child {
-                      text-align: end;
-                    }
-                  }
-                }
-              }
-            }
-          }
-          .detailsWrapper {
-            padding: 1rem;
-            border-radius: 0.5rem;
-            h2 {
-              @include blueHeading;
-              font-size: 1.8rem;
-              font-weight: 600;
-            }
-            .detailsBlock {
-              margin: 1rem 0;
-              border-radius: 0.5rem;
-              background-color: #f9fbff;
-              h2 {
-                @include blueHeading;
-                text-align: center;
-                padding: 1rem;
-                background-color: #edf3ff;
-                border-top-left-radius: 0.5rem;
-                border-top-right-radius: 0.5rem;
-              }
-              .infoDetails {
-                display: flex;
-                align-items: center;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                border-bottom: 1px solid #dcefff;
-                padding: 1rem 0;
-                .infoBlocks {
-                  display: flex;
-                  align-items: center;
-                  gap: 5px;
-                  padding: 0.5rem;
-                  p {
-                    color: #616263;
-                    font-size: 1.4rem;
-                    margin: 0;
-                  }
-                  span {
-                    display: flex;
-                    align-items: center;
-                  }
-                }
-              }
-              .addressDetails {
-                display: flex;
-                gap: 5px;
-                padding: 1rem 0.5rem;
-                border-bottom: 1px solid #dcefff;
-                span {
-                  padding: 0.5rem 0;
-                }
-                p {
-                  color: #616263;
-                  font-size: 1.4rem;
-                  margin: 0;
-                }
-              }
-              .loremDetails {
-                display: flex;
-                gap: 5px;
-                padding: 1rem 0.5rem;
-                border-bottom: 1px solid #dcefff;
-                span {
-                  padding: 0.5rem 0;
-                }
-                p {
-                  color: #616263;
-                  font-size: 1.4rem;
-                  margin: 0;
-                }
-              }
-              .editButton {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 10px;
-                background-color: #1912d3;
-                padding: 1rem;
-                border-bottom-left-radius: 0.5rem;
-                border-bottom-right-radius: 0.5rem;
-                span {
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                }
-                p {
-                  font-size: 1.6rem;
-                  font-weight: 500;
-                  color: #ffffff;
-                  margin: 0;
-                }
-              }
-            }
-          }
-        }
-        .mcRightBlock {
-          padding: 1rem;
-          h2 {
-            @include blueHeading;
-            font-size: 1.8rem;
-            font-weight: 600;
-            margin: 0;
-            padding: 1rem;
-          }
-          .hdSection {
-            .tabBtnHolder {
-              display: flex;
-              align-items: center;
-              gap: 10px;
-              flex-wrap: wrap;
-              background-color: #edf3ff;
-              .tab-btn {
-                border: none;
-                background-color: transparent;
-                padding: 1rem;
-                font-size: 1.2rem;
-                font-weight: 500;
-                color: #616263;
-                display: flex;
-                align-items: center;
-                gap: 5px;
-                svg {
-                  fill: #616263;
-                }
-                &.active {
-                  color: #2e0aa3;
-                  svg {
-                    path {
-                      fill: #2e0aa3;
-                    }
-                  }
-                }
-              }
-            }
-            .tab-content {
-              @include overflow-wrap;
-              height: 95vh;
-              #files-tab {
-                .drop-btn-wrap {
-                  @include bluebtn;
-                  width: fit-content;
-                  margin: 2rem auto;
-                }
-              }
-            }
-          }
-          .hd-btn-wrap {
-            display: flex;
-            align-items: center;
-            justify-content: end;
-            padding: 1rem 2rem;
-            gap: 10px;
-            .hd-close-btn {
-              @include bluebtn;
-              background-color: #edf3ff;
-              p {
-                color: #888888;
-              }
-            }
-            .hd-save-btn {
-              @include bluebtn;
-            }
-          }
-        }
-      }
-    }
   }
 }
 
@@ -2333,15 +2326,7 @@ h6 {
               .nh-input-btnwrap {
                 display: flex;
                 flex-direction: column;
-                .input-btn-div {
-                  padding: 0;
-                  input {
-                    margin: 0;
-                    height: 3.3rem;
-                    width: 6.2rem;
-                    box-shadow: 1px 1px 5px rgba(228, 228, 228, 0.3);
-                  }
-                }
+                @include swtichInputBox;
               }
             }
           }
@@ -2358,15 +2343,7 @@ h6 {
               .nh-input-btnwrap {
                 display: flex;
                 flex-direction: column;
-                .input-btn-div {
-                  padding: 0;
-                  input {
-                    margin: 0;
-                    height: 3.3rem;
-                    width: 6.2rem;
-                    box-shadow: 1px 1px 5px rgba(228, 228, 228, 0.3);
-                  }
-                }
+                @include swtichInputBox;
               }
             }
           }
@@ -2482,6 +2459,9 @@ h6 {
             p {
               color: #888888;
             }
+          }
+          button {
+            border: 0;
           }
           .nh-modal-addbtn {
             @include bluebtn;
@@ -3028,15 +3008,7 @@ h6 {
                 .nh-input-btnwrap {
                   display: flex;
                   flex-direction: column;
-                  .input-btn-div {
-                    padding: 0;
-                    input {
-                      margin: 0;
-                      height: 3.3rem;
-                      width: 6.2rem;
-                      box-shadow: 1px 1px 5px rgba(228, 228, 228, 0.3);
-                    }
-                  }
+                  @include swtichInputBox;
                 }
               }
             }
@@ -3053,15 +3025,7 @@ h6 {
                 .nh-input-btnwrap {
                   display: flex;
                   flex-direction: column;
-                  .input-btn-div {
-                    padding: 0;
-                    input {
-                      margin: 0;
-                      height: 3.3rem;
-                      width: 6.2rem;
-                      box-shadow: 1px 1px 5px rgba(228, 228, 228, 0.3);
-                    }
-                  }
+                  @include swtichInputBox;
                 }
               }
             }
@@ -3137,6 +3101,9 @@ h6 {
                 color: #888888;
               }
             }
+            button {
+              border: 0;
+            }
             .nh-modal-addbtn {
               @include bluebtn;
             }
@@ -3199,6 +3166,7 @@ h6 {
   border-radius: 0.4rem !important;
   padding: 0.2rem !important;
   background-color: transparent !important;
+  appearance: auto;
   &:focus-visible {
     outline: none !important;
   }
@@ -3242,13 +3210,25 @@ h6 {
 }
 
 .common-button {
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
   background-color: #1912d3;
-  border-radius: 0.5rem;
-  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem !important;
+  padding: 0.8rem 1.2rem !important;
+  text-align: center !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  border: 0 !important;
+}
+.common-box {
+  margin-bottom: 2rem;
+}
+.common-boxTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
   text-align: center;
-  color: white;
-  cursor: pointer;
+  color: #172f78;
+  border-bottom: 0.2rem solid #ccc;
+  padding-bottom: 2rem;
 }
 .common-form {
   display: flex;
@@ -3306,6 +3286,25 @@ h6 {
       &:nth-child(odd) {
         background-color: #ffffff;
       }
+    }
+  }
+}
+
+.myBtnGroup{
+  display: flex;
+  gap: 1rem;
+}
+.panelBtnWrap{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 0;
+  .common-button{
+    border: .1rem solid #313131 !important;
+    color: #313131 !important;
+    &:hover{
+      background-color: #004ab8;
+      color: #fff !important;
     }
   }
 }
