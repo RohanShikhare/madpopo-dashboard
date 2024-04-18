@@ -1548,6 +1548,171 @@ h6 {
           }
         }
       }
+      .settingsPage {
+        #settings {
+          padding: 3rem 0;
+        }
+        .box {
+          padding: 1.5rem 1rem;
+          background-color: #edf3ff;
+          border-radius: 1.2rem;
+          .box-body {
+            form {
+              width: 65%;
+              margin: 0 auto;
+            }
+            @include swtichInputBox;
+            .input-btn-div {
+              margin-bottom: 3rem;
+            }
+            .myError {
+              font-size: 1.4rem;
+              margin-bottom: 1rem;
+              display: block;
+            }
+            .common-label {
+              font-size: 1.6rem !important;
+              margin-bottom: 1rem !important;
+            }
+            .common-input {
+              height: 4rem;
+              background-color: #fff !important;
+              width: 100%;
+              margin-bottom: 1rem !important;
+            }
+            .common-select {
+              height: 4rem;
+              background-color: #fff !important;
+              width: 100%;
+              margin-bottom: 1rem !important;
+              padding: 0 1rem !important;
+              appearance: none;
+              border: 0 !important;
+            }
+            .common-radio {
+              // height: 3.3rem;
+              // width: 3.3rem;
+              height: 2rem;
+              width: 2rem;
+              cursor: pointer;
+            }
+            .smallBoxWrap {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+            }
+            .myDaysMsg {
+              font-size: 1.4rem;
+              margin-bottom: 1rem;
+              display: block;
+              font-weight: 600;
+            }
+            .dynamicLogoWrap {
+              margin: 2rem 0;
+            }
+            .rangeSliderBoxWraps {
+              display: flex;
+              align-items: center;
+              #invoice-logo-slider {
+                width: 100%;
+              
+              }
+            }
+            #logo-slider {
+              width: 100%;
+              height: 1.5rem;
+            }
+            .invoice_images {
+              // height: 12rem;
+              width: 50%;
+              overflow: hidden;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                max-width: 100%;
+              }
+            }
+            #invoice-logo-dimensionss {
+              font-size: 1.4rem;
+              font-weight: 500;
+              display: flex;
+            }
+            .common-alert {
+              font-size: 1.4rem;
+              display: flex;
+              align-items: center;
+              button {
+                border: 0;
+                background: transparent;
+                margin-right: 0.5rem;
+              }
+            }
+            .hs-table {
+              @include data-table;
+            }
+            .inneRow {
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
+              gap: 2rem;
+              margin-bottom: 1rem;
+              .common-input {
+                width: 80% !important;
+              }
+            }
+            .smallText {
+              a {
+                font-size: 1.4rem;
+                color: #02c302 !important;
+                font-weight: 500;
+                padding-left: 0.5rem;
+                text-decoration: underline !important;
+              }
+            }
+            .common-radioLabel {
+              color: #172f78;
+              font-size: 1.4rem;
+              font-weight: 500;
+            }
+            .radioWrap {
+              .radioCol4 {
+                display: flex;
+                gap: 0.5rem;
+                align-items: center;
+              }
+            }
+          }
+          .list-group {
+            gap: 1rem;
+            margin-top: 2rem;
+            .list-group-item {
+              border: 0;
+              height: 4rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              &.common-button {
+                background-color: #fff;
+                color: #212529 !important;
+                &.active {
+                  background-color: #004ab8;
+                  color: #fff !important;
+                }
+              }
+              a {
+                width: 100%;
+                height: 100%;
+                font-weight: 400;
+              }
+              &:hover {
+                background-color: #004ab8;
+                color: #fff !important;
+              }
+            }
+          }
+        }
+      }
     }
     // hosting-services-ended
 
@@ -2333,15 +2498,7 @@ h6 {
               .nh-input-btnwrap {
                 display: flex;
                 flex-direction: column;
-                .input-btn-div {
-                  padding: 0;
-                  input {
-                    margin: 0;
-                    height: 3.3rem;
-                    width: 6.2rem;
-                    box-shadow: 1px 1px 5px rgba(228, 228, 228, 0.3);
-                  }
-                }
+                @include swtichInputBox;
               }
             }
           }
@@ -2482,6 +2639,9 @@ h6 {
             p {
               color: #888888;
             }
+          }
+          button {
+            border: 0;
           }
           .nh-modal-addbtn {
             @include bluebtn;
@@ -3028,15 +3188,7 @@ h6 {
                 .nh-input-btnwrap {
                   display: flex;
                   flex-direction: column;
-                  .input-btn-div {
-                    padding: 0;
-                    input {
-                      margin: 0;
-                      height: 3.3rem;
-                      width: 6.2rem;
-                      box-shadow: 1px 1px 5px rgba(228, 228, 228, 0.3);
-                    }
-                  }
+                  @include swtichInputBox;
                 }
               }
             }
@@ -3053,15 +3205,7 @@ h6 {
                 .nh-input-btnwrap {
                   display: flex;
                   flex-direction: column;
-                  .input-btn-div {
-                    padding: 0;
-                    input {
-                      margin: 0;
-                      height: 3.3rem;
-                      width: 6.2rem;
-                      box-shadow: 1px 1px 5px rgba(228, 228, 228, 0.3);
-                    }
-                  }
+                  @include swtichInputBox;
                 }
               }
             }
@@ -3137,6 +3281,9 @@ h6 {
                 color: #888888;
               }
             }
+            button {
+              border: 0;
+            }
             .nh-modal-addbtn {
               @include bluebtn;
             }
@@ -3183,12 +3330,18 @@ h6 {
   border: none !important;
   width: 20rem !important;
   border-radius: 0.5rem !important;
+  height: 4rem;
   &:focus-visible {
     outline: none !important;
   }
   width: 100% !important;
   @include mobile {
     font-size: 1.2rem !important;
+  }
+}
+#add-translation {
+  &.common-button {
+   height: 4rem;
   }
 }
 .common-select {
@@ -3199,6 +3352,8 @@ h6 {
   border-radius: 0.4rem !important;
   padding: 0.2rem !important;
   background-color: transparent !important;
+  appearance: auto;
+  height: 4rem;
   &:focus-visible {
     outline: none !important;
   }
@@ -3243,13 +3398,33 @@ h6 {
 
 .common-button {
   font-size: 1.6rem;
+  font-size: 1.6rem !important;
+  background-color: #1912d3;
   background-color: #1912d3;
   border-radius: 0.5rem;
+  border-radius: 0.5rem !important;
   padding: 0.8rem 1.2rem;
+  padding: 0.8rem 1.2rem !important;
+  text-align: center !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  border: 0 !important;
+}
+.common-box {
+  margin-bottom: 2rem;
+}
+.common-boxTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
   text-align: center;
   color: white;
+  color: #172f78;
   cursor: pointer;
+  border-bottom: 0.2rem solid #ccc;
+  padding-bottom: 2rem;
 }
+
 .common-form {
   display: flex;
 }
@@ -3309,5 +3484,69 @@ h6 {
     }
   }
 }
-
+.myBtnGroup {
+  display: flex;
+  gap: 1rem;
+}
+.panelBtnWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 0;
+  .common-button {
+    border: 0.1rem solid #313131 !important;
+    color: #313131 !important;
+    &.active {
+      background-color: #004ab8;
+      color: #fff !important;
+    }
+    &:hover {
+      background-color: #004ab8;
+      color: #fff !important;
+    }
+  }
+}
+.settings-image {
+  width: 20rem;
+  overflow: hidden;
+  margin: 2rem 0;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.hs-table-overflow {
+  @include overflow-wrap;
+  .hs-table {
+    @include data-table;
+    tr {
+      td {
+        &.drag-handle {
+          i {
+            color: #212529;
+          }
+        }
+        i {
+          color: #fff;
+        }
+        .btn-group {
+          i {
+            color: #212529;
+            font-size: 1.6rem;
+          }
+        }
+        .dropdown-toggle::after {
+          border-top: 0.5rem solid;
+          border-right: 0.5rem solid transparent;
+          border-bottom: 0;
+          border-left: 0.5rem solid transparent;
+        }
+      }
+    }
+  }
+}
+.progress{
+  height: 3rem !important;
+}
 //common-css-for-all-end

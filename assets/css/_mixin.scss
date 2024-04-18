@@ -360,3 +360,15 @@
     margin: 0;
   }
 }
+
+@mixin swtichInputBox{
+  .input-btn-div {
+    padding: 0;
+    input {
+      margin: 0;
+      height: 3.3rem;
+      width: 6.2rem;
+      box-shadow: 1px 1px 5px rgba(228, 228, 228, 0.3);
+    }
+  }
+}
